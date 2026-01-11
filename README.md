@@ -1,3 +1,53 @@
+# Webstudio builder
+
+### Init builder step by step
+
+1. Install the "Dev Containers" extension in VS Code:
+   - Open VS Code.
+   - Go to the Extensions view by clicking the Extensions icon in the Activity Bar on the side of the window.
+   - Search for "Dev Containers" and click Install. Alternatively, you can install it from the recommended extensions listed in the Webstudio project.
+2. Fork and clone the Webstudio repository:
+   - Fork the repository on GitHub.
+   - Clone your forked repository to your local machine.
+3. Open the repository in VS Code:
+   - Open VS Code.
+   - Select "File" > "Open Folder" and choose your project folder.
+4. Reopen in Container:
+   - Once your folder is open, you might see a notification asking if you want to reopen in a container. Click "Reopen in Container".
+   - If you don't see a notification, press F1, type Dev Containers: Reopen in Container, and select it.
+5. install deps: `pnpm i`
+6. wait patiently...
+7. Run the development server:
+   - Run the following command: `pnpm dev:builder`
+8. Open the application: `https://wstd.dev:5173/`
+
+### Login locally
+
+1. create a file: `apps/builder/.env.development`
+2. add lines:
+
+```
+DEV_LOGIN=true
+AUTH_SECRET=a random value
+```
+
+### Build the app
+
+In the devContainer terminal:
+
+1. (optional) Download NVM if it is not already there:  
+   `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash`
+2. Get node version 22 with nvm:  
+   `nvm install 22`
+3. Download webstudio CLI:
+   `npm install -g webstudio`
+4. In the webstudio UI click the **PUBLISH** button
+5. Init webstudio project with the command:  
+   `webstudio`
+6. (optional) create a docker compose config file `compose.yml` to run the Dockerfile created from webstudio
+7. Run the docker compose file: `docker compose up --build -d`
+
+<br>
 <img width="1512" alt="builder-screenshot" src="https://github.com/webstudio-is/.github/blob/main/assets/builder-screenshot.png?raw=true">
 <br /><br />
 
@@ -16,20 +66,3 @@
 - [Wishlist](https://github.com/webstudio-is/webstudio-community/discussions/categories/wishlist)
 - [Builder Issues Tracker](https://github.com/webstudio-is/webstudio/issues)
 - [Roadmap](https://github.com/orgs/webstudio-is/projects/11)
-
-## Social Media
-
-- [Twitter](https://twitter.com/getwebstudio)
-- [Youtube](https://www.youtube.com/@getwebstudio)
-- [Discord](https://wstd.us/community)
-
-## Thanks
-
-<a href="https://www.lost-pixel.com/"><img src="https://user-images.githubusercontent.com/29632358/168112844-77e76a0d-b96f-4bc8-b753-cd39f4afd428.png" width="50" height="50" alt="Lost Pixel" /></a>
-
-Thanks to [Lost Pixel](https://www.lost-pixel.com/) for providing the visual testing platform that helps us review UI changes and catch visual regressions.
-
-## License
-
-- **Webstudio core** (all functionality in this repository) is free/open-source under AGPL-3.0-or-later.
-- **sdk-components-animation** package (optional) is proprietary. You must accept the Webstudio, Inc. EULA located in [sdk-components-animation/LICENSE](./packages/sdk-components-animation/LICENSE) before using it.
