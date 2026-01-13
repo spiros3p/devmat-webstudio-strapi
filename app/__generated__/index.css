@@ -23,6 +23,9 @@
   h1.w-element {
     box-sizing: border-box;
   }
+  h2.w-element {
+    box-sizing: border-box;
+  }
   p.w-element {
     box-sizing: border-box;
   }
@@ -209,5 +212,8 @@
   }
   .ckrth4 {
     flex-shrink: 0;
+  }
+  .c1xx6mlz {
+    text-align: end;
   }
 }

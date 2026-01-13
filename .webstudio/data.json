@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "5d235e27-a285-46d2-8492-76cef0946ccf",
+    "id": "a39c9f8e-85af-4eec-88b6-6648eea3bfc0",
     "projectId": "0a2d7944-5150-4e8a-bdc4-05d3f1900326",
-    "version": 7,
-    "createdAt": "2026-01-11T13:41:49.904+00:00",
-    "updatedAt": "2026-01-11T13:41:49.904+00:00",
+    "version": 20,
+    "createdAt": "2026-01-11T21:04:18.002+00:00",
+    "updatedAt": "2026-01-11T21:04:18.002+00:00",
     "pages": {
       "homePage": {
         "id": "Or7Xv4vwLLMBNFIN8nUUo",
@@ -1072,6 +1072,18 @@
             "value": "center"
           }
         }
+      ],
+      [
+        "7TjdAiGsnkAj-N_hNXDZA:LGch67xgB8qBuXgBepmCw:textAlign:",
+        {
+          "breakpointId": "LGch67xgB8qBuXgBepmCw",
+          "styleSourceId": "7TjdAiGsnkAj-N_hNXDZA",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "end"
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -1136,6 +1148,13 @@
         {
           "type": "local",
           "id": "LwGva-_0AMQwf58HRqdY3"
+        }
+      ],
+      [
+        "7TjdAiGsnkAj-N_hNXDZA",
+        {
+          "type": "local",
+          "id": "7TjdAiGsnkAj-N_hNXDZA"
         }
       ]
     ],
@@ -1202,6 +1221,13 @@
           "instanceId": "nh7RfRx_ZBVvRnSLR0TOp",
           "values": ["LwGva-_0AMQwf58HRqdY3"]
         }
+      ],
+      [
+        "zLQ7C7hxV1gjG3SzLZfcp",
+        {
+          "instanceId": "zLQ7C7hxV1gjG3SzLZfcp",
+          "values": ["7TjdAiGsnkAj-N_hNXDZA"]
+        }
       ]
     ],
     "props": [
@@ -1246,6 +1272,16 @@
           "name": "mainVarName",
           "resourceId": "ObeSDBiBDGZHOvwV9CUKR"
         }
+      ],
+      [
+        "cr9sR2uaQK02-WknjkUBM",
+        {
+          "type": "resource",
+          "id": "cr9sR2uaQK02-WknjkUBM",
+          "scopeInstanceId": "zLQ7C7hxV1gjG3SzLZfcp",
+          "name": "name",
+          "resourceId": "3lHhLUlgtysXgx6h0JZfo"
+        }
       ]
     ],
     "resources": [
@@ -1256,6 +1292,17 @@
           "name": "mainVarName",
           "method": "get",
           "url": "\"http://172.18.0.23:1337/api/main\"",
+          "searchParams": [],
+          "headers": []
+        }
+      ],
+      [
+        "3lHhLUlgtysXgx6h0JZfo",
+        {
+          "id": "3lHhLUlgtysXgx6h0JZfo",
+          "name": "name",
+          "method": "get",
+          "url": "\"\"",
           "searchParams": [],
           "headers": []
         }
@@ -1273,6 +1320,10 @@
             {
               "type": "id",
               "value": "qUE8lku5yUQUVX9IWwocW"
+            },
+            {
+              "type": "id",
+              "value": "F3shXBNF-zO7AcIGPjK8H"
             }
           ]
         }
@@ -1470,6 +1521,10 @@
             {
               "type": "id",
               "value": "nh7RfRx_ZBVvRnSLR0TOp"
+            },
+            {
+              "type": "id",
+              "value": "zLQ7C7hxV1gjG3SzLZfcp"
             }
           ]
         }
@@ -1485,6 +1540,36 @@
             {
               "type": "expression",
               "value": "\"Hello \" + $ws$dataSource$h6ORst81vIx0C6updF4ef.data.data.name"
+            }
+          ]
+        }
+      ],
+      [
+        "zLQ7C7hxV1gjG3SzLZfcp",
+        {
+          "type": "instance",
+          "id": "zLQ7C7hxV1gjG3SzLZfcp",
+          "component": "ws:element",
+          "tag": "h2",
+          "children": [
+            {
+              "type": "text",
+              "value": "Godspeed "
+            }
+          ]
+        }
+      ],
+      [
+        "F3shXBNF-zO7AcIGPjK8H",
+        {
+          "type": "instance",
+          "id": "F3shXBNF-zO7AcIGPjK8H",
+          "component": "ws:element",
+          "tag": "div",
+          "children": [
+            {
+              "type": "text",
+              "value": "k,lo,o"
             }
           ]
         }

@@ -7,7 +7,7 @@ import { Body as Body } from "@webstudio-is/sdk-components-react-router";
 
 export const projectId = "0a2d7944-5150-4e8a-bdc4-05d3f1900326";
 
-export const lastPublished = "2026-01-11T13:41:49.904Z";
+export const lastPublished = "2026-01-11T21:04:18.002Z";
 
 export const siteName = undefined;
 
@@ -37,7 +37,9 @@ const Page = (_props: { system: any }) => {
         <h1 className={`w-element c1ok9k6w`}>
           {"Hello " + mainVarName?.data?.data?.name}
         </h1>
+        <h2 className={`w-element c1xx6mlz`}>{"Godspeed "}</h2>
       </div>
+      <div className={`w-element`}>{"k,lo,o"}</div>
     </Body>
   );
 };

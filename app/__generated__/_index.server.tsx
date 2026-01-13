@@ -11,8 +11,16 @@ export const getResources = (_props: { system: System }) => {
     method: "get",
     headers: [],
   };
+  const name: ResourceRequest = {
+    name: "name",
+    url: "",
+    searchParams: [],
+    method: "get",
+    headers: [],
+  };
   const _data = new Map<string, ResourceRequest>([
     ["mainVarName_1", mainVarName_1],
+    ["name", name],
   ]);
   const _action = new Map<string, ResourceRequest>([]);
   return { data: _data, action: _action };
