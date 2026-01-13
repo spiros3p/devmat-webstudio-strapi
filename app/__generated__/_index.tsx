@@ -7,7 +7,7 @@ import { Body as Body } from "@webstudio-is/sdk-components-react-router";
 
 export const projectId = "0a2d7944-5150-4e8a-bdc4-05d3f1900326";
 
-export const lastPublished = "2026-01-13T09:48:02.952Z";
+export const lastPublished = "2026-01-13T13:30:17.606Z";
 
 export const siteName = undefined;
 
@@ -32,7 +32,7 @@ export const CustomCode = () => {
 };
 
 const Page = (_props: { system: any }) => {
-  let PageState = useResource("PageState_1");
+  let sitestate = useResource("sitestate_1");
   return (
     <Body className={`w-element`}>
       <div className={`w-element`}>
@@ -42,7 +42,7 @@ const Page = (_props: { system: any }) => {
         <h2
           className={`w-element c1ok9k6w c10w4q97 cek1jwi c7d6b3o citx16c c4rrhvj`}
         >
-          {PageState?.data?.data?.pageStatus}
+          {sitestate?.data?.data?.siteStatus}
         </h2>
       </div>
     </Body>

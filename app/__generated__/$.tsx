@@ -11,7 +11,7 @@ import { HtmlEmbed as HtmlEmbed } from "@webstudio-is/sdk-components-react";
 
 export const projectId = "0a2d7944-5150-4e8a-bdc4-05d3f1900326";
 
-export const lastPublished = "2026-01-13T09:48:02.952Z";
+export const lastPublished = "2026-01-13T13:30:17.606Z";
 
 export const siteName = undefined;
 

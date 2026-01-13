@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "d6bcf437-f4b8-4a5a-aa59-a7b016d696fd",
+    "id": "abeceb12-4801-43d7-b12b-360433cb5483",
     "projectId": "0a2d7944-5150-4e8a-bdc4-05d3f1900326",
-    "version": 49,
-    "createdAt": "2026-01-13T09:48:02.952+00:00",
-    "updatedAt": "2026-01-13T09:48:02.952+00:00",
+    "version": 51,
+    "createdAt": "2026-01-13T13:30:17.606+00:00",
+    "updatedAt": "2026-01-13T13:30:17.606+00:00",
     "pages": {
       "homePage": {
         "id": "Or7Xv4vwLLMBNFIN8nUUo",
@@ -1365,7 +1365,7 @@
           "type": "resource",
           "id": "iqqPxEUaxAHpPGA8nin_e",
           "scopeInstanceId": "zLQ7C7hxV1gjG3SzLZfcp",
-          "name": "Page State",
+          "name": "site state",
           "resourceId": "wX6NTwCYxyaT4NDgteRMJ"
         }
       ]
@@ -1386,9 +1386,9 @@
         "wX6NTwCYxyaT4NDgteRMJ",
         {
           "id": "wX6NTwCYxyaT4NDgteRMJ",
-          "name": "Page State",
+          "name": "site state",
           "method": "get",
-          "url": "\"http://172.18.0.23:1337/api/state\"",
+          "url": "\"http://172.18.0.23:1337/api/site-state\"",
           "searchParams": [],
           "headers": []
         }
@@ -1621,7 +1621,7 @@
           "children": [
             {
               "type": "expression",
-              "value": "$ws$dataSource$iqqPxEUaxAHpPGA8nin_e.data.data.pageStatus"
+              "value": "$ws$dataSource$iqqPxEUaxAHpPGA8nin_e.data.data.siteStatus"
             }
           ]
         }

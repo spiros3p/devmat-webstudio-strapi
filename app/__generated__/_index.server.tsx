@@ -11,16 +11,16 @@ export const getResources = (_props: { system: System }) => {
     method: "get",
     headers: [],
   };
-  const PageState_1: ResourceRequest = {
-    name: "Page State",
-    url: "http://172.18.0.23:1337/api/state",
+  const sitestate_1: ResourceRequest = {
+    name: "site state",
+    url: "http://172.18.0.23:1337/api/site-state",
     searchParams: [],
     method: "get",
     headers: [],
   };
   const _data = new Map<string, ResourceRequest>([
     ["name", name],
-    ["PageState_1", PageState_1],
+    ["sitestate_1", sitestate_1],
   ]);
   const _action = new Map<string, ResourceRequest>([]);
   return { data: _data, action: _action };
