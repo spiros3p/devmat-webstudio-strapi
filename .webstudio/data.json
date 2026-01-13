@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "a39c9f8e-85af-4eec-88b6-6648eea3bfc0",
+    "id": "d6bcf437-f4b8-4a5a-aa59-a7b016d696fd",
     "projectId": "0a2d7944-5150-4e8a-bdc4-05d3f1900326",
-    "version": 20,
-    "createdAt": "2026-01-11T21:04:18.002+00:00",
-    "updatedAt": "2026-01-11T21:04:18.002+00:00",
+    "version": 49,
+    "createdAt": "2026-01-13T09:48:02.952+00:00",
+    "updatedAt": "2026-01-13T09:48:02.952+00:00",
     "pages": {
       "homePage": {
         "id": "Or7Xv4vwLLMBNFIN8nUUo",
@@ -1062,10 +1062,10 @@
         }
       ],
       [
-        "LwGva-_0AMQwf58HRqdY3:LGch67xgB8qBuXgBepmCw:textAlign:",
+        "7TjdAiGsnkAj-N_hNXDZA:LGch67xgB8qBuXgBepmCw:textAlign:",
         {
           "breakpointId": "LGch67xgB8qBuXgBepmCw",
-          "styleSourceId": "LwGva-_0AMQwf58HRqdY3",
+          "styleSourceId": "7TjdAiGsnkAj-N_hNXDZA",
           "property": "textAlign",
           "value": {
             "type": "keyword",
@@ -1074,14 +1074,100 @@
         }
       ],
       [
-        "7TjdAiGsnkAj-N_hNXDZA:LGch67xgB8qBuXgBepmCw:textAlign:",
+        "7TjdAiGsnkAj-N_hNXDZA:LGch67xgB8qBuXgBepmCw:fontFamily:",
         {
           "breakpointId": "LGch67xgB8qBuXgBepmCw",
           "styleSourceId": "7TjdAiGsnkAj-N_hNXDZA",
+          "property": "fontFamily",
+          "value": {
+            "type": "fontFamily",
+            "value": ["Rounded Sans"]
+          }
+        }
+      ],
+      [
+        "fKnD1bno7l_U_jXh1KnB6:LGch67xgB8qBuXgBepmCw:fontFamily:",
+        {
+          "breakpointId": "LGch67xgB8qBuXgBepmCw",
+          "styleSourceId": "fKnD1bno7l_U_jXh1KnB6",
+          "property": "fontFamily",
+          "value": {
+            "type": "fontFamily",
+            "value": ["Monoton"]
+          }
+        }
+      ],
+      [
+        "fKnD1bno7l_U_jXh1KnB6:LGch67xgB8qBuXgBepmCw:fontWeight:",
+        {
+          "breakpointId": "LGch67xgB8qBuXgBepmCw",
+          "styleSourceId": "fKnD1bno7l_U_jXh1KnB6",
+          "property": "fontWeight",
+          "value": {
+            "type": "keyword",
+            "value": "400"
+          }
+        }
+      ],
+      [
+        "fKnD1bno7l_U_jXh1KnB6:LGch67xgB8qBuXgBepmCw:textAlign:",
+        {
+          "breakpointId": "LGch67xgB8qBuXgBepmCw",
+          "styleSourceId": "fKnD1bno7l_U_jXh1KnB6",
           "property": "textAlign",
           "value": {
             "type": "keyword",
-            "value": "end"
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "7TjdAiGsnkAj-N_hNXDZA:LGch67xgB8qBuXgBepmCw:textTransform:",
+        {
+          "breakpointId": "LGch67xgB8qBuXgBepmCw",
+          "styleSourceId": "7TjdAiGsnkAj-N_hNXDZA",
+          "property": "textTransform",
+          "value": {
+            "type": "keyword",
+            "value": "uppercase"
+          }
+        }
+      ],
+      [
+        "7TjdAiGsnkAj-N_hNXDZA:LGch67xgB8qBuXgBepmCw:fontWeight:",
+        {
+          "breakpointId": "LGch67xgB8qBuXgBepmCw",
+          "styleSourceId": "7TjdAiGsnkAj-N_hNXDZA",
+          "property": "fontWeight",
+          "value": {
+            "type": "keyword",
+            "value": "600"
+          }
+        }
+      ],
+      [
+        "7TjdAiGsnkAj-N_hNXDZA:LGch67xgB8qBuXgBepmCw:lineHeight:",
+        {
+          "breakpointId": "LGch67xgB8qBuXgBepmCw",
+          "styleSourceId": "7TjdAiGsnkAj-N_hNXDZA",
+          "property": "lineHeight",
+          "value": {
+            "type": "unit",
+            "value": 1.2,
+            "unit": "number"
+          }
+        }
+      ],
+      [
+        "7TjdAiGsnkAj-N_hNXDZA:LGch67xgB8qBuXgBepmCw:fontSize:",
+        {
+          "breakpointId": "LGch67xgB8qBuXgBepmCw",
+          "styleSourceId": "7TjdAiGsnkAj-N_hNXDZA",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "value": 1.5,
+            "unit": "em"
           }
         }
       ]
@@ -1144,17 +1230,17 @@
         }
       ],
       [
-        "LwGva-_0AMQwf58HRqdY3",
-        {
-          "type": "local",
-          "id": "LwGva-_0AMQwf58HRqdY3"
-        }
-      ],
-      [
         "7TjdAiGsnkAj-N_hNXDZA",
         {
           "type": "local",
           "id": "7TjdAiGsnkAj-N_hNXDZA"
+        }
+      ],
+      [
+        "fKnD1bno7l_U_jXh1KnB6",
+        {
+          "type": "local",
+          "id": "fKnD1bno7l_U_jXh1KnB6"
         }
       ]
     ],
@@ -1216,17 +1302,17 @@
         }
       ],
       [
-        "nh7RfRx_ZBVvRnSLR0TOp",
-        {
-          "instanceId": "nh7RfRx_ZBVvRnSLR0TOp",
-          "values": ["LwGva-_0AMQwf58HRqdY3"]
-        }
-      ],
-      [
         "zLQ7C7hxV1gjG3SzLZfcp",
         {
           "instanceId": "zLQ7C7hxV1gjG3SzLZfcp",
           "values": ["7TjdAiGsnkAj-N_hNXDZA"]
+        }
+      ],
+      [
+        "YN4WhfSLhZLsCaPcOWxf5",
+        {
+          "instanceId": "YN4WhfSLhZLsCaPcOWxf5",
+          "values": ["fKnD1bno7l_U_jXh1KnB6"]
         }
       ]
     ],
@@ -1264,16 +1350,6 @@
     ],
     "dataSources": [
       [
-        "h6ORst81vIx0C6updF4ef",
-        {
-          "type": "resource",
-          "id": "h6ORst81vIx0C6updF4ef",
-          "scopeInstanceId": "nh7RfRx_ZBVvRnSLR0TOp",
-          "name": "mainVarName",
-          "resourceId": "ObeSDBiBDGZHOvwV9CUKR"
-        }
-      ],
-      [
         "cr9sR2uaQK02-WknjkUBM",
         {
           "type": "resource",
@@ -1282,20 +1358,19 @@
           "name": "name",
           "resourceId": "3lHhLUlgtysXgx6h0JZfo"
         }
+      ],
+      [
+        "iqqPxEUaxAHpPGA8nin_e",
+        {
+          "type": "resource",
+          "id": "iqqPxEUaxAHpPGA8nin_e",
+          "scopeInstanceId": "zLQ7C7hxV1gjG3SzLZfcp",
+          "name": "Page State",
+          "resourceId": "wX6NTwCYxyaT4NDgteRMJ"
+        }
       ]
     ],
     "resources": [
-      [
-        "ObeSDBiBDGZHOvwV9CUKR",
-        {
-          "id": "ObeSDBiBDGZHOvwV9CUKR",
-          "name": "mainVarName",
-          "method": "get",
-          "url": "\"http://172.18.0.23:1337/api/main\"",
-          "searchParams": [],
-          "headers": []
-        }
-      ],
       [
         "3lHhLUlgtysXgx6h0JZfo",
         {
@@ -1303,6 +1378,17 @@
           "name": "name",
           "method": "get",
           "url": "\"\"",
+          "searchParams": [],
+          "headers": []
+        }
+      ],
+      [
+        "wX6NTwCYxyaT4NDgteRMJ",
+        {
+          "id": "wX6NTwCYxyaT4NDgteRMJ",
+          "name": "Page State",
+          "method": "get",
+          "url": "\"http://172.18.0.23:1337/api/state\"",
           "searchParams": [],
           "headers": []
         }
@@ -1320,10 +1406,6 @@
             {
               "type": "id",
               "value": "qUE8lku5yUQUVX9IWwocW"
-            },
-            {
-              "type": "id",
-              "value": "F3shXBNF-zO7AcIGPjK8H"
             }
           ]
         }
@@ -1520,26 +1602,11 @@
           "children": [
             {
               "type": "id",
-              "value": "nh7RfRx_ZBVvRnSLR0TOp"
+              "value": "YN4WhfSLhZLsCaPcOWxf5"
             },
             {
               "type": "id",
               "value": "zLQ7C7hxV1gjG3SzLZfcp"
-            }
-          ]
-        }
-      ],
-      [
-        "nh7RfRx_ZBVvRnSLR0TOp",
-        {
-          "type": "instance",
-          "id": "nh7RfRx_ZBVvRnSLR0TOp",
-          "component": "ws:element",
-          "tag": "h1",
-          "children": [
-            {
-              "type": "expression",
-              "value": "\"Hello \" + $ws$dataSource$h6ORst81vIx0C6updF4ef.data.data.name"
             }
           ]
         }
@@ -1553,23 +1620,23 @@
           "tag": "h2",
           "children": [
             {
-              "type": "text",
-              "value": "Godspeed "
+              "type": "expression",
+              "value": "$ws$dataSource$iqqPxEUaxAHpPGA8nin_e.data.data.pageStatus"
             }
           ]
         }
       ],
       [
-        "F3shXBNF-zO7AcIGPjK8H",
+        "YN4WhfSLhZLsCaPcOWxf5",
         {
           "type": "instance",
-          "id": "F3shXBNF-zO7AcIGPjK8H",
+          "id": "YN4WhfSLhZLsCaPcOWxf5",
           "component": "ws:element",
-          "tag": "div",
+          "tag": "h1",
           "children": [
             {
               "type": "text",
-              "value": "k,lo,o"
+              "value": "Devmat Solutions PC"
             }
           ]
         }
@@ -1611,7 +1678,22 @@
       "rootInstanceId": "AyvgXGVWKWeU_EvTKL7hm"
     }
   ],
-  "assets": [],
+  "assets": [
+    {
+      "id": "1565b395f454d5c2642d0f411030051e7342fbaf6d5bfc5da5899c47ecd3511e",
+      "name": "Monoton-Regular_ZzprU0UZVPRY408r7k90h.ttf",
+      "projectId": "0a2d7944-5150-4e8a-bdc4-05d3f1900326",
+      "size": 49908,
+      "type": "font",
+      "createdAt": "2026-01-13T09:40:01.385+00:00",
+      "format": "ttf",
+      "meta": {
+        "family": "Monoton",
+        "style": "normal",
+        "weight": 400
+      }
+    }
+  ],
   "user": {
     "email": "hello@webstudio.is"
   },

@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Monoton;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/Monoton-Regular_ZzprU0UZVPRY408r7k90h.ttf")
+    format("truetype");
+}
 @layer presets {
   :root {
     display: grid;
@@ -213,7 +221,28 @@
   .ckrth4 {
     flex-shrink: 0;
   }
-  .c1xx6mlz {
-    text-align: end;
+  .c10w4q97 {
+    font-family:
+      ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa, Manjari,
+      "Arial Rounded MT", "Arial Rounded MT Bold", Calibri, source-sans-pro,
+      sans-serif;
+  }
+  .cek1jwi {
+    text-transform: uppercase;
+  }
+  .c7d6b3o {
+    font-weight: 600;
+  }
+  .citx16c {
+    line-height: 1.2;
+  }
+  .c4rrhvj {
+    font-size: 1.5em;
+  }
+  .c1kiuc91 {
+    font-family: Monoton, sans-serif;
+  }
+  .cf606sg {
+    font-weight: 400;
   }
 }

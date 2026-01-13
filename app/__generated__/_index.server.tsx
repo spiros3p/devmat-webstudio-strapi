@@ -4,13 +4,6 @@
 import type { PageMeta } from "@webstudio-is/sdk";
 import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
-  const mainVarName_1: ResourceRequest = {
-    name: "mainVarName",
-    url: "http://172.18.0.23:1337/api/main",
-    searchParams: [],
-    method: "get",
-    headers: [],
-  };
   const name: ResourceRequest = {
     name: "name",
     url: "",
@@ -18,9 +11,16 @@ export const getResources = (_props: { system: System }) => {
     method: "get",
     headers: [],
   };
+  const PageState_1: ResourceRequest = {
+    name: "Page State",
+    url: "http://172.18.0.23:1337/api/state",
+    searchParams: [],
+    method: "get",
+    headers: [],
+  };
   const _data = new Map<string, ResourceRequest>([
-    ["mainVarName_1", mainVarName_1],
     ["name", name],
+    ["PageState_1", PageState_1],
   ]);
   const _action = new Map<string, ResourceRequest>([]);
   return { data: _data, action: _action };
