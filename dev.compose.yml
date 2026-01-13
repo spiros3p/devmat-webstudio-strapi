@@ -1,6 +1,6 @@
 services:
   app:
-    container_name: devmat-ui
+    container_name: devmat-ui-dev
     build: .
     # expose:
     #   - 3030
