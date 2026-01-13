@@ -2,19 +2,19 @@ services:
   app:
     container_name: devmat-ui
     build: .
-    expose:
-      - 3030
+    # expose:
+    #   - 3030
     # volumes:
     #   - node_pkgs:/app/node_modules
-    # ports:
-    #   - 3030:3030
+    ports:
+      - 3030:3030
     networks:
       common_network:
         ipv4_address: 172.18.0.22
     # command: sleep infinity
 
-# volumes:
-#   node_pkgs:  
+volumes:
+  node_pkgs:  
 
 networks:
   common_network:
