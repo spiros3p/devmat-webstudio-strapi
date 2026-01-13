@@ -27,10 +27,10 @@ services:
       - ./types:/opt/app/types
       - ./exports:/opt/app/exports
       # - node_pkgs:/opt/node_modules
-    #   # expose:
-    #   #   - ${PORT}
-    ports:
-      - ${PORT}:${PORT}
+    expose:
+      - ${PORT}
+    # ports:
+    #   - ${PORT}:${PORT}
     # depends_on:
     #   - mariadb
     networks:
