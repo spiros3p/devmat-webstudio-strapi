@@ -1,0 +1,45 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "cms/**"
+  workflow_dispatch:
+
+env:
+  BUILD_CONFIG: production
+  VPS_HOST: ${{ vars.VPS_HOST }}
+  VPS_USER: ${{ vars.VPS_USER }}
+  APP_DIR: ${{ vars.APP_DIR }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install SSH key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H $VPS_HOST >> ~/.ssh/known_hosts
+
+      - name: Deploy to VPS
+        env:
+          APP_DIR: ${{ env.APP_DIR }}
+          BUILD_CONFIG: ${{ env.BUILD_CONFIG }}
+        run: |
+          ssh -i ~/.ssh/id_rsa $VPS_USER@$VPS_HOST << 'EOF'
+            cd ${{ env.APP_DIR }}
+            git pull
+            export PORT=${{ env.PORT }}
+            export BUILD_CONFIG=${{ env.BUILD_CONFIG }}
+            BUILD_CONFIG=${BUILD_CONFIG} COMPOSE_BAKE=true docker compose up --build -d
+          EOF
