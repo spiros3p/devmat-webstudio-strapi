@@ -1,17 +1,17 @@
 {
   "kind": "singleType",
-  "collectionName": "states",
+  "collectionName": "site_states",
   "info": {
-    "singularName": "state",
-    "pluralName": "states",
-    "displayName": "state"
+    "singularName": "site-state",
+    "pluralName": "site-states",
+    "displayName": "siteState"
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "pageStatus": {
+    "siteStatus": {
       "type": "string"
     }
   }
