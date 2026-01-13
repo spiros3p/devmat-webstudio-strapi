@@ -12,7 +12,7 @@ env:
   BUILD_CONFIG: production
   VPS_HOST: ${{ vars.VPS_HOST }}
   VPS_USER: ${{ vars.VPS_USER }}
-  APP_DIR: ${{ vars.APP_DIR }}
+  APP_DIR_STRAPI: ${{ vars.APP_DIR_STRAPI }}
 
 jobs:
   deploy:
@@ -33,13 +33,12 @@ jobs:
 
       - name: Deploy to VPS
         env:
-          APP_DIR: ${{ env.APP_DIR }}
+          APP_DIR_STRAPI: ${{ env.APP_DIR_STRAPI }}
           BUILD_CONFIG: ${{ env.BUILD_CONFIG }}
         run: |
           ssh -i ~/.ssh/id_rsa $VPS_USER@$VPS_HOST << 'EOF'
-            cd ${{ env.APP_DIR }}
+            cd ${{ env.APP_DIR_STRAPI }}
             git pull
-            export PORT=${{ env.PORT }}
             export BUILD_CONFIG=${{ env.BUILD_CONFIG }}
             BUILD_CONFIG=${BUILD_CONFIG} COMPOSE_BAKE=true docker compose up --build -d
           EOF
