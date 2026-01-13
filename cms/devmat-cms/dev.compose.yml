@@ -31,16 +31,50 @@ services:
     #   #   - ${PORT}
     ports:
       - ${PORT}:${PORT}
-    # depends_on:
-    #   - mariadb
+    depends_on:
+      - mariadb
     networks:
       common_network:
         ipv4_address: 172.18.0.23
 
+  mariadb:
+    container_name: devmat-mariadb
+    image: mariadb:12
+    restart: always
+    environment:
+      - MARIADB_ROOT_PASSWORD=${DB_ROOT_PWD}
+      - MARIADB_ROOT_HOST=%
+      - MARIADB_USER=${DATABASE_USERNAME}
+      - MARIADB_PASSWORD=${DATABASE_PASSWORD}
+      - MARIADB_DATABASE=${DATABASE_NAME}
+    # expose:
+    #   - 3306
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./.db:/var/lib/mysql
+    networks:
+      common_network:
+        ipv4_address: 172.18.0.24
 
+  phpmyadmin:
+    container_name: mariadb-ui
+    image: phpmyadmin:latest
+    restart: always
+    env_file: ./.env
+    environment:
+      - PMA_HOST=mariadb
+      - PMA_PORT=3306
+      - UPLOAD_LIMIT=60M
+    # expose:
+    #   - 80
+    depends_on:
+      - mariadb
+    ports:
+      - "8089:80"
 
 volumes:
-  node_pkgs:  
+  node_pkgs:
 
 networks:
   common_network:
