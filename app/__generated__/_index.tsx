@@ -3,11 +3,31 @@
 
 import { Fragment, useState } from "react";
 import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-import { Body as Body } from "@webstudio-is/sdk-components-react-router";
+import {
+  Body as Body,
+  Link as Link,
+} from "@webstudio-is/sdk-components-react-router";
+import {
+  NavigationMenu as NavigationMenu,
+  NavigationMenuList as NavigationMenuList,
+  NavigationMenuItem as NavigationMenuItem,
+  NavigationMenuTrigger as NavigationMenuTrigger,
+  NavigationMenuContent as NavigationMenuContent,
+  NavigationMenuLink as NavigationMenuLink,
+  NavigationMenuViewport as NavigationMenuViewport,
+} from "@webstudio-is/sdk-components-react-radix";
+import {
+  Button as Button,
+  Text as Text,
+  Box as Box,
+  HtmlEmbed as HtmlEmbed,
+  Paragraph as Paragraph,
+  Image as Image,
+} from "@webstudio-is/sdk-components-react";
 
 export const projectId = "0a2d7944-5150-4e8a-bdc4-05d3f1900326";
 
-export const lastPublished = "2026-01-13T13:30:17.606Z";
+export const lastPublished = "2026-01-14T09:25:53.548Z";
 
 export const siteName = undefined;
 
@@ -34,16 +54,22 @@ export const CustomCode = () => {
 const Page = (_props: { system: any }) => {
   let sitestate = useResource("sitestate_1");
   return (
-    <Body className={`w-element`}>
-      <div className={`w-element`}>
-        <h1 className={`w-element c1kiuc91 cf606sg c1ok9k6w`}>
+    <Body className={`w-element ca1367l cvwj1e5 cmjq5f4 chvthtj`}>
+      <div className={`w-element c1e8wxyp`}>
+        <h1 className={`w-element c1kiuc91 cf606sg c1ok9k6w ckvo8m0 clc3r69`}>
           {"Devmat Solutions PC"}
         </h1>
         <h2
-          className={`w-element c1ok9k6w c10w4q97 cek1jwi c7d6b3o citx16c c4rrhvj`}
+          className={`w-element c1ok9k6w c12ikdfy cek1jwi c7d6b3o citx16c cjptfmy cielvey co8v17q ce53uq3`}
         >
           {sitestate?.data?.data?.siteStatus}
         </h2>
+        <div className={`w-element c1x97uab`}>
+          <Image
+            src={"https://cdn-icons-png.flaticon.com/512/5110/5110294.png"}
+            className={`w-image c1x97uab c1i7pqf3 c10n4v7u`}
+          />
+        </div>
       </div>
     </Body>
   );
