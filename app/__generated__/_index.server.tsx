@@ -34,7 +34,7 @@ export const getPageMeta = ({
   resources: Record<string, any>;
 }): PageMeta => {
   return {
-    title: "Home",
+    title: "Devmat Solutions PC – Easy, Powerful, Intelligent",
     description: undefined,
     excludePageFromSearch: undefined,
     language: undefined,
@@ -51,4 +51,4 @@ export const getRemixParams = ({ ...params }: Params): Params => {
   return params;
 };
 
-export const contactEmail = "hello@webstudio.is";
+export const contactEmail = "info@devmat.gr";

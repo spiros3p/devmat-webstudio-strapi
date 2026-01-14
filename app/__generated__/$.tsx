@@ -7,9 +7,9 @@ import { Body as Body } from "@webstudio-is/sdk-components-react-router";
 
 export const projectId = "0a2d7944-5150-4e8a-bdc4-05d3f1900326";
 
-export const lastPublished = "2026-01-14T09:25:53.548Z";
+export const lastPublished = "2026-01-14T10:04:06.395Z";
 
-export const siteName = undefined;
+export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
 export const breakpoints = [
   { id: "LGch67xgB8qBuXgBepmCw" },
@@ -18,7 +18,8 @@ export const breakpoints = [
   { id: "G3PBx5haKWv4BbxZ05Wat", maxWidth: 479 },
 ];
 
-export const favIconAsset: string | undefined = undefined;
+export const favIconAsset: string | undefined =
+  "favicon_APM-vqgr8Z9I7VmPQSXYr.png";
 
 // Font assets on current page (can be preloaded)
 export const pageFontAssets: string[] = [];

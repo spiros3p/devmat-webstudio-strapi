@@ -36,4 +36,4 @@ export const getRemixParams = ({ ...params }: Params): Params => {
   return params;
 };
 
-export const contactEmail = "hello@webstudio.is";
+export const contactEmail = "info@devmat.gr";

@@ -1,15 +1,20 @@
 {
   "build": {
-    "id": "be033b98-34e0-45f7-8822-1910173bbe70",
+    "id": "11ef461a-7288-4992-ac21-ade8eb386cb6",
     "projectId": "0a2d7944-5150-4e8a-bdc4-05d3f1900326",
-    "version": 251,
-    "createdAt": "2026-01-14T09:25:53.548+00:00",
-    "updatedAt": "2026-01-14T09:25:53.548+00:00",
+    "version": 272,
+    "createdAt": "2026-01-14T10:04:06.395+00:00",
+    "updatedAt": "2026-01-14T10:04:06.395+00:00",
     "pages": {
+      "meta": {
+        "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
+        "contactEmail": "info@devmat.gr",
+        "faviconAssetId": "db1c1891eed3349d541fb69cbe3f801b988b105599487d858b8867efe2f4bd57"
+      },
       "homePage": {
         "id": "Or7Xv4vwLLMBNFIN8nUUo",
         "name": "under constrtuction",
-        "title": "\"Home\"",
+        "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
         "rootInstanceId": "CD6fYpZfDNaqTkqs9Qm6g",
         "meta": {},
         "path": ""
@@ -29,7 +34,7 @@
         {
           "id": "7I9e125Fx88Kls-pXJtyJ",
           "name": "home",
-          "title": "\"Home\"",
+          "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
           "rootInstanceId": "j3of0DkKcKI3DL_cNg0NE",
           "meta": {},
           "path": "/home"
@@ -9063,7 +9068,7 @@
           "value": {
             "type": "unit",
             "unit": "em",
-            "value": 0.2
+            "value": 0.4
           }
         }
       ],
@@ -20040,8 +20045,8 @@
           "id": "K14ITqHPA7u2i26pufZLs",
           "instanceId": "AD5O0hHIzrHG13oRsbMvV",
           "name": "src",
-          "type": "string",
-          "value": "https://cdn-icons-png.flaticon.com/512/5110/5110294.png"
+          "type": "asset",
+          "value": "cba7e5d5af79a6483b5dd2789bb47e843e42671656d1581fa1a50ed64028873b"
         }
       ],
       [
@@ -20192,6 +20197,36 @@
           "name": "data-ws-show",
           "type": "boolean",
           "value": true
+        }
+      ],
+      [
+        "1M2MJ5e9qUFP8uPtB5PCv",
+        {
+          "id": "1M2MJ5e9qUFP8uPtB5PCv",
+          "instanceId": "AD5O0hHIzrHG13oRsbMvV",
+          "name": "width",
+          "type": "number",
+          "value": 350
+        }
+      ],
+      [
+        "Zv6-PfRoUYPt1Ql6gbkDI",
+        {
+          "id": "Zv6-PfRoUYPt1Ql6gbkDI",
+          "instanceId": "AD5O0hHIzrHG13oRsbMvV",
+          "name": "height",
+          "type": "number",
+          "value": 350
+        }
+      ],
+      [
+        "N9PGThuBckTuHGiCE61cL",
+        {
+          "id": "N9PGThuBckTuHGiCE61cL",
+          "instanceId": "AD5O0hHIzrHG13oRsbMvV",
+          "name": "alt",
+          "type": "asset",
+          "value": "cba7e5d5af79a6483b5dd2789bb47e843e42671656d1581fa1a50ed64028873b"
         }
       ]
     ],
@@ -22648,7 +22683,7 @@
   "page": {
     "id": "Or7Xv4vwLLMBNFIN8nUUo",
     "name": "under constrtuction",
-    "title": "\"Home\"",
+    "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
     "rootInstanceId": "CD6fYpZfDNaqTkqs9Qm6g",
     "meta": {},
     "path": ""
@@ -22657,7 +22692,7 @@
     {
       "id": "Or7Xv4vwLLMBNFIN8nUUo",
       "name": "under constrtuction",
-      "title": "\"Home\"",
+      "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
       "rootInstanceId": "CD6fYpZfDNaqTkqs9Qm6g",
       "meta": {},
       "path": ""
@@ -22676,7 +22711,7 @@
     {
       "id": "7I9e125Fx88Kls-pXJtyJ",
       "name": "home",
-      "title": "\"Home\"",
+      "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
       "rootInstanceId": "j3of0DkKcKI3DL_cNg0NE",
       "meta": {},
       "path": "/home"
@@ -22695,6 +22730,32 @@
         "family": "Monoton",
         "style": "normal",
         "weight": 400
+      }
+    },
+    {
+      "id": "cba7e5d5af79a6483b5dd2789bb47e843e42671656d1581fa1a50ed64028873b",
+      "name": "work-in-progress_9kwdBfP1AlkQIoCBpUhxT.webp",
+      "projectId": "0a2d7944-5150-4e8a-bdc4-05d3f1900326",
+      "size": 19626,
+      "type": "image",
+      "format": "webp",
+      "createdAt": "2026-01-14T09:44:12.919+00:00",
+      "meta": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "db1c1891eed3349d541fb69cbe3f801b988b105599487d858b8867efe2f4bd57",
+      "name": "favicon_APM-vqgr8Z9I7VmPQSXYr.png",
+      "projectId": "0a2d7944-5150-4e8a-bdc4-05d3f1900326",
+      "size": 1177,
+      "type": "image",
+      "format": "png",
+      "createdAt": "2026-01-14T09:42:15.283+00:00",
+      "meta": {
+        "width": 32,
+        "height": 32
       }
     }
   ],
