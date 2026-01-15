@@ -1,4 +1,4 @@
-name: Deploy to VPS
+name: Deploy CMS to VPS
 
 on:
   push:
