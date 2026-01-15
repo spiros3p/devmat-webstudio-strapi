@@ -18,7 +18,7 @@
 5. install deps: `pnpm i`
 6. wait patiently...
 7. Run the development server:
-   - Run the following command: `pnpm dev:builder`
+   - Run the following command: `pnpm dev`
 8. Open the application: `https://wstd.dev:5173/`
 
 ### Login locally

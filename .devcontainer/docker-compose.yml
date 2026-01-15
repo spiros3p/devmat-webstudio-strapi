@@ -12,7 +12,7 @@ services:
       - ..:/workspaces/webstudio:cached
       # preserve history
       - ./.local:/home/node/.local
-      - docker-data:/var/lib/docker
+      - ./.docker-data:/var/lib/docker
 
     entrypoint: ["/usr/local/share/docker-init.sh"]
     # Overrides default command so things don't shut down after the process ends.
@@ -30,7 +30,7 @@ services:
     command: ["postgres", "-c", "log_statement=all", "-c", "listen_addresses=*"]
     restart: unless-stopped
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - ./.pgdb:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: pass
       POSTGRES_DB: webstudio
@@ -65,10 +65,6 @@ services:
 
     # Runs app on the same network as the database container, allows "forwardPorts" in devcontainer.json function.
     network_mode: service:db
-
-volumes:
-  postgres-data:
-  docker-data:
 
 networks:
   default:
