@@ -4,7 +4,24 @@
 import type { PageMeta } from "@webstudio-is/sdk";
 import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
-  const _data = new Map<string, ResourceRequest>([]);
+  const generalinfo_1: ResourceRequest = {
+    name: "general info",
+    url: "http://172.18.0.23:1337/api/general",
+    searchParams: [],
+    method: "get",
+    headers: [],
+  };
+  const general_1: ResourceRequest = {
+    name: "general",
+    url: "http://172.18.0.23:1337/api/general",
+    searchParams: [],
+    method: "get",
+    headers: [],
+  };
+  const _data = new Map<string, ResourceRequest>([
+    ["generalinfo_1", generalinfo_1],
+    ["general_1", general_1],
+  ]);
   const _action = new Map<string, ResourceRequest>([]);
   return { data: _data, action: _action };
 };
@@ -18,13 +35,13 @@ export const getPageMeta = ({
 }): PageMeta => {
   return {
     title: "Devmat Solutions PC – Easy, Powerful, Intelligent",
-    description: undefined,
-    excludePageFromSearch: undefined,
-    language: undefined,
+    description: "",
+    excludePageFromSearch: true,
+    language: "",
     socialImageAssetName: undefined,
-    socialImageUrl: undefined,
+    socialImageUrl: "",
     status: undefined,
-    redirect: undefined,
+    redirect: "",
     custom: [],
   };
 };
@@ -34,4 +51,4 @@ export const getRemixParams = ({ ...params }: Params): Params => {
   return params;
 };
 
-export const contactEmail = "info@devmat.gr";
+export const contactEmail = "hello@webstudio.is";

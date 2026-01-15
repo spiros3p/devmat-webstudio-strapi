@@ -4,23 +4,15 @@
 import type { PageMeta } from "@webstudio-is/sdk";
 import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
-  const name: ResourceRequest = {
-    name: "name",
-    url: "",
-    searchParams: [],
-    method: "get",
-    headers: [],
-  };
-  const sitestate_1: ResourceRequest = {
-    name: "site state",
+  const SiteState_1: ResourceRequest = {
+    name: "Site State",
     url: "http://172.18.0.23:1337/api/site-state",
     searchParams: [],
     method: "get",
     headers: [],
   };
   const _data = new Map<string, ResourceRequest>([
-    ["name", name],
-    ["sitestate_1", sitestate_1],
+    ["SiteState_1", SiteState_1],
   ]);
   const _action = new Map<string, ResourceRequest>([]);
   return { data: _data, action: _action };
@@ -51,4 +43,4 @@ export const getRemixParams = ({ ...params }: Params): Params => {
   return params;
 };
 
-export const contactEmail = "info@devmat.gr";
+export const contactEmail = "hello@webstudio.is";

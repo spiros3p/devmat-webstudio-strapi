@@ -6,6 +6,7 @@ import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
 import {
   Body as Body,
   Link as Link,
+  Link as Link_1,
 } from "@webstudio-is/sdk-components-react-router";
 import {
   NavigationMenu as NavigationMenu,
@@ -24,59 +25,61 @@ import {
   Paragraph as Paragraph,
 } from "@webstudio-is/sdk-components-react";
 
-export const projectId = "0a2d7944-5150-4e8a-bdc4-05d3f1900326";
+export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-export const lastPublished = "2026-01-14T10:04:06.395Z";
+export const lastPublished = "2026-01-15T17:56:03.063Z";
 
 export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
 export const breakpoints = [
-  { id: "LGch67xgB8qBuXgBepmCw" },
-  { id: "R1S7kBD_wbh0OqRcarSve", maxWidth: 991 },
-  { id: "8Me_X-4PSbtACW2eerf0O", maxWidth: 767 },
-  { id: "G3PBx5haKWv4BbxZ05Wat", maxWidth: 479 },
+  { id: "IOEBbQqW2Zb9XucSe4u8N" },
+  { id: "DbhVpmYVsZWuN8eaww6JI", maxWidth: 991 },
+  { id: "C3TGAnuYbFrXJRwOz5IBY", maxWidth: 767 },
+  { id: "Cau1OpnQLcB8-xVPpUhsW", maxWidth: 479 },
 ];
 
 export const favIconAsset: string | undefined =
-  "favicon_APM-vqgr8Z9I7VmPQSXYr.png";
+  "favicon_APM-vqgr8Z9I7VmPQSXYr_vdkAt5PAsc3Yrv-eO-IZd.png";
 
 // Font assets on current page (can be preloaded)
 export const pageFontAssets: string[] = [
-  "Monoton-Regular_ZzprU0UZVPRY408r7k90h.ttf",
+  "Monoton-Regular_2wnBBOU8x4IpGGenJ_aES.ttf",
 ];
 
 export const pageBackgroundImageAssets: string[] = [];
 
 const Page = (_props: { system: any }) => {
+  let generalinfo = useResource("generalinfo_1");
+  let general = useResource("general_1");
   return (
-    <Body className={`w-element ca1367l cvwj1e5 cmjq5f4 chvthtj`}>
-      <div className={`w-element`}>
+    <Body
+      className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}
+    >
+      <div className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j c1nnj4xy`}>
         <NavigationMenu
-          className={`w-navigation-menu c7hyy7e c1c1xfd0 cfsg2t6 c3x7f0m cvcggr2 c147m0g3 c12owo67 c1cyy59t c1hst5f7 c1naww48 cattm0h c1r0mslp c1nc5d2o ch2peyc cwcuxbu`}
+          className={`w-navigation-menu c1gbr3z6 c1b9a0j2 cyksmbj c1rc0m8f c1q7lfpp ciexhcn c1oji2iw crw0x0i c7k78s6 c1jfats1`}
         >
-          <h1
-            className={`w-element c1kiuc91 cf606sg cwx6he3 c14p2g2w c1u0odc6 c11yrgwy c1j44yfu c7qegtb cllvqeg`}
+          <div
+            className={`w-element c1anbojs c1s55wh8 c1uyinf6 c1wdeocc c4cayoo c53v5zz cj79p55 c1falt5c`}
           >
             {"Devmat Solutions PC"}
-          </h1>
+          </div>
           <NavigationMenuList
-            className={`w-menu-list cfsg2t6 co0rma1 c14nlzbq c17voal6 c1hixjdl c1w0i25r c17mrs1n cw0jbmk c1chyb9w cemfsiz c1sd9vjg c1son051 c1vg4jev c1j2xaop c1naww48`}
+            className={`w-menu-list c1wdeocc c4kj7kl c4cayoo c7d4aiq cyksmbj c19ayrcm cm1hduf c9ki4md c1sdaeb8 c1oji2iw c7pv373 c18tswnh c1avjyiw cyh8saq c98ze20`}
           >
-            <Box
-              className={`w-box cdxzbw9 c6t2k6d c19nqvmx cfsg2t6 c17mrs1n c1i7pqf3 c10n4v7u`}
-            >
+            <Box className={`w-box c1ca1opd cbixgik c1h8kc0m cyksmbj c7pv373`}>
               <NavigationMenuViewport
-                className={`w-menu-viewport c7hyy7e c476gp6 c10rjq0p c1bwhc8m c162pnmn c9tsa3f c1l8tiu csfcqzk c1x653zv c1cpw0cz c1fbnn06 c7gj4lp cpkzk7l c16i4ekm`}
+                className={`w-menu-viewport c1gbr3z6 c15k0oe7 c1pwlyx4 ctvij5o c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi cse038c chhklim c1xib519 c8343zk c1s43d56`}
               />
             </Box>
             <NavigationMenuItem data-ws-index="0" className={`w-menu-item`}>
               <NavigationMenuTrigger>
                 <Button
-                  className={`w-button c8c4s5y c1w0i25r c17mrs1n c1ba61ev c162pnmn c9tsa3f c1l8tiu csfcqzk c1p33k6z c1opuvcw c1de6pmp c1uqoqk6 cyhwo9g c14ceoky c1a9f04j c1smnnhd c1q7awuv c11zkx0w c18cgbzw crrtha9 c1l8tl29 cywkbvh cyo4pb7 chlfvck c192l50l c3rzlfv`}
+                  className={`w-button ccqry52 c1oji2iw c7pv373 c199gza7 c1scatng c12dglsd c18cn36h c1s0vdhp cc3itzg cu15652 cyjqqjx c152iurg c15q8tho c1kh7ybw c1rwsfc4 c16v3bxy c1qj3xb5 cwl22p7 c6i07qh c16vucp1 c10wx85o c1q4fk80 cbq1r21 c3928kp c1jwpyv4 c1frugua`}
                 >
-                  <Text className={`w-text c1jdn64c`}>{"Products"}</Text>
+                  <Text className={`w-text c53v5zz`}>{"Products"}</Text>
                   <Box
-                    className={`w-box c1mb4ml7 c58am9s c1bkgvzn c1cp7rmv ckrth4 craohvx cfgiqo6 cd8bu3l c1pshrl7 cm22lze`}
+                    className={`w-box c1jfsl5 cv7jg5f c15h8iyp c1ilvq6h cleis16 c1eqwf0y czk77kp c2lasyc cdjvvc8 c1o70tqg`}
                   >
                     <HtmlEmbed
                       code={
@@ -88,174 +91,27 @@ const Page = (_props: { system: any }) => {
                 </Button>
               </NavigationMenuTrigger>
               <NavigationMenuContent
-                className={`w-menu-content cbhqp57 c100ij5 c10qr9s6 ccmlefz c7gmc43`}
+                className={`w-menu-content cbixgik c1hvks5x c1pvcg4w coyh8d5 c1nalyre`}
               >
-                <Box className={`w-box cfsg2t6 c1fceksf cvgayr9`}>
+                <Box className={`w-box cyksmbj c125js0i c9ei9hc cuxtrnq`}>
                   <Box
-                    className={`w-box czlmrvk cfsg2t6 c1fceksf cvgayr9 c1urlnx8`}
-                  >
-                    <NavigationMenuLink>
-                      <Link
-                        href={"https://ui.shadcn.com/docs/components/accordion"}
-                        className={`w-link c1wc4gaj cfsg2t6 c1urlnx8 cczimom cw0jbmk c1chyb9w c162pnmn c9tsa3f c1l8tiu csfcqzk c1nl2zgu c1be09mj c1r7w5yg cmztrdq chlfvck c192l50l cdiwolh culuaxl`}
-                      >
-                        <Text className={`w-text c1p33k6z c1de6pmp c1nl2zgu`}>
-                          {"Accordion"}
-                        </Text>
-                        <Paragraph
-                          className={`w-paragraph c10rjq0p c1bwhc8m c1yq9nfr c1gvdaew c1b7d5p2 c1p33k6z c1kezb0e cr9lh8y c1sd9vjg`}
-                        >
-                          {
-                            "A vertically stacked set of interactive headings that each reveal a section of content."
-                          }
-                        </Paragraph>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink>
-                      <Link
-                        href={"https://ui.shadcn.com/docs/components/dialog"}
-                        className={`w-link c1wc4gaj cfsg2t6 c1urlnx8 cczimom cw0jbmk c1chyb9w c162pnmn c9tsa3f c1l8tiu csfcqzk c1nl2zgu c1be09mj c1r7w5yg cmztrdq chlfvck c192l50l cdiwolh culuaxl`}
-                      >
-                        <Text className={`w-text c1p33k6z c1de6pmp c1nl2zgu`}>
-                          {"Dialog"}
-                        </Text>
-                        <Paragraph
-                          className={`w-paragraph c10rjq0p c1bwhc8m c1yq9nfr c1gvdaew c1b7d5p2 c1p33k6z c1kezb0e cr9lh8y c1sd9vjg`}
-                        >
-                          {
-                            "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert."
-                          }
-                        </Paragraph>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink>
-                      <Link
-                        href={
-                          "https://ui.shadcn.com/docs/components/collapsible"
-                        }
-                        className={`w-link c1wc4gaj cfsg2t6 c1urlnx8 cczimom cw0jbmk c1chyb9w c162pnmn c9tsa3f c1l8tiu csfcqzk c1nl2zgu c1be09mj c1r7w5yg cmztrdq chlfvck c192l50l cdiwolh culuaxl`}
-                      >
-                        <Text className={`w-text c1p33k6z c1de6pmp c1nl2zgu`}>
-                          {"Collapsible"}
-                        </Text>
-                        <Paragraph
-                          className={`w-paragraph c10rjq0p c1bwhc8m c1yq9nfr c1gvdaew c1b7d5p2 c1p33k6z c1kezb0e cr9lh8y c1sd9vjg`}
-                        >
-                          {
-                            "An interactive component which expands/collapses a panel."
-                          }
-                        </Paragraph>
-                      </Link>
-                    </NavigationMenuLink>
-                  </Box>
-                  <Box
-                    className={`w-box czlmrvk cfsg2t6 c1fceksf cvgayr9 c1urlnx8`}
-                  >
-                    <NavigationMenuLink>
-                      <Link
-                        href={"https://ui.shadcn.com/docs/components/popover"}
-                        className={`w-link c1wc4gaj cfsg2t6 c1urlnx8 cczimom cw0jbmk c1chyb9w c162pnmn c9tsa3f c1l8tiu csfcqzk c1nl2zgu c1be09mj c1r7w5yg cmztrdq chlfvck c192l50l cdiwolh culuaxl`}
-                      >
-                        <Text className={`w-text c1p33k6z c1de6pmp c1nl2zgu`}>
-                          {"Popover"}
-                        </Text>
-                        <Paragraph
-                          className={`w-paragraph c10rjq0p c1bwhc8m c1yq9nfr c1gvdaew c1b7d5p2 c1p33k6z c1kezb0e cr9lh8y c1sd9vjg`}
-                        >
-                          {
-                            "Displays rich content in a portal, triggered by a button."
-                          }
-                        </Paragraph>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink>
-                      <Link
-                        href={"https://ui.shadcn.com/docs/components/tooltip"}
-                        className={`w-link c1wc4gaj cfsg2t6 c1urlnx8 cczimom cw0jbmk c1chyb9w c162pnmn c9tsa3f c1l8tiu csfcqzk c1nl2zgu c1be09mj c1r7w5yg cmztrdq chlfvck c192l50l cdiwolh culuaxl`}
-                      >
-                        <Text className={`w-text c1p33k6z c1de6pmp c1nl2zgu`}>
-                          {"Tooltip"}
-                        </Text>
-                        <Paragraph
-                          className={`w-paragraph c10rjq0p c1bwhc8m c1yq9nfr c1gvdaew c1b7d5p2 c1p33k6z c1kezb0e cr9lh8y c1sd9vjg`}
-                        >
-                          {
-                            "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it."
-                          }
-                        </Paragraph>
-                      </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink>
-                      <Link
-                        href={"https://ui.shadcn.com/docs/components/button"}
-                        className={`w-link c1wc4gaj cfsg2t6 c1urlnx8 cczimom cw0jbmk c1chyb9w c162pnmn c9tsa3f c1l8tiu csfcqzk c1nl2zgu c1be09mj c1r7w5yg cmztrdq chlfvck c192l50l cdiwolh culuaxl`}
-                      >
-                        <Text className={`w-text c1p33k6z c1de6pmp c1nl2zgu`}>
-                          {"Button"}
-                        </Text>
-                        <Paragraph
-                          className={`w-paragraph c10rjq0p c1bwhc8m c1yq9nfr c1gvdaew c1b7d5p2 c1p33k6z c1kezb0e cr9lh8y c1sd9vjg`}
-                        >
-                          {
-                            "Displays a button or a component that looks like a button."
-                          }
-                        </Paragraph>
-                      </Link>
-                    </NavigationMenuLink>
-                  </Box>
-                </Box>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem data-ws-index="1" className={`w-menu-item`}>
-              <NavigationMenuLink>
-                <Link
-                  className={`w-link c8c4s5y c1w0i25r c17mrs1n c1ba61ev c162pnmn c9tsa3f c1l8tiu csfcqzk c1p33k6z c1opuvcw c1de6pmp c1uqoqk6 cyhwo9g c14ceoky c1a9f04j c1smnnhd c1be09mj c1jdn64c c11zkx0w c18cgbzw crrtha9 c1l8tl29 cywkbvh cyo4pb7 chlfvck c192l50l`}
-                >
-                  {"Solutions"}
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem data-ws-index="2" className={`w-menu-item`}>
-              <NavigationMenuTrigger>
-                <Button
-                  className={`w-button c8c4s5y c1w0i25r c17mrs1n c1ba61ev c162pnmn c9tsa3f c1l8tiu csfcqzk c1p33k6z c1opuvcw c1de6pmp c1uqoqk6 cyhwo9g c14ceoky c1a9f04j c1smnnhd c1q7awuv c11zkx0w c18cgbzw crrtha9 c1l8tl29 cywkbvh cyo4pb7 chlfvck c192l50l c3rzlfv`}
-                >
-                  <Text className={`w-text c1jdn64c`}>{"Resources"}</Text>
-                  <Box
-                    className={`w-box c1mb4ml7 c58am9s c1bkgvzn c1cp7rmv ckrth4 craohvx cfgiqo6 cd8bu3l c1pshrl7 cm22lze`}
-                  >
-                    <HtmlEmbed
-                      code={
-                        '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" width="100%" height="100%" style="display: block;"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m4 6 4 4 4-4"/></svg>'
-                      }
-                      clientOnly={false}
-                      className={`w-html-embed`}
-                    />
-                  </Box>
-                </Button>
-              </NavigationMenuTrigger>
-              <NavigationMenuContent
-                className={`w-menu-content cbhqp57 c100ij5 c10qr9s6 ccmlefz c7gmc43`}
-              >
-                <Box className={`w-box cfsg2t6 c1fceksf cvgayr9 c109y0ux`}>
-                  <Box
-                    className={`w-box c3suo4x c1x8sj33 c162pnmn c9tsa3f c1l8tiu csfcqzk c7gmc43`}
+                    className={`w-box c8xtvbx c1j8ew9a c1scatng c12dglsd c18cn36h c1s0vdhp c1nalyre`}
                   >
                     {""}
                   </Box>
                   <Box
-                    className={`w-box czlmrvk cfsg2t6 c1fceksf cvgayr9 c1urlnx8`}
+                    className={`w-box c10kvjaq cyksmbj c125js0i c9ei9hc c1i7snbb`}
                   >
                     <NavigationMenuLink>
                       <Link
                         href={"https://ui.shadcn.com/docs/components/sheet"}
-                        className={`w-link c1wc4gaj cfsg2t6 c1urlnx8 cczimom cw0jbmk c1chyb9w c162pnmn c9tsa3f c1l8tiu csfcqzk c1nl2zgu c1be09mj c1r7w5yg cmztrdq chlfvck c192l50l cdiwolh culuaxl`}
+                        className={`w-link c1tjie79 cyksmbj c1i7snbb clbsjag c18tswnh c1avjyiw c1scatng c12dglsd c18cn36h c1s0vdhp c1n9d4u8 cqjwob8 c1b9nnoh cpxva6b c3928kp c1jwpyv4 cfn2ywy c2bousg`}
                       >
-                        <Text className={`w-text c1p33k6z c1de6pmp c1nl2zgu`}>
+                        <Text className={`w-text cc3itzg cyjqqjx c1n9d4u8`}>
                           {"Sheet"}
                         </Text>
                         <Paragraph
-                          className={`w-paragraph c10rjq0p c1bwhc8m c1yq9nfr c1gvdaew c1b7d5p2 c1p33k6z c1kezb0e cr9lh8y c1sd9vjg`}
+                          className={`w-paragraph c1pwlyx4 ctvij5o c5cr60h c8lqbwc c1gq6vpr cc3itzg c12rzb79 c14nvnl5 cyh8saq`}
                         >
                           {
                             "Extends the Dialog component to display content that complements the main content of the screen."
@@ -268,13 +124,13 @@ const Page = (_props: { system: any }) => {
                         href={
                           "https://ui.shadcn.com/docs/components/navigation-menu"
                         }
-                        className={`w-link c1wc4gaj cfsg2t6 c1urlnx8 cczimom cw0jbmk c1chyb9w c162pnmn c9tsa3f c1l8tiu csfcqzk c1nl2zgu c1be09mj c1r7w5yg cmztrdq chlfvck c192l50l cdiwolh culuaxl`}
+                        className={`w-link c1tjie79 cyksmbj c1i7snbb clbsjag c18tswnh c1avjyiw c1scatng c12dglsd c18cn36h c1s0vdhp c1n9d4u8 cqjwob8 c1b9nnoh cpxva6b c3928kp c1jwpyv4 cfn2ywy c2bousg`}
                       >
-                        <Text className={`w-text c1p33k6z c1de6pmp c1nl2zgu`}>
+                        <Text className={`w-text cc3itzg cyjqqjx c1n9d4u8`}>
                           {"Navigation Menu"}
                         </Text>
                         <Paragraph
-                          className={`w-paragraph c10rjq0p c1bwhc8m c1yq9nfr c1gvdaew c1b7d5p2 c1p33k6z c1kezb0e cr9lh8y c1sd9vjg`}
+                          className={`w-paragraph c1pwlyx4 ctvij5o c5cr60h c8lqbwc c1gq6vpr cc3itzg c12rzb79 c14nvnl5 cyh8saq`}
                         >
                           {"A collection of links for navigating websites."}
                         </Paragraph>
@@ -283,13 +139,13 @@ const Page = (_props: { system: any }) => {
                     <NavigationMenuLink>
                       <Link
                         href={"https://ui.shadcn.com/docs/components/tabs"}
-                        className={`w-link c1wc4gaj cfsg2t6 c1urlnx8 cczimom cw0jbmk c1chyb9w c162pnmn c9tsa3f c1l8tiu csfcqzk c1nl2zgu c1be09mj c1r7w5yg cmztrdq chlfvck c192l50l cdiwolh culuaxl`}
+                        className={`w-link c1tjie79 cyksmbj c1i7snbb clbsjag c18tswnh c1avjyiw c1scatng c12dglsd c18cn36h c1s0vdhp c1n9d4u8 cqjwob8 c1b9nnoh cpxva6b c3928kp c1jwpyv4 cfn2ywy c2bousg`}
                       >
-                        <Text className={`w-text c1p33k6z c1de6pmp c1nl2zgu`}>
+                        <Text className={`w-text cc3itzg cyjqqjx c1n9d4u8`}>
                           {"Tabs"}
                         </Text>
                         <Paragraph
-                          className={`w-paragraph c10rjq0p c1bwhc8m c1yq9nfr c1gvdaew c1b7d5p2 c1p33k6z c1kezb0e cr9lh8y c1sd9vjg`}
+                          className={`w-paragraph c1pwlyx4 ctvij5o c5cr60h c8lqbwc c1gq6vpr cc3itzg c12rzb79 c14nvnl5 cyh8saq`}
                         >
                           {
                             "A set of layered sections of content—known as tab panels—that are displayed one at a time."
@@ -301,10 +157,156 @@ const Page = (_props: { system: any }) => {
                 </Box>
               </NavigationMenuContent>
             </NavigationMenuItem>
+            <NavigationMenuItem data-ws-index="1" className={`w-menu-item`}>
+              <NavigationMenuTrigger>
+                <Button
+                  className={`w-button ccqry52 c1oji2iw c7pv373 c199gza7 c1scatng c12dglsd c18cn36h c1s0vdhp cc3itzg cu15652 cyjqqjx c152iurg c15q8tho c1kh7ybw c1rwsfc4 c16v3bxy c1qj3xb5 cwl22p7 c6i07qh c16vucp1 c10wx85o c1q4fk80 cbq1r21 c3928kp c1jwpyv4 c1frugua`}
+                >
+                  <Text className={`w-text c53v5zz`}>{"Solutions"}</Text>
+                  <Box
+                    className={`w-box c1jfsl5 cv7jg5f c15h8iyp c1ilvq6h cleis16 c1eqwf0y czk77kp c2lasyc cdjvvc8 c1o70tqg`}
+                  >
+                    <HtmlEmbed
+                      code={
+                        '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" width="100%" height="100%" style="display: block;"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m4 6 4 4 4-4"/></svg>'
+                      }
+                      className={`w-html-embed`}
+                    />
+                  </Box>
+                </Button>
+              </NavigationMenuTrigger>
+              <NavigationMenuContent
+                className={`w-menu-content cbixgik c1hvks5x c1pvcg4w coyh8d5 c1nalyre`}
+              >
+                <Box className={`w-box cyksmbj c125js0i c9ei9hc`}>
+                  <Box
+                    className={`w-box c10kvjaq cyksmbj c125js0i c9ei9hc c1i7snbb`}
+                  >
+                    <NavigationMenuLink>
+                      <Link
+                        href={"https://ui.shadcn.com/docs/components/accordion"}
+                        className={`w-link c1tjie79 cyksmbj c1i7snbb clbsjag c18tswnh c1avjyiw c1scatng c12dglsd c18cn36h c1s0vdhp c1n9d4u8 cqjwob8 c1b9nnoh cpxva6b c3928kp c1jwpyv4 cfn2ywy c2bousg`}
+                      >
+                        <Text className={`w-text cc3itzg cyjqqjx c1n9d4u8`}>
+                          {"Accordion"}
+                        </Text>
+                        <Paragraph
+                          className={`w-paragraph c1pwlyx4 ctvij5o c5cr60h c8lqbwc c1gq6vpr cc3itzg c12rzb79 c14nvnl5 cyh8saq`}
+                        >
+                          {
+                            "A vertically stacked set of interactive headings that each reveal a section of content."
+                          }
+                        </Paragraph>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink>
+                      <Link
+                        href={"https://ui.shadcn.com/docs/components/dialog"}
+                        className={`w-link c1tjie79 cyksmbj c1i7snbb clbsjag c18tswnh c1avjyiw c1scatng c12dglsd c18cn36h c1s0vdhp c1n9d4u8 cqjwob8 c1b9nnoh cpxva6b c3928kp c1jwpyv4 cfn2ywy c2bousg`}
+                      >
+                        <Text className={`w-text cc3itzg cyjqqjx c1n9d4u8`}>
+                          {"Dialog"}
+                        </Text>
+                        <Paragraph
+                          className={`w-paragraph c1pwlyx4 ctvij5o c5cr60h c8lqbwc c1gq6vpr cc3itzg c12rzb79 c14nvnl5 cyh8saq`}
+                        >
+                          {
+                            "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert."
+                          }
+                        </Paragraph>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink>
+                      <Link
+                        href={
+                          "https://ui.shadcn.com/docs/components/collapsible"
+                        }
+                        className={`w-link c1tjie79 cyksmbj c1i7snbb clbsjag c18tswnh c1avjyiw c1scatng c12dglsd c18cn36h c1s0vdhp c1n9d4u8 cqjwob8 c1b9nnoh cpxva6b c3928kp c1jwpyv4 cfn2ywy c2bousg`}
+                      >
+                        <Text className={`w-text cc3itzg cyjqqjx c1n9d4u8`}>
+                          {"Collapsible"}
+                        </Text>
+                        <Paragraph
+                          className={`w-paragraph c1pwlyx4 ctvij5o c5cr60h c8lqbwc c1gq6vpr cc3itzg c12rzb79 c14nvnl5 cyh8saq`}
+                        >
+                          {
+                            "An interactive component which expands/collapses a panel."
+                          }
+                        </Paragraph>
+                      </Link>
+                    </NavigationMenuLink>
+                  </Box>
+                  <Box
+                    className={`w-box c10kvjaq cyksmbj c125js0i c9ei9hc c1i7snbb`}
+                  >
+                    <NavigationMenuLink>
+                      <Link
+                        href={"https://ui.shadcn.com/docs/components/popover"}
+                        className={`w-link c1tjie79 cyksmbj c1i7snbb clbsjag c18tswnh c1avjyiw c1scatng c12dglsd c18cn36h c1s0vdhp c1n9d4u8 cqjwob8 c1b9nnoh cpxva6b c3928kp c1jwpyv4 cfn2ywy c2bousg`}
+                      >
+                        <Text className={`w-text cc3itzg cyjqqjx c1n9d4u8`}>
+                          {"Popover"}
+                        </Text>
+                        <Paragraph
+                          className={`w-paragraph c1pwlyx4 ctvij5o c5cr60h c8lqbwc c1gq6vpr cc3itzg c12rzb79 c14nvnl5 cyh8saq`}
+                        >
+                          {
+                            "Displays rich content in a portal, triggered by a button."
+                          }
+                        </Paragraph>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink>
+                      <Link
+                        href={"https://ui.shadcn.com/docs/components/tooltip"}
+                        className={`w-link c1tjie79 cyksmbj c1i7snbb clbsjag c18tswnh c1avjyiw c1scatng c12dglsd c18cn36h c1s0vdhp c1n9d4u8 cqjwob8 c1b9nnoh cpxva6b c3928kp c1jwpyv4 cfn2ywy c2bousg`}
+                      >
+                        <Text className={`w-text cc3itzg cyjqqjx c1n9d4u8`}>
+                          {"Tooltip"}
+                        </Text>
+                        <Paragraph
+                          className={`w-paragraph c1pwlyx4 ctvij5o c5cr60h c8lqbwc c1gq6vpr cc3itzg c12rzb79 c14nvnl5 cyh8saq`}
+                        >
+                          {
+                            "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it."
+                          }
+                        </Paragraph>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink>
+                      <Link
+                        href={"https://ui.shadcn.com/docs/components/button"}
+                        className={`w-link c1tjie79 cyksmbj c1i7snbb clbsjag c18tswnh c1avjyiw c1scatng c12dglsd c18cn36h c1s0vdhp c1n9d4u8 cqjwob8 c1b9nnoh cpxva6b c3928kp c1jwpyv4 cfn2ywy c2bousg`}
+                      >
+                        <Text className={`w-text cc3itzg cyjqqjx c1n9d4u8`}>
+                          {"Button"}
+                        </Text>
+                        <Paragraph
+                          className={`w-paragraph c1pwlyx4 ctvij5o c5cr60h c8lqbwc c1gq6vpr cc3itzg c12rzb79 c14nvnl5 cyh8saq`}
+                        >
+                          {
+                            "Displays a button or a component that looks like a button."
+                          }
+                        </Paragraph>
+                      </Link>
+                    </NavigationMenuLink>
+                  </Box>
+                </Box>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem data-ws-index="2" className={`w-menu-item`}>
+              <NavigationMenuLink>
+                <Link
+                  className={`w-link ccqry52 c1oji2iw c7pv373 c199gza7 c1scatng c12dglsd c18cn36h c1s0vdhp cc3itzg cu15652 cyjqqjx c152iurg c15q8tho c1kh7ybw c1rwsfc4 c16v3bxy cqjwob8 c53v5zz cwl22p7 c6i07qh c16vucp1 c10wx85o c1q4fk80 cbq1r21 c3928kp c1jwpyv4`}
+                >
+                  {"Resources"}
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
             <NavigationMenuItem data-ws-index="3" className={`w-menu-item`}>
               <NavigationMenuLink>
                 <Link
-                  className={`w-link c8c4s5y c1w0i25r c17mrs1n c1ba61ev c162pnmn c9tsa3f c1l8tiu csfcqzk c1p33k6z c1opuvcw c1de6pmp c1uqoqk6 cyhwo9g c14ceoky c1a9f04j c1smnnhd c1be09mj c1jdn64c c11zkx0w c18cgbzw crrtha9 c1l8tl29 cywkbvh cyo4pb7 chlfvck c192l50l`}
+                  className={`w-link ccqry52 c1oji2iw c7pv373 c199gza7 c1scatng c12dglsd c18cn36h c1s0vdhp cc3itzg cu15652 cyjqqjx c152iurg c15q8tho c1kh7ybw c1rwsfc4 c16v3bxy cqjwob8 c53v5zz cwl22p7 c6i07qh c16vucp1 c10wx85o c1q4fk80 cbq1r21 c3928kp c1jwpyv4`}
                 >
                   {"Contact"}
                 </Link>
@@ -312,18 +314,48 @@ const Page = (_props: { system: any }) => {
             </NavigationMenuItem>
             <NavigationMenuItem
               data-ws-index="4"
-              className={`w-menu-item c1kiw8s3 c1mqbg3i`}
+              className={`w-menu-item cbanl4k`}
             >
               <NavigationMenuLink>
                 <Link
-                  className={`w-link c8c4s5y c1w0i25r c17mrs1n c1rnw1n6 c1upsilg c19xn68l c14u5dle c14v3gv4 c1p33k6z c1opuvcw c1de6pmp c1uqoqk6 cyhwo9g c14ceoky c1a9f04j c1smnnhd c1be09mj c1o4dtzp craohvx cfgiqo6 chcxm0r c1vc9st0 cm22lze cjnoqzp c18cgbzw c1jpj35g cywkbvh cyo4pb7 c1bl4kp ckscez0`}
+                  className={`w-link ccqry52 c1oji2iw c7pv373 cyidosu cfxgbuw c1w3iq2x cmd2k6o c1aefk7h cc3itzg cu15652 cyjqqjx c152iurg c15q8tho c1kh7ybw c1rwsfc4 c16v3bxy cqjwob8 c1ox04z8 c1eqwf0y czk77kp c1lc8yfv c1mucujo c1o70tqg c1t98528 c6i07qh c16vucp1 c10wx85o c1q4fk80 cbq1r21 c11r2gzv ca9pb38`}
                 >
-                  {"Book a Demo"}
+                  {"Book a demo"}
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
+      </div>
+      <div
+        className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j c1b9a0j2 cyidosu c1ox04z8 cu3uc3t c190h4xw c1ua5e08 c1rt2b5x celrewe ceuzb9a`}
+      >
+        <div
+          className={`w-element c1321bjb c140tk4r cavlpe c1ox04z8 csjbh93 c2zh38f cyksmbj c1i7snbb c1oji2iw c7pv373`}
+        >
+          <h1
+            className={`w-element c1fh2qkn cyiizu9 cqvjdig crmjlkc c1ihasyt c3c9r1c cpii4el c19jcr0r c1fb947j c1l3k9y7`}
+          >
+            {generalinfo?.data?.data?.headerTitle}
+          </h1>
+          <h3 className={`w-element c3c9r1c c1ihasyt c1fq6v54 cpf8n67`}>
+            {general?.data?.data?.headerSubTitle}
+          </h3>
+          <div
+            className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl`}
+          >
+            <Link_1
+              className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1wbt3eu cxjyi5z c1kd0iqv c2t1vc3 cmx5vkr c53v5zz c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6`}
+            >
+              {"Book a free demo"}
+            </Link_1>
+            <Link_1
+              className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1pk2abd c1om2ni4 c1t9kc3 caxks0e c199gza7 c1ox04z8 c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6`}
+            >
+              {"Explore features"}
+            </Link_1>
+          </div>
+        </div>
       </div>
     </Body>
   );
