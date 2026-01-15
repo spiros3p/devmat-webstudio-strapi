@@ -37,10 +37,8 @@ services:
       common_network:
         ipv4_address: 172.18.0.23
 
-
-
-volumes:
-  node_pkgs:  
+# volumes:
+#   node_pkgs:  
 
 networks:
   common_network:
