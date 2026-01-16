@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_hero_hero_sections",
+  "info": {
+    "displayName": "Hero section",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubTitle": {
+      "type": "string"
+    },
+    "primaryButton": {
+      "type": "component",
+      "component": "button.button",
+      "repeatable": false
+    },
+    "secondaryButton": {
+      "type": "component",
+      "component": "button.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

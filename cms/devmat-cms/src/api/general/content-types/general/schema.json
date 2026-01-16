@@ -15,21 +15,15 @@
     }
   },
   "attributes": {
-    "headerTitle": {
-      "type": "string",
+    "heroSection": {
+      "type": "component",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
-    },
-    "headerSubTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      },
+      "component": "hero.hero-section",
+      "repeatable": false
     }
   }
 }

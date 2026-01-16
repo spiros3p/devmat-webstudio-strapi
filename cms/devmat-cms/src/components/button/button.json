@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_button_buttons",
+  "info": {
+    "displayName": "Button",
+    "icon": "typhoon"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "default": "#",
+      "required": true
+    },
+    "target": {
+      "type": "enumeration",
+      "required": true,
+      "default": "_self",
+      "enum": ["_blank", "_self", "_parent", "_top"]
+    }
+  },
+  "config": {}
+}
