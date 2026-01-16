@@ -26,7 +26,6 @@ services:
       - ./src:/opt/app/src
       - ./types:/opt/app/types
       - ./exports:/opt/app/exports
-      - /opt/app/node_modules
     #   # expose:
     #   #   - ${PORT}
     ports:

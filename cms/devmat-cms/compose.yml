@@ -26,19 +26,13 @@ services:
       - ./src:/opt/app/src
       - ./types:/opt/app/types
       - ./exports:/opt/app/exports
-      # - node_pkgs:/opt/node_modules
     expose:
       - ${PORT}
     # ports:
     #   - ${PORT}:${PORT}
-    # depends_on:
-    #   - mariadb
     networks:
       common_network:
         ipv4_address: 172.18.0.23
-
-# volumes:
-#   node_pkgs:  
 
 networks:
   common_network:
