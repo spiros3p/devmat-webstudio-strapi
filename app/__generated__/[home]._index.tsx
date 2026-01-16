@@ -6,12 +6,13 @@
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuLink as NavigationMenuLink, NavigationMenuViewport as NavigationMenuViewport } from "@webstudio-is/sdk-components-react-radix";
-import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Paragraph as Paragraph } from "@webstudio-is/sdk-components-react";
+import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Paragraph as Paragraph, Video as Video } from "@webstudio-is/sdk-components-react";
+import { VideoAnimation as VideoAnimation } from "@webstudio-is/sdk-components-animation";
 
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-01-16T02:18:16.058Z";
+      export const lastPublished = "2026-01-16T14:58:51.415Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -31,6 +32,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       const Page = (_props: { system: any; }) => {
 let generaldatacms = useResource("generaldatacms_1")
+let [cmsUrl, set$cmsUrl] = useVariableState<any>("http://172.18.0.23:1337")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
 <div
@@ -271,9 +273,10 @@ className={`w-link ccqry52 c1oji2iw c7pv373 cyidosu cfxgbuw c1w3iq2x cmd2k6o c1a
 </NavigationMenu>
 </div>
 <div
-className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j c1b9a0j2 cyidosu c1ox04z8 cu3uc3t c190h4xw c1ua5e08 c1rt2b5x celrewe ceuzb9a`}>
+className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j c1b9a0j2 cyidosu cu3uc3t c190h4xw c1ua5e08 c1rt2b5x celrewe ceuzb9a`}>
+{(!!generaldatacms?.data?.data?.heroSection?.heroMedia?.[0]) &&
 <div
-className={`w-element c1321bjb c140tk4r cavlpe c1ox04z8 csjbh93 c2zh38f cyksmbj c1i7snbb c1oji2iw c7pv373`}>
+className={`w-element c1321bjb c140tk4r cavlpe c1ox04z8 csjbh93 c1ht3eul cyksmbj c1i7snbb c1oji2iw c7pv373`}>
 <h1
 className={`w-element c1fh2qkn cyiizu9 cqvjdig crmjlkc c1ihasyt c3c9r1c cpii4el c19jcr0r c1fb947j c1l3k9y7`}>
 {generaldatacms?.data?.data?.heroSection?.heroTitle}
@@ -283,7 +286,7 @@ className={`w-element c3c9r1c c1ihasyt c1fq6v54 cpf8n67`}>
 {generaldatacms?.data?.data?.heroSection?.heroSubTitle}
 </h3>
 <div
-className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl`}>
+className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl caui1hn`}>
 <Link_1
 href={generaldatacms?.data?.data?.heroSection?.primaryButton?.href}
 target={generaldatacms?.data?.data?.heroSection?.primaryButton?.target}
@@ -299,7 +302,25 @@ className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1pk2abd c1om2ni
 {generaldatacms?.data?.data?.heroSection?.secondaryButton?.title}
 </Link_1>
 </div>
+{(!!generaldatacms?.data?.data?.heroSection?.heroMedia?.length) &&
+<div
+className={`w-element crl2cyx cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1sa2q31 c1thowfs c19z55ud ciuqbe1`}>
+<VideoAnimation
+className={`w-video-animation cfxgbuw c1w3iq2x c1aefk7h cmd2k6o ceohp8a c1akzqgy cztcn6n c4z38mt c1ijjeon c4irn6o`}>
+<Video
+preload={"auto"}
+autoPlay={true}
+muted={true}
+playsInline={true}
+crossOrigin={"anonymous"}
+loop={true}
+src={cmsUrl + generaldatacms?.data?.data?.heroSection?.heroMedia?.[0]?.url }
+className={`w-video cfxgbuw c1w3iq2x c1aefk7h cmd2k6o`} />
+</VideoAnimation>
 </div>
+}
+</div>
+}
 </div>
 </Body>
 }
