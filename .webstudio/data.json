@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "81c8e0b3-668e-4a73-8386-95ee0093e6c1",
+    "id": "f7be9248-84fe-4575-8bb5-7c9be95f502a",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 258,
-    "createdAt": "2026-01-16T00:40:17.563+00:00",
-    "updatedAt": "2026-01-16T00:40:17.563+00:00",
+    "version": 283,
+    "createdAt": "2026-01-16T02:18:16.058+00:00",
+    "updatedAt": "2026-01-16T02:18:16.058+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -34,6 +34,7 @@
           "id": "84gONRgxC5KUX1IKoVxAh",
           "name": "home",
           "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
+          "history": ["/home"],
           "rootInstanceId": "6xK8OBCz1a0km4Hi38tjX",
           "meta": {
             "description": "\"\"",
@@ -12808,6 +12809,66 @@
           "type": "string",
           "value": "https://ui.shadcn.com/docs/components/button"
         }
+      ],
+      [
+        "6AGus5j6pnoYJomRa9zOq",
+        {
+          "id": "6AGus5j6pnoYJomRa9zOq",
+          "instanceId": "bJoOFadg2zV7euZGE9anb",
+          "name": "href",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.primaryButton.href"
+        }
+      ],
+      [
+        "LSBVzE2kU6N6uP9Wfp173",
+        {
+          "id": "LSBVzE2kU6N6uP9Wfp173",
+          "instanceId": "bJoOFadg2zV7euZGE9anb",
+          "name": "target",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.primaryButton.target"
+        }
+      ],
+      [
+        "K5HlQLi1Erw-Ll9EeUtva",
+        {
+          "id": "K5HlQLi1Erw-Ll9EeUtva",
+          "instanceId": "bJoOFadg2zV7euZGE9anb",
+          "name": "title",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.primaryButton.title"
+        }
+      ],
+      [
+        "MFlDTkLcvLqyfdne1Cx7r",
+        {
+          "id": "MFlDTkLcvLqyfdne1Cx7r",
+          "instanceId": "ENep_v_7iJU9AT9WRRi-P",
+          "name": "title",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.secondaryButton.title"
+        }
+      ],
+      [
+        "qWmmLPlPekmxcVU4TFjjq",
+        {
+          "id": "qWmmLPlPekmxcVU4TFjjq",
+          "instanceId": "ENep_v_7iJU9AT9WRRi-P",
+          "name": "href",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.secondaryButton.href"
+        }
+      ],
+      [
+        "GO5ejY4AdochjKTzGtw5i",
+        {
+          "id": "GO5ejY4AdochjKTzGtw5i",
+          "instanceId": "ENep_v_7iJU9AT9WRRi-P",
+          "name": "target",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.secondaryButton.target"
+        }
       ]
     ],
     "dataSources": [
@@ -12822,23 +12883,13 @@
         }
       ],
       [
-        "hAut3kEK2YAVSWo5SSLtr",
+        "eAVK7uMysV6RJPcYcWLDc",
         {
           "type": "resource",
-          "id": "hAut3kEK2YAVSWo5SSLtr",
-          "scopeInstanceId": "swEEnPbCufxcSD3j8DFw5",
-          "name": "general info",
-          "resourceId": "SpSIc-OqJQySpJVImdjOy"
-        }
-      ],
-      [
-        "2oVFnAtMgqR8MvefRM6yo",
-        {
-          "type": "resource",
-          "id": "2oVFnAtMgqR8MvefRM6yo",
-          "scopeInstanceId": "oOWw9jZJXHHuZzE5WhLo4",
-          "name": "general",
-          "resourceId": "_6Co_n_4qnYog8FUhU0AK"
+          "id": "eAVK7uMysV6RJPcYcWLDc",
+          "scopeInstanceId": ":root",
+          "name": "general data | cms",
+          "resourceId": "5uuGe9AEIeanc7JRhz_Dk"
         }
       ]
     ],
@@ -12855,21 +12906,10 @@
         }
       ],
       [
-        "SpSIc-OqJQySpJVImdjOy",
+        "5uuGe9AEIeanc7JRhz_Dk",
         {
-          "id": "SpSIc-OqJQySpJVImdjOy",
-          "name": "general info",
-          "method": "get",
-          "url": "\"http://172.18.0.23:1337/api/general\"",
-          "searchParams": [],
-          "headers": []
-        }
-      ],
-      [
-        "_6Co_n_4qnYog8FUhU0AK",
-        {
-          "id": "_6Co_n_4qnYog8FUhU0AK",
-          "name": "general",
+          "id": "5uuGe9AEIeanc7JRhz_Dk",
+          "name": "general data | cms",
           "method": "get",
           "url": "\"http://172.18.0.23:1337/api/general\"",
           "searchParams": [],
@@ -14309,7 +14349,7 @@
           "children": [
             {
               "type": "expression",
-              "value": "$ws$dataSource$hAut3kEK2YAVSWo5SSLtr.data.data.headerTitle"
+              "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.heroTitle"
             }
           ]
         }
@@ -14324,7 +14364,7 @@
           "children": [
             {
               "type": "expression",
-              "value": "$ws$dataSource$2oVFnAtMgqR8MvefRM6yo.data.data.headerSubTitle"
+              "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.heroSubTitle"
             }
           ]
         }
@@ -14358,8 +14398,8 @@
           "tag": "a",
           "children": [
             {
-              "type": "text",
-              "value": "Book a free demo"
+              "type": "expression",
+              "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.primaryButton.title"
             }
           ]
         }
@@ -14373,8 +14413,8 @@
           "tag": "a",
           "children": [
             {
-              "type": "text",
-              "value": "Explore features"
+              "type": "expression",
+              "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.secondaryButton.title"
             }
           ]
         }
@@ -14419,6 +14459,7 @@
       "id": "84gONRgxC5KUX1IKoVxAh",
       "name": "home",
       "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
+      "history": ["/home"],
       "rootInstanceId": "6xK8OBCz1a0km4Hi38tjX",
       "meta": {
         "description": "\"\"",

@@ -27,7 +27,7 @@ import {
 
 export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-export const lastPublished = "2026-01-16T00:40:17.563Z";
+export const lastPublished = "2026-01-16T02:18:16.058Z";
 
 export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -49,8 +49,7 @@ export const pageFontAssets: string[] = [
 export const pageBackgroundImageAssets: string[] = [];
 
 const Page = (_props: { system: any }) => {
-  let generalinfo = useResource("generalinfo_1");
-  let general = useResource("general_1");
+  let generaldatacms = useResource("generaldatacms_1");
   return (
     <Body
       className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}
@@ -336,23 +335,41 @@ const Page = (_props: { system: any }) => {
           <h1
             className={`w-element c1fh2qkn cyiizu9 cqvjdig crmjlkc c1ihasyt c3c9r1c cpii4el c19jcr0r c1fb947j c1l3k9y7`}
           >
-            {generalinfo?.data?.data?.headerTitle}
+            {generaldatacms?.data?.data?.heroSection?.heroTitle}
           </h1>
           <h3 className={`w-element c3c9r1c c1ihasyt c1fq6v54 cpf8n67`}>
-            {general?.data?.data?.headerSubTitle}
+            {generaldatacms?.data?.data?.heroSection?.heroSubTitle}
           </h3>
           <div
             className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl`}
           >
             <Link_1
+              href={
+                generaldatacms?.data?.data?.heroSection?.primaryButton?.href
+              }
+              target={
+                generaldatacms?.data?.data?.heroSection?.primaryButton?.target
+              }
+              title={
+                generaldatacms?.data?.data?.heroSection?.primaryButton?.title
+              }
               className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1wbt3eu cxjyi5z c1kd0iqv c2t1vc3 cmx5vkr c53v5zz c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}
             >
-              {"Book a free demo"}
+              {generaldatacms?.data?.data?.heroSection?.primaryButton?.title}
             </Link_1>
             <Link_1
+              title={
+                generaldatacms?.data?.data?.heroSection?.secondaryButton?.title
+              }
+              href={
+                generaldatacms?.data?.data?.heroSection?.secondaryButton?.href
+              }
+              target={
+                generaldatacms?.data?.data?.heroSection?.secondaryButton?.target
+              }
               className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1pk2abd c1om2ni4 c1t9kc3 caxks0e c199gza7 c1ox04z8 c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}
             >
-              {"Explore features"}
+              {generaldatacms?.data?.data?.heroSection?.secondaryButton?.title}
             </Link_1>
           </div>
         </div>

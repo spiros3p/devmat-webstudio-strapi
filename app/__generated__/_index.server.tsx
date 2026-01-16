@@ -11,8 +11,16 @@ export const getResources = (_props: { system: System }) => {
     method: "get",
     headers: [],
   };
+  const generaldatacms: ResourceRequest = {
+    name: "general data | cms",
+    url: "http://172.18.0.23:1337/api/general",
+    searchParams: [],
+    method: "get",
+    headers: [],
+  };
   const _data = new Map<string, ResourceRequest>([
     ["SiteState_1", SiteState_1],
+    ["generaldatacms", generaldatacms],
   ]);
   const _action = new Map<string, ResourceRequest>([]);
   return { data: _data, action: _action };
