@@ -27,7 +27,7 @@ import {
 
 export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-export const lastPublished = "2026-01-15T17:56:03.063Z";
+export const lastPublished = "2026-01-16T00:40:17.563Z";
 
 export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -345,12 +345,12 @@ const Page = (_props: { system: any }) => {
             className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl`}
           >
             <Link_1
-              className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1wbt3eu cxjyi5z c1kd0iqv c2t1vc3 cmx5vkr c53v5zz c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6`}
+              className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1wbt3eu cxjyi5z c1kd0iqv c2t1vc3 cmx5vkr c53v5zz c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}
             >
               {"Book a free demo"}
             </Link_1>
             <Link_1
-              className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1pk2abd c1om2ni4 c1t9kc3 caxks0e c199gza7 c1ox04z8 c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6`}
+              className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1pk2abd c1om2ni4 c1t9kc3 caxks0e c199gza7 c1ox04z8 c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}
             >
               {"Explore features"}
             </Link_1>
