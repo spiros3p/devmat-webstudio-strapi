@@ -19,6 +19,8 @@
     "@strapi/plugin-users-permissions": "5.33.3",
     "@strapi/strapi": "5.33.3",
     "mysql2": "3.9.8",
+    "node-addon-api": "latest",
+    "node-gyp": "latest",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
