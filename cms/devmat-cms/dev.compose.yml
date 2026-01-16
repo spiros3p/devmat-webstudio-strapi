@@ -26,7 +26,7 @@ services:
       - ./src:/opt/app/src
       - ./types:/opt/app/types
       - ./exports:/opt/app/exports
-      # - node_pkgs:/opt/node_modules
+      - /opt/app/node_modules
     #   # expose:
     #   #   - ${PORT}
     ports:
@@ -57,24 +57,21 @@ services:
       common_network:
         ipv4_address: 172.18.0.24
 
-  phpmyadmin:
-    container_name: mariadb-ui
-    image: phpmyadmin:latest
-    restart: always
-    env_file: ./.env
-    environment:
-      - PMA_HOST=mariadb
-      - PMA_PORT=3306
-      - UPLOAD_LIMIT=60M
-    # expose:
-    #   - 80
-    depends_on:
-      - mariadb
-    ports:
-      - "8089:80"
-
-volumes:
-  node_pkgs:
+  # phpmyadmin:
+  #   container_name: mariadb-ui
+  #   image: phpmyadmin:latest
+  #   restart: always
+  #   env_file: ./.env
+  #   environment:
+  #     - PMA_HOST=mariadb
+  #     - PMA_PORT=3306
+  #     - UPLOAD_LIMIT=60M
+  #   # expose:
+  #   #   - 80
+  #   depends_on:
+  #     - mariadb
+  #   ports:
+  #     - "8089:80"
 
 networks:
   common_network:
