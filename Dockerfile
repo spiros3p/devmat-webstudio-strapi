@@ -5,7 +5,7 @@ FROM node:22-alpine
 COPY . /app/
 WORKDIR /app
 
-RUN npm ci --omit=dev
+RUN npm i --omit=dev
 RUN npm run build:app
 
 CMD ["npm", "run", "start:app"]
