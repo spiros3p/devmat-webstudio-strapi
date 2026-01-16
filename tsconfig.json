@@ -1,8 +1,19 @@
 {
-  "include": ["**/*.ts", "**/*.tsx", "**/*.mjs"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.mjs"
+  ],
   "compilerOptions": {
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vite/client", "@webstudio-is/react-sdk/placeholder"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "types": [
+      "vite/client",
+      "@webstudio-is/react-sdk/placeholder"
+    ],
     "isolatedModules": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",

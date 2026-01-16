@@ -1,24 +1,29 @@
 /* eslint-disable */
-/* This is a auto generated file for building the project */
+      /* This is a auto generated file for building the project */ 
 
-import type { PageMeta } from "@webstudio-is/sdk";
-import type { System, ResourceRequest } from "@webstudio-is/sdk";
+
+      import type { PageMeta } from "@webstudio-is/sdk";
+      import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
   const generaldatacms_1: ResourceRequest = {
     name: "general data | cms",
     url: "http://172.18.0.23:1337/api/general",
-    searchParams: [],
+    searchParams: [
+    ],
     method: "get",
-    headers: [],
-  };
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["generaldatacms_1", generaldatacms_1],
-  ]);
-  const _action = new Map<string, ResourceRequest>([]);
-  return { data: _data, action: _action };
-};
+  ])
+  const _action = new Map<string, ResourceRequest>([
+  ])
+  return { data: _data, action: _action }
+}
 
-export const getPageMeta = ({
+
+      export const getPageMeta = ({
   system,
   resources,
 }: {
@@ -34,13 +39,17 @@ export const getPageMeta = ({
     socialImageUrl: "",
     status: undefined,
     redirect: "",
-    custom: [],
+    custom: [
+    ],
   };
 };
 
-type Params = Record<string, string | undefined>;
-export const getRemixParams = ({ ...params }: Params): Params => {
-  return params;
-};
 
-export const contactEmail = "hello@webstudio.is";
+      type Params = Record<string, string | undefined>;
+export const getRemixParams = ({ ...params }: Params): Params => {
+  return params
+}
+
+
+      export const contactEmail = "hello@webstudio.is";
+    
