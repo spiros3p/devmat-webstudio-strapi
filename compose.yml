@@ -5,7 +5,7 @@ services:
     expose:
       - 3030
     volumes:
-      - /app/node_modules
+      - node_pkgs:/app/node_modules
     # ports:
     #   - 3030:3030
     networks:
@@ -13,8 +13,8 @@ services:
         ipv4_address: 172.18.0.22
     # command: sleep infinity
 
-# volumes:
-#   node_pkgs:  
+volumes:
+  node_pkgs:  
 
 networks:
   common_network:
