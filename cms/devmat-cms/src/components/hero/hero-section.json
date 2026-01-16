@@ -21,6 +21,15 @@
       "type": "component",
       "component": "button.button",
       "repeatable": false
+    },
+    "heroMedia": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     }
   },
   "config": {}
