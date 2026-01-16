@@ -1,0 +1,18 @@
+{
+  "GET /api/general": {
+    "content-type": "api::general.general",
+    "populate": {
+      "heroSection": {
+        "fields": ["heroTitle", "heroSubTitle"],
+        "populate": {
+          "primaryButton": {
+            "fields": ["title", "href", "target"]
+          },
+          "secondaryButton": {
+            "fields": ["title", "href", "target"]
+          }
+        }
+      }
+    }
+  }
+}
