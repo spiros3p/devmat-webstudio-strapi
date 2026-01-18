@@ -13,7 +13,8 @@
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry",
-    "export": "strapi export --file exports/strapi_dt --no-encrypt"
+    "export": "strapi export --file exports/strapi_dt --no-encrypt",
+    "import": "strapi import -f exports/strapi_dt.tar.gz"
   },
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^6.0.3",
