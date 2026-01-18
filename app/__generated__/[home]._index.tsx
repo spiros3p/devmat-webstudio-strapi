@@ -12,7 +12,7 @@ import { VideoAnimation as VideoAnimation } from "@webstudio-is/sdk-components-a
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-01-16T14:58:51.415Z";
+      export const lastPublished = "2026-01-18T15:47:31.544Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -32,7 +32,7 @@ import { VideoAnimation as VideoAnimation } from "@webstudio-is/sdk-components-a
 
       const Page = (_props: { system: any; }) => {
 let generaldatacms = useResource("generaldatacms_1")
-let [cmsUrl, set$cmsUrl] = useVariableState<any>("http://172.18.0.23:1337")
+let [cmsMediaUrl, set$cmsMediaUrl] = useVariableState<any>("https://admin.devmat.spirosroadto.info")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
 <div
@@ -314,7 +314,7 @@ muted={true}
 playsInline={true}
 crossOrigin={"anonymous"}
 loop={true}
-src={cmsUrl + generaldatacms?.data?.data?.heroSection?.heroMedia?.[0]?.url }
+src={cmsMediaUrl + generaldatacms?.data?.data?.heroSection?.heroMedia?.[0]?.url }
 className={`w-video cfxgbuw c1w3iq2x c1aefk7h cmd2k6o`} />
 </VideoAnimation>
 </div>

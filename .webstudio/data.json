@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "42f093ef-072b-47a6-8dc6-89640dfbf6af",
+    "id": "eb2a400c-c2be-4267-8275-88c7484e63f5",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 400,
-    "createdAt": "2026-01-16T14:58:51.415+00:00",
-    "updatedAt": "2026-01-16T14:58:51.415+00:00",
+    "version": 404,
+    "createdAt": "2026-01-18T15:47:31.544+00:00",
+    "updatedAt": "2026-01-18T15:47:31.544+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -14062,7 +14062,7 @@
           "instanceId": "UVkaoW5Ns419oV_rgaBMI",
           "name": "src",
           "type": "expression",
-          "value": "$ws$dataSource$kttkTQ9ptJhyVJcBoBOrw + $ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.heroMedia[0].url "
+          "value": "$ws$dataSource$BXUAVSyjbccTYH8iqgfZt + $ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.heroMedia[0].url "
         }
       ],
       [
@@ -14117,6 +14117,19 @@
           "value": {
             "type": "string",
             "value": "http://172.18.0.23:1337"
+          }
+        }
+      ],
+      [
+        "BXUAVSyjbccTYH8iqgfZt",
+        {
+          "type": "variable",
+          "id": "BXUAVSyjbccTYH8iqgfZt",
+          "scopeInstanceId": ":root",
+          "name": "cmsMediaUrl",
+          "value": {
+            "type": "string",
+            "value": "https://admin.devmat.spirosroadto.info"
           }
         }
       ]
