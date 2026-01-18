@@ -12,7 +12,8 @@
     "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
-    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+    "upgrade:dry": "npx @strapi/upgrade latest --dry",
+    "export": "strapi export --file exports/strapi_dt --no-encrypt"
   },
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^6.0.3",
