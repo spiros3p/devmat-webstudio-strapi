@@ -14,7 +14,8 @@
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry",
     "export": "strapi export --file exports/strapi_dt --no-encrypt",
-    "import": "strapi import -f exports/strapi_dt.tar.gz"
+    "import": "strapi import -f exports/strapi_dt.tar.gz",
+    "scp:data": "scp exports/strapi_dt.tar.gz spiros@37.60.235.172:/home/spiros/apps/devmat/devmat-webstudio-strapi/cms/devmat-cms/exports"
   },
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^6.0.3",
