@@ -10,7 +10,7 @@
       "type": "string"
     },
     "heroSubTitle": {
-      "type": "string"
+      "type": "text"
     },
     "primaryButton": {
       "type": "component",
