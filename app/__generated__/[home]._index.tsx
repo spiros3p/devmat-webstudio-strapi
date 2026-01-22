@@ -6,13 +6,12 @@
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuLink as NavigationMenuLink, NavigationMenuViewport as NavigationMenuViewport } from "@webstudio-is/sdk-components-react-radix";
-import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Paragraph as Paragraph, Video as Video } from "@webstudio-is/sdk-components-react";
-import { VideoAnimation as VideoAnimation } from "@webstudio-is/sdk-components-animation";
+import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Paragraph as Paragraph, Fragment as Fragment_1, Slot as Slot, Image as Image } from "@webstudio-is/sdk-components-react";
 
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-01-18T15:47:31.544Z";
+      export const lastPublished = "2026-01-22T03:02:10.179Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -31,7 +30,7 @@ import { VideoAnimation as VideoAnimation } from "@webstudio-is/sdk-components-a
       
 
       const Page = (_props: { system: any; }) => {
-let generaldatacms = useResource("generaldatacms_1")
+let homepagedatacms = useResource("homepagedatacms_1")
 let [cmsMediaUrl, set$cmsMediaUrl] = useVariableState<any>("https://admin.devmat.spirosroadto.info")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
@@ -273,51 +272,97 @@ className={`w-link ccqry52 c1oji2iw c7pv373 cyidosu cfxgbuw c1w3iq2x cmd2k6o c1a
 </NavigationMenu>
 </div>
 <div
-className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j c1b9a0j2 cyidosu cu3uc3t c190h4xw c1ua5e08 c1rt2b5x celrewe ceuzb9a`}>
-{(!!generaldatacms?.data?.data?.heroSection?.heroMedia?.[0]) &&
+className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j cyidosu cu3uc3t cqkrgkz csjbh93 c1ht3eul c190h4xw c1ua5e08 c1rt2b5x celrewe ceuzb9a`}>
+{(!!homepagedatacms?.data?.data?.heroSection?.heroMedia?.[0]) &&
 <div
-className={`w-element c1321bjb c140tk4r cavlpe c1ox04z8 csjbh93 c1ht3eul cyksmbj c1i7snbb c1oji2iw c7pv373`}>
+className={`w-element c1321bjb c140tk4r cavlpe c1ox04z8 cyksmbj c1i7snbb c1oji2iw c7pv373`}>
 <h1
 className={`w-element c1fh2qkn cyiizu9 cqvjdig crmjlkc c1ihasyt c3c9r1c cpii4el c19jcr0r c1fb947j c1l3k9y7`}>
-{generaldatacms?.data?.data?.heroSection?.heroTitle}
+{homepagedatacms?.data?.data?.heroSection?.heroTitle}
 </h1>
 <h3
 className={`w-element c3c9r1c c1ihasyt c1fq6v54 cpf8n67`}>
-{generaldatacms?.data?.data?.heroSection?.heroSubTitle}
+{homepagedatacms?.data?.data?.heroSection?.heroSubTitle}
 </h3>
 <div
-className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl caui1hn`}>
+className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl caui1hn cynjatq`}>
 <Link_1
-href={generaldatacms?.data?.data?.heroSection?.primaryButton?.href}
-target={generaldatacms?.data?.data?.heroSection?.primaryButton?.target}
-title={generaldatacms?.data?.data?.heroSection?.primaryButton?.title}
+href={homepagedatacms?.data?.data?.heroSection?.primaryButton?.href}
+target={homepagedatacms?.data?.data?.heroSection?.primaryButton?.target}
+title={homepagedatacms?.data?.data?.heroSection?.primaryButton?.title}
 className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1wbt3eu cxjyi5z c1kd0iqv c2t1vc3 cmx5vkr c53v5zz c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}>
-{generaldatacms?.data?.data?.heroSection?.primaryButton?.title}
+{homepagedatacms?.data?.data?.heroSection?.primaryButton?.title}
 </Link_1>
 <Link_1
-title={generaldatacms?.data?.data?.heroSection?.secondaryButton?.title}
-href={generaldatacms?.data?.data?.heroSection?.secondaryButton?.href}
-target={generaldatacms?.data?.data?.heroSection?.secondaryButton?.target}
+title={homepagedatacms?.data?.data?.heroSection?.secondaryButton?.title}
+href={homepagedatacms?.data?.data?.heroSection?.secondaryButton?.href}
+target={homepagedatacms?.data?.data?.heroSection?.secondaryButton?.target}
 className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1pk2abd c1om2ni4 c1t9kc3 caxks0e c199gza7 c1ox04z8 c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}>
-{generaldatacms?.data?.data?.heroSection?.secondaryButton?.title}
+{homepagedatacms?.data?.data?.heroSection?.secondaryButton?.title}
 </Link_1>
 </div>
-{(!!generaldatacms?.data?.data?.heroSection?.heroMedia?.length) &&
-<div
-className={`w-element crl2cyx cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1sa2q31 c1thowfs c19z55ud ciuqbe1`}>
-<VideoAnimation
-className={`w-video-animation cfxgbuw c1w3iq2x c1aefk7h cmd2k6o ceohp8a c1akzqgy cztcn6n c4z38mt c1ijjeon c4irn6o`}>
-<Video
-preload={"auto"}
-autoPlay={true}
-muted={true}
-playsInline={true}
-crossOrigin={"anonymous"}
-loop={true}
-src={cmsMediaUrl + generaldatacms?.data?.data?.heroSection?.heroMedia?.[0]?.url }
-className={`w-video cfxgbuw c1w3iq2x c1aefk7h cmd2k6o`} />
-</VideoAnimation>
-</div>
+{(!!homepagedatacms?.data?.data?.heroSection?.heroMedia?.length) &&
+<Box
+className={`w-box chwyzxr cc65596 c8h0kd1 c1jmoocp c1ulw3bq cc6w7r cnzj5wj`}>
+<Box
+data-slides-per-view={"1"}
+data-infinite-loop={"true"}
+data-nav={"true"}
+data-nav-next-el={".swiper-button-next"}
+data-nav-prev-el={".swiper-button-prev"}
+data-swiper={"true"}
+data-parallax={"true"}
+data-slider-speed={"750"}
+data-autoplay={"true"}
+data-autoplay-delay={""}
+className={`w-box c1jmoocp c1gbr3z6 c1xz0hfv c1nn1c1j c14ukf1q cb38r9g c1pwlyx4 ctvij5o c1przhxw c1i7snbb c1oaz3g3 c1oji2iw c9z7hxy c9iayub c1550nn1 czqdj2f co4edm4 c1fpr0os ${"swiper swiper-c-auto"}`}>
+<Box
+className={`w-box c1przhxw c1gbr3z6 c14ukf1q c9z7hxy cyksmbj cgocsqs ceh8ohp c1jmoocp cvgvkkz coy7gv6 ${"swiper-wrapper"}`}>
+{homepagedatacms?.data?.data?.heroSection?.heroMedia?.map?.((collectionItem: any, index: number) =>
+<Fragment key={index}>
+<Box
+className={`w-box c1a7h4u9 c1gbr3z6 c1przhxw cleis16 c6s2mb7 c1pwlyx4 ctvij5o czsacc7 c6pmyha ${"swiper-slide"}`}>
+<Box
+className={`w-box cjtheg6 clmafat c1rkdu33 c2i0qoz c1f5j10l cmk688s cejznww cp88vo0 c9iayub c1550nn1 czqdj2f co4edm4 cl3a54z cyksmbj c1tu7rdi c1oji2iw c7pv373 c1i7snbb c1a7h4u9 c1pwlyx4 ctvij5o cqwy470 c1mkwpu4 c18ym91p cb6svwg c1otp91o`}>
+<Image
+data-swiper-parallax={"75%"}
+data-swiper-parallax-scale={"1.1"}
+optimize={false}
+src={cmsMediaUrl+collectionItem?.url}
+className={`w-image c1ca1opd cyiufop c12t5nos c1jmoocp c1a7h4u9 c1przhxw cgtklm7 cgzsvfq c1gkl50b`} />
+<Box
+className={`w-box cyksmbj c1i7snbb c125js0i cgocsqs c7m897 c1oaz3g3 cpstobg c1m9hz2e c3qj012 c1vhk8r2 cfoyo6b ctqyu0d c1su9msf c1ca1opd c1iqp751 ctoeblo c1c40y1i c7ghkhh c194hou3 c13pklef c16caxk5`} />
+</Box>
+</Box>
+</Fragment>
+)}
+</Box>
+<Box
+className={`w-box c1ca1opd cibahxt c1gqsx5u cyksmbj c1rrbixb c1oaz3g3 c9z7hxy cu4g92s c6lxvrw chkjoc1 c172hey ccsqwz c18cfxvo c7wa604 c1ajz4hn crtf4qo c11c9uoh`}>
+<Box
+className={`w-box c1maz3g9 cyksmbj c1oji2iw c7pv373 c292i9b cxl0o9s cdfpp7e co80yic c57zjvh c143tev2 c16mb7nx c1gbr3z6 c11ti0jn cmaxjvo c1dx8b2v c1qrp8v2 c12c2zig clr6biy c1d70lvb cvj1e6d ${"swiper-button-prev"}`}>
+<HtmlEmbed
+code={"<svg viewBox=\"0 0 24 24\" x=\"0\" y=\"0\" width=\"1em\" height=\"1em\"><g transform=\"matrix(-1,0,0,1,24.17136001586914,0)\"><path fill=\"currentColor\" d=\"M7.412 24 6 22.588l9.881-9.881a1 1 0 0 0 0-1.414L6.017 1.431 7.431.017l9.862 9.862a3 3 0 0 1 0 4.242Z\" opacity=\"1\" data-original=\"#000000\" class=\"\"></path></g></svg>"}
+className={`w-html-embed`} />
+</Box>
+<Box
+className={`w-box c1maz3g9 cyksmbj c1oji2iw c7pv373 c292i9b cxl0o9s cdfpp7e co80yic c57zjvh c143tev2 c16mb7nx c1gbr3z6 c11ti0jn cm241ru cmaxjvo c1dx8b2v c1qrp8v2 c12c2zig clr6biy c1d70lvb cvj1e6d c8n6rm ${"swiper-button-next"}`}>
+<HtmlEmbed
+code={"<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\"><path fill=\"currentColor\" d=\"M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z\"></path></svg>"}
+className={`w-html-embed`} />
+</Box>
+</Box>
+</Box>
+<Slot>
+<Fragment_1>
+<HtmlEmbed
+code={"<script src=\"https://unpkg.com/swiper/swiper-bundle.min.js\" defer=\"\"></script>\n<script type=\"module\">\ndocument.querySelectorAll('[data-swiper=\"true\"]:not(.swiper-initialized)').forEach(function(container, index) {\n  \n  const dataset = container.dataset\n  \n  const options = {\n    loop: dataset.infiniteLoop === 'true',\n    speed: parseFloat(dataset.sliderSpeed) || 1000,\n    parallax: dataset.parallax === 'true',\n    spaceBetween: parseFloat(dataset.spaceBetweenSlides) || 0,\n    slidesPerView: dataset.slidesPerView === 'auto' ? 'auto' : parseFloat(dataset.slidesPerView) || 1,\n    effect: dataset.effect || 'slide',\n    fadeEffect: { crossFade: dataset.crossfadeEffect === 'true' },\n    autoplay: dataset.autoplay === 'true' ? {\n      delay: parseFloat(dataset.autoplayDelay) || 5000,\n      disableOnInteraction: dataset.autoplayInteractDisable === 'true',\n    } : false,\n    pagination: dataset.pagination === 'true' ? {\n      el:  container.querySelector(dataset.paginationEl || '.swiper-pagination'),\n      clickable: dataset.paginationClickable === 'true',\n    } : false,\n    navigation: dataset.nav === 'true' ? {\n      nextEl: container.querySelector(dataset.navNextEl || '.swiper-button-next'),\n      prevEl: container.querySelector(dataset.navPrevEl || '.swiper-button-prev'),\n    } : false,\n    freeMode: dataset.freeMode === 'true',\n    centeredSlides: dataset.centeredSlides === 'true', // Apply general setting\n  };\n  \n  new Swiper(container, options);\n});\n</script>"}
+clientOnly={true}
+executeScriptOnCanvas={false}
+className={`w-html-embed`} />
+</Fragment_1>
+</Slot>
+</Box>
 }
 </div>
 }
