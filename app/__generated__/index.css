@@ -28,9 +28,6 @@
   h2.w-element {
     box-sizing: border-box
   }
-  h3.w-element {
-    box-sizing: border-box
-  }
   p.w-element {
     box-sizing: border-box
   }
@@ -289,6 +286,9 @@
   }
   .ciexhcn {
     width: auto
+  }
+  .caui1hn {
+    margin-bottom: 12px
   }
   .c1wdeocc {
     padding-top: 8px
@@ -555,8 +555,8 @@
   .c1s43d56 {
     border: 1px solid rgb(226 232 240 / 1)
   }
-  .c1s55wh8 {
-    font-size: 18px
+  .c6gi1xt {
+    font-size: 22px
   }
   .c1uyinf6 {
     align-self: center
@@ -569,6 +569,9 @@
   }
   .c1ht3eul {
     padding-bottom: 40px
+  }
+  .cpo4c4l {
+    margin-bottom: 50px
   }
   .c1pk2abd {
     border-top-color: white
@@ -610,6 +613,9 @@
   .c1fq6v54 {
     max-width: 700px
   }
+  .c1s55wh8 {
+    font-size: 18px
+  }
   .c18htm2o {
     column-gap: 16px
   }
@@ -625,8 +631,8 @@
   .ch2shl {
     font-weight: 600
   }
-  .caui1hn {
-    margin-bottom: 12px
+  .c2yan1w {
+    margin-bottom: 18px
   }
   .cu2xsck {
     display: inline-block
@@ -827,8 +833,50 @@
   .c194hou3 {
     background-position: 0% 0%
   }
+  .cv37voi {
+    width: 100svw
+  }
+  .c1ejoj25 {
+    column-gap: 18px
+  }
+  .cy0z055 {
+    row-gap: 18px
+  }
+  .czzvbuw {
+    padding: 12px
+  }
+  .c1bjxlr9 {
+    color: rgb(102 102 102 / 1)
+  }
+  .cntodcp {
+    font-size: 20px
+  }
+  .csa87u {
+    line-height: 1.2px
+  }
+  .c1d80dtg {
+    margin-bottom: 40px
+  }
+  .c1dhh8cz {
+    text-transform: uppercase
+  }
+  .c11w9ocq {
+    overflow-x: clip
+  }
+  .cq9s6sa {
+    overflow-y: clip
+  }
+  .c1ii509t {
+    width: 250px
+  }
+  .cahym6m {
+    height: 110px
+  }
 }
 @media all and (max-width: 991px) {
+  .c1dipgxw {
+    font-size: 18px
+  }
   .c190h4xw {
     border-top-color: rgb(20 69 123 / 1)
   }

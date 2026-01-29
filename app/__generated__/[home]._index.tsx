@@ -11,7 +11,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-01-22T03:02:10.179Z";
+      export const lastPublished = "2026-01-29T20:04:21.091Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -37,9 +37,9 @@ className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2
 <div
 className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j c1nnj4xy`}>
 <NavigationMenu
-className={`w-navigation-menu c1gbr3z6 c1b9a0j2 cyksmbj c1rc0m8f c1q7lfpp ciexhcn c1oji2iw crw0x0i c7k78s6 c1jfats1`}>
+className={`w-navigation-menu c1gbr3z6 c1b9a0j2 cyksmbj c1rc0m8f c1q7lfpp ciexhcn c1oji2iw crw0x0i c7k78s6 caui1hn c1jfats1`}>
 <div
-className={`w-element c1anbojs c1s55wh8 c1uyinf6 c1wdeocc c4cayoo c53v5zz cj79p55 c1falt5c`}>
+className={`w-element c1anbojs c6gi1xt c1uyinf6 c1wdeocc c4cayoo c53v5zz cj79p55 c1falt5c c1dipgxw`}>
 {"Devmat Solutions PC"}
 </div>
 <NavigationMenuList
@@ -272,7 +272,7 @@ className={`w-link ccqry52 c1oji2iw c7pv373 cyidosu cfxgbuw c1w3iq2x cmd2k6o c1a
 </NavigationMenu>
 </div>
 <div
-className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j cyidosu cu3uc3t cqkrgkz csjbh93 c1ht3eul c190h4xw c1ua5e08 c1rt2b5x celrewe ceuzb9a`}>
+className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j cyidosu cu3uc3t cqkrgkz csjbh93 c1ht3eul cpo4c4l c190h4xw c1ua5e08 c1rt2b5x celrewe ceuzb9a`}>
 {(!!homepagedatacms?.data?.data?.heroSection?.heroMedia?.[0]) &&
 <div
 className={`w-element c1321bjb c140tk4r cavlpe c1ox04z8 cyksmbj c1i7snbb c1oji2iw c7pv373`}>
@@ -280,12 +280,12 @@ className={`w-element c1321bjb c140tk4r cavlpe c1ox04z8 cyksmbj c1i7snbb c1oji2i
 className={`w-element c1fh2qkn cyiizu9 cqvjdig crmjlkc c1ihasyt c3c9r1c cpii4el c19jcr0r c1fb947j c1l3k9y7`}>
 {homepagedatacms?.data?.data?.heroSection?.heroTitle}
 </h1>
-<h3
-className={`w-element c3c9r1c c1ihasyt c1fq6v54 cpf8n67`}>
+<p
+className={`w-element c3c9r1c c1ihasyt c1fq6v54 cpf8n67 c1s55wh8`}>
 {homepagedatacms?.data?.data?.heroSection?.heroSubTitle}
-</h3>
+</p>
 <div
-className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl caui1hn cynjatq`}>
+className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl c2yan1w cynjatq`}>
 <Link_1
 href={homepagedatacms?.data?.data?.heroSection?.primaryButton?.href}
 target={homepagedatacms?.data?.data?.heroSection?.primaryButton?.target}
@@ -318,7 +318,12 @@ data-autoplay-delay={""}
 className={`w-box c1jmoocp c1gbr3z6 c1xz0hfv c1nn1c1j c14ukf1q cb38r9g c1pwlyx4 ctvij5o c1przhxw c1i7snbb c1oaz3g3 c1oji2iw c9z7hxy c9iayub c1550nn1 czqdj2f co4edm4 c1fpr0os ${"swiper swiper-c-auto"}`}>
 <Box
 className={`w-box c1przhxw c1gbr3z6 c14ukf1q c9z7hxy cyksmbj cgocsqs ceh8ohp c1jmoocp cvgvkkz coy7gv6 ${"swiper-wrapper"}`}>
-{homepagedatacms?.data?.data?.heroSection?.heroMedia?.map?.((collectionItem: any, index: number) =>
+{Object.entries(
+  // @ts-ignore
+  homepagedatacms?.data?.data?.heroSection?.heroMedia ?? {}
+).map(([_key, collectionItem]: any) => {
+  const index = Array.isArray(homepagedatacms?.data?.data?.heroSection?.heroMedia) ? Number(_key) : _key;
+  return (
 <Fragment key={index}>
 <Box
 className={`w-box c1a7h4u9 c1gbr3z6 c1przhxw cleis16 c6s2mb7 c1pwlyx4 ctvij5o czsacc7 c6pmyha ${"swiper-slide"}`}>
@@ -335,7 +340,9 @@ className={`w-box cyksmbj c1i7snbb c125js0i cgocsqs c7m897 c1oaz3g3 cpstobg c1m9
 </Box>
 </Box>
 </Fragment>
-)}
+)
+})
+}
 </Box>
 <Box
 className={`w-box c1ca1opd cibahxt c1gqsx5u cyksmbj c1rrbixb c1oaz3g3 c9z7hxy cu4g92s c6lxvrw chkjoc1 c172hey ccsqwz c18cfxvo c7wa604 c1ajz4hn crtf4qo c11c9uoh`}>
@@ -367,6 +374,38 @@ className={`w-html-embed`} />
 </div>
 }
 </div>
+{(!!homepagedatacms?.data?.data?.customerLogos?.customersLogos?.length) &&
+<div
+className={`w-element cpo4c4l`}>
+<h2
+className={`w-element cavlpe c1bjxlr9 cntodcp csa87u c1d80dtg c1dhh8cz`}>
+{homepagedatacms?.data?.data?.customerLogos?.sectionTitle}
+</h2>
+<Box
+className={`w-box cv37voi cyksmbj c1oji2iw c7pv373 c1ejoj25 cy0z055 c1rc0m8f czzvbuw`}>
+{Object.entries(
+  // @ts-ignore
+  homepagedatacms?.data?.data?.customerLogos?.customersLogos ?? {}
+).map(([_key, collectionItem_1]: any) => {
+  const index_1 = Array.isArray(homepagedatacms?.data?.data?.customerLogos?.customersLogos) ? Number(_key) : _key;
+  return (
+<Fragment key={index_1}>
+<div
+className={`w-element`}>
+<Image
+optimize={false}
+alt={collectionItem_1?.logo?.name}
+loading={"eager"}
+src={cmsMediaUrl+collectionItem_1?.logo?.url}
+className={`w-image c11w9ocq cq9s6sa c1ii509t cahym6m cyiufop`} />
+</div>
+</Fragment>
+)
+})
+}
+</Box>
+</div>
+}
 </Body>
 }
 
