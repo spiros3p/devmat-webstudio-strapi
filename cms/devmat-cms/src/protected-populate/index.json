@@ -33,6 +33,26 @@
                   "populate": {}
                }
             }
+         },
+         "customerLogos": {
+            "fields": [
+               "sectionTitle"
+            ],
+            "populate": {
+               "customersLogos": {
+                  "populate": {
+                     "logo": {
+                        "fields": [
+                           "url",
+                           "previewUrl",
+                           "name",
+                           "alternativeText",
+                           "caption"
+                        ]
+                     }
+                  }
+               }
+            }
          }
       }
    }

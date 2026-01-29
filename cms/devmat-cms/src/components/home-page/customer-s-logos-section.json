@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_page_customer_s_logos_sections",
+  "info": {
+    "displayName": "Customer's Logos Section",
+    "icon": "store"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "customersLogos": {
+      "type": "component",
+      "component": "home-page.customer-s-logo",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

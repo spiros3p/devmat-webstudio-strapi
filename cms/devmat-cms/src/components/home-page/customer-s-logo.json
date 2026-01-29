@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_page_customer_s_logos",
+  "info": {
+    "displayName": "customer's logo",
+    "icon": "collapse"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

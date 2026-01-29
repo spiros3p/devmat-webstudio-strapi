@@ -24,6 +24,16 @@
       },
       "component": "hero.hero-section",
       "repeatable": false
+    },
+    "customerLogos": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "home-page.customer-s-logos-section",
+      "repeatable": false
     }
   }
 }
