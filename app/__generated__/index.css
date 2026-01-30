@@ -287,9 +287,6 @@
   .ciexhcn {
     width: auto
   }
-  .caui1hn {
-    margin-bottom: 12px
-  }
   .c1wdeocc {
     padding-top: 8px
   }
@@ -531,6 +528,9 @@
   .c1nnj4xy {
     max-width: 1100px
   }
+  .caui1hn {
+    margin-bottom: 12px
+  }
   .cbanl4k {
     margin-left: 12px
   }
@@ -561,18 +561,6 @@
   .c1uyinf6 {
     align-self: center
   }
-  .cqkrgkz {
-    background-image: linear-gradient(rgb(0 103 213 / 1) 0%, rgb(0 0 0 / 0) 100%)
-  }
-  .csjbh93 {
-    padding-top: 20px
-  }
-  .c1ht3eul {
-    padding-bottom: 40px
-  }
-  .cpo4c4l {
-    margin-bottom: 50px
-  }
   .c1pk2abd {
     border-top-color: white
   }
@@ -596,6 +584,63 @@
   }
   .c1lflnfx {
     border-bottom-style: solid
+  }
+  .cv37voi {
+    width: 100svw
+  }
+  .c1ejoj25 {
+    column-gap: 18px
+  }
+  .cy0z055 {
+    row-gap: 18px
+  }
+  .czzvbuw {
+    padding: 12px
+  }
+  .c1bjxlr9 {
+    color: rgb(102 102 102 / 1)
+  }
+  .cntodcp {
+    font-size: 20px
+  }
+  .csa87u {
+    line-height: 1.2px
+  }
+  .c1u6lavf {
+    margin-bottom: 30px
+  }
+  .c1dhh8cz {
+    text-transform: uppercase
+  }
+  .c11w9ocq {
+    overflow-x: clip
+  }
+  .cq9s6sa {
+    overflow-y: clip
+  }
+  .cxpdds9 {
+    width: 170px
+  }
+  .c4eb266 {
+    height: 70px
+  }
+  .cyiufop {
+    object-fit: cover
+  }
+  .cpo4c4l {
+    margin-bottom: 50px
+  }
+  .c9s2vs7 {
+    margin-top: 70px
+  }
+  .cqkrgkz {
+    background-image: linear-gradient(rgb(0 103 213 / 1) 0%, rgb(0 0 0 / 0) 100%)
+  }
+  .csjbh93 {
+    padding-top: 20px
+  }
+  .c1ht3eul {
+    padding-bottom: 40px
   }
   .cpii4el {
     max-width: 620px
@@ -706,6 +751,82 @@
   .ceh8ohp {
     justify-content: start
   }
+  .c1a7h4u9 {
+    height: 100%
+  }
+  .c6s2mb7 {
+    aspect-ratio: 16/10
+  }
+  .cjtheg6 {
+    border-top-style: none
+  }
+  .clmafat {
+    border-right-style: none
+  }
+  .c1rkdu33 {
+    border-left-style: none
+  }
+  .c2i0qoz {
+    border-bottom-style: none
+  }
+  .c1f5j10l {
+    border-top-color: rgb(203 213 225 / 1)
+  }
+  .cmk688s {
+    border-right-color: rgb(203 213 225 / 1)
+  }
+  .cejznww {
+    border-bottom-color: rgb(203 213 225 / 1)
+  }
+  .cp88vo0 {
+    border-left-color: rgb(203 213 225 / 1)
+  }
+  .cl3a54z {
+    row-gap: 1.5rem
+  }
+  .c12t5nos {
+    object-position: 50% 50%
+  }
+  .c7m897 {
+    height: 33%
+  }
+  .cpstobg {
+    background-attachment: scroll
+  }
+  .c1m9hz2e {
+    -webkit-background-clip: border-box;
+    background-clip: border-box
+  }
+  .c3qj012 {
+    background-blend-mode: normal
+  }
+  .c1vhk8r2 {
+    background-image: linear-gradient(rgb(0 0 0 / 0) 0%, rgb(15 23 42 / 1) 95%)
+  }
+  .cfoyo6b {
+    background-origin: padding-box
+  }
+  .ctqyu0d {
+    background-repeat: repeat
+  }
+  .c1su9msf {
+    background-size: auto
+  }
+  .c1iqp751 {
+    z-index: 20
+  }
+  .ctoeblo {
+    left: 0px
+  }
+  .c1c40y1i {
+    right: 0px
+  }
+  .c7ghkhh {
+    bottom: 0px
+  }
+  .c194hou3 {
+    background-position: 0% 0%
+  }
   .cibahxt {
     right: 2rem
   }
@@ -754,123 +875,23 @@
   .cm241ru {
     font-size: 100%
   }
-  .c1a7h4u9 {
-    height: 100%
+  .c2ace6m {
+    border-top-left-radius: 10px
   }
-  .c6s2mb7 {
-    aspect-ratio: 16/10
+  .cjaeftc {
+    border-top-right-radius: 10px
   }
-  .cjtheg6 {
-    border-top-style: none
+  .c15ykucn {
+    border-bottom-left-radius: 10px
   }
-  .clmafat {
-    border-right-style: none
+  .cb65ij0 {
+    border-bottom-right-radius: 10px
   }
-  .c1rkdu33 {
-    border-left-style: none
+  .c1pt0jgm {
+    box-shadow: 0px 0px 20px 10px rgb(0 0 0 / 0.2) inset
   }
-  .c2i0qoz {
-    border-bottom-style: none
-  }
-  .c1f5j10l {
-    border-top-color: rgb(203 213 225 / 1)
-  }
-  .cmk688s {
-    border-right-color: rgb(203 213 225 / 1)
-  }
-  .cejznww {
-    border-bottom-color: rgb(203 213 225 / 1)
-  }
-  .cp88vo0 {
-    border-left-color: rgb(203 213 225 / 1)
-  }
-  .cl3a54z {
-    row-gap: 1.5rem
-  }
-  .cyiufop {
-    object-fit: cover
-  }
-  .c12t5nos {
-    object-position: 50% 50%
-  }
-  .c7m897 {
-    height: 33%
-  }
-  .cpstobg {
-    background-attachment: scroll
-  }
-  .c1m9hz2e {
-    -webkit-background-clip: border-box;
-    background-clip: border-box
-  }
-  .c3qj012 {
-    background-blend-mode: normal
-  }
-  .c1vhk8r2 {
-    background-image: linear-gradient(rgb(0 0 0 / 0) 0%, rgb(15 23 42 / 1) 95%)
-  }
-  .cfoyo6b {
-    background-origin: padding-box
-  }
-  .ctqyu0d {
-    background-repeat: repeat
-  }
-  .c1su9msf {
-    background-size: auto
-  }
-  .c1iqp751 {
-    z-index: 20
-  }
-  .ctoeblo {
-    left: 0px
-  }
-  .c1c40y1i {
-    right: 0px
-  }
-  .c7ghkhh {
-    bottom: 0px
-  }
-  .c194hou3 {
-    background-position: 0% 0%
-  }
-  .cv37voi {
-    width: 100svw
-  }
-  .c1ejoj25 {
-    column-gap: 18px
-  }
-  .cy0z055 {
-    row-gap: 18px
-  }
-  .czzvbuw {
-    padding: 12px
-  }
-  .c1bjxlr9 {
-    color: rgb(102 102 102 / 1)
-  }
-  .cntodcp {
-    font-size: 20px
-  }
-  .csa87u {
-    line-height: 1.2px
-  }
-  .c1d80dtg {
-    margin-bottom: 40px
-  }
-  .c1dhh8cz {
-    text-transform: uppercase
-  }
-  .c11w9ocq {
-    overflow-x: clip
-  }
-  .cq9s6sa {
-    overflow-y: clip
-  }
-  .c1ii509t {
-    width: 250px
-  }
-  .cahym6m {
-    height: 110px
+  .c3txa2i {
+    padding: 4px
   }
 }
 @media all and (max-width: 991px) {
@@ -954,6 +975,12 @@
   .cnzj5wj {
     width: 90svw
   }
+  .czsacc7 {
+    aspect-ratio: 16/10
+  }
+  .c16caxk5 {
+    height: 64%
+  }
   .chkjoc1 {
     bottom: 1.5rem
   }
@@ -975,40 +1002,10 @@
   .c12c2zig {
     font-size: 70%
   }
-  .czsacc7 {
-    aspect-ratio: 16/10
-  }
-  .c16caxk5 {
-    height: 64%
-  }
 }
 @media all and (max-width: 479px) {
   .c1ulw3bq {
     width: 91svw
-  }
-  .c7wa604 {
-    bottom: 1.25rem
-  }
-  .c1ajz4hn {
-    right: 1.25rem
-  }
-  .crtf4qo {
-    column-gap: 0.5rem
-  }
-  .c11c9uoh {
-    row-gap: 0.5rem
-  }
-  .clr6biy {
-    width: 27px
-  }
-  .c1d70lvb {
-    height: 27px
-  }
-  .cvj1e6d {
-    font-size: 60%
-  }
-  .c8n6rm {
-    padding: 0
   }
   .c6pmyha {
     aspect-ratio: 16/10
@@ -1033,5 +1030,29 @@
   }
   .cgzsvfq {
     object-position: 50% 50%
+  }
+  .c7wa604 {
+    bottom: 1.25rem
+  }
+  .c1ajz4hn {
+    right: 1.25rem
+  }
+  .crtf4qo {
+    column-gap: 0.5rem
+  }
+  .c11c9uoh {
+    row-gap: 0.5rem
+  }
+  .clr6biy {
+    width: 27px
+  }
+  .c1d70lvb {
+    height: 27px
+  }
+  .cvj1e6d {
+    font-size: 60%
+  }
+  .c8n6rm {
+    padding: 0
   }
 }

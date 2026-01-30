@@ -6,12 +6,12 @@
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
 import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuLink as NavigationMenuLink, NavigationMenuViewport as NavigationMenuViewport } from "@webstudio-is/sdk-components-react-radix";
-import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Paragraph as Paragraph, Fragment as Fragment_1, Slot as Slot, Image as Image } from "@webstudio-is/sdk-components-react";
+import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Paragraph as Paragraph, Fragment as Fragment_1, Image as Image, Slot as Slot } from "@webstudio-is/sdk-components-react";
 
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-01-29T20:04:21.091Z";
+      export const lastPublished = "2026-01-30T17:43:08.215Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -31,13 +31,13 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       const Page = (_props: { system: any; }) => {
 let homepagedatacms = useResource("homepagedatacms_1")
-let [cmsMediaUrl, set$cmsMediaUrl] = useVariableState<any>("https://admin.devmat.spirosroadto.info")
+let [cmsMediaUrlLocal, set$cmsMediaUrlLocal] = useVariableState<any>("https://admin.devmat.spirosroadto.info")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
 <div
-className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j c1nnj4xy`}>
+className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j c1nnj4xy caui1hn`}>
 <NavigationMenu
-className={`w-navigation-menu c1gbr3z6 c1b9a0j2 cyksmbj c1rc0m8f c1q7lfpp ciexhcn c1oji2iw crw0x0i c7k78s6 caui1hn c1jfats1`}>
+className={`w-navigation-menu c1gbr3z6 c1b9a0j2 cyksmbj c1rc0m8f c1q7lfpp ciexhcn c1oji2iw crw0x0i c7k78s6 c1jfats1`}>
 <div
 className={`w-element c1anbojs c6gi1xt c1uyinf6 c1wdeocc c4cayoo c53v5zz cj79p55 c1falt5c c1dipgxw`}>
 {"Devmat Solutions PC"}
@@ -333,7 +333,7 @@ className={`w-box cjtheg6 clmafat c1rkdu33 c2i0qoz c1f5j10l cmk688s cejznww cp88
 data-swiper-parallax={"75%"}
 data-swiper-parallax-scale={"1.1"}
 optimize={false}
-src={cmsMediaUrl+collectionItem?.url}
+src={cmsMediaUrlLocal+collectionItem?.url}
 className={`w-image c1ca1opd cyiufop c12t5nos c1jmoocp c1a7h4u9 c1przhxw cgtklm7 cgzsvfq c1gkl50b`} />
 <Box
 className={`w-box cyksmbj c1i7snbb c125js0i cgocsqs c7m897 c1oaz3g3 cpstobg c1m9hz2e c3qj012 c1vhk8r2 cfoyo6b ctqyu0d c1su9msf c1ca1opd c1iqp751 ctoeblo c1c40y1i c7ghkhh c194hou3 c13pklef c16caxk5`} />
@@ -376,9 +376,9 @@ className={`w-html-embed`} />
 </div>
 {(!!homepagedatacms?.data?.data?.customerLogos?.customersLogos?.length) &&
 <div
-className={`w-element cpo4c4l`}>
+className={`w-element cpo4c4l c9s2vs7`}>
 <h2
-className={`w-element cavlpe c1bjxlr9 cntodcp csa87u c1d80dtg c1dhh8cz`}>
+className={`w-element cavlpe c1bjxlr9 cntodcp csa87u c1u6lavf c1dhh8cz`}>
 {homepagedatacms?.data?.data?.customerLogos?.sectionTitle}
 </h2>
 <Box
@@ -391,13 +391,13 @@ className={`w-box cv37voi cyksmbj c1oji2iw c7pv373 c1ejoj25 cy0z055 c1rc0m8f czz
   return (
 <Fragment key={index_1}>
 <div
-className={`w-element`}>
+className={`w-element c2ace6m cjaeftc c15ykucn cb65ij0 c1pt0jgm c3txa2i`}>
 <Image
 optimize={false}
 alt={collectionItem_1?.logo?.name}
 loading={"eager"}
-src={cmsMediaUrl+collectionItem_1?.logo?.url}
-className={`w-image c11w9ocq cq9s6sa c1ii509t cahym6m cyiufop`} />
+src={cmsMediaUrlLocal+collectionItem_1?.logo?.url}
+className={`w-image c11w9ocq cq9s6sa cxpdds9 c4eb266 cyiufop`} />
 </div>
 </Fragment>
 )
