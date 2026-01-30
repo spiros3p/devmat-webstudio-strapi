@@ -7,7 +7,8 @@
   "scripts": {
     "build:app": "react-router build",
     "build": "pnpm -r --filter='!./fixtures/*' build",
-    "build:builder": "npx webstudio build --template docker && pnpm unstageThem",
+    "build:builder": "npx webstudio build --template docker && pnpm discardThem",
+    "sync": "npx webstudio sync",
     "dts": "pnpm -r dts",
     "dev:app": "PORT=3030 react-router dev",
     "dev": "pnpm --filter='@webstudio-is/builder' dev",
@@ -23,7 +24,7 @@
     "local:release": "pnpm build && pnpm dts && pnpm local:version-snapshot && pnpm local:publish-snapshot && pnpm local:dangerously-undo-version-snapshot && echo \"now execute\npnpm up -r -L '@webstudio-is/*' --registry http://localhost:4873\"",
     "typecheck": "tsc",
     "start:app": "PORT=3030 react-router-serve ./build/server/index.js",
-    "unstageThem": "git restore .dockerignore Dockerfile package.json"
+    "discardThem": "git restore .dockerignore Dockerfile package.json"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
