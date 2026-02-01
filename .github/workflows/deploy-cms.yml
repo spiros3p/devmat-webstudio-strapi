@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "cms/**"
+      - "apps/devmat-cms/**"
   workflow_dispatch:
 
 env:
