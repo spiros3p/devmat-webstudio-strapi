@@ -12,12 +12,12 @@
     "heroSubTitle": {
       "type": "text"
     },
-    "primaryButton": {
+    "leftButton": {
       "type": "component",
       "component": "button.button",
       "repeatable": false
     },
-    "secondaryButton": {
+    "rightButton": {
       "type": "component",
       "component": "button.button",
       "repeatable": false
