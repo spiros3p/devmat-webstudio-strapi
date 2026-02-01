@@ -1,58 +1,79 @@
 {
    "GET /api/general": {
       "content-type": "api::general.general",
-      "populate": {
-         "heroSection": {
-            "fields": [
-               "heroTitle",
-               "heroSubTitle"
-            ],
+      "roles": {
+         "authenticated": {},
+         "public": {
             "populate": {
-               "primaryButton": {
+               "heroSection": {
                   "fields": [
-                     "title",
-                     "href",
-                     "target"
-                  ]
-               },
-               "secondaryButton": {
-                  "fields": [
-                     "title",
-                     "href",
-                     "target"
-                  ]
-               },
-               "heroMedia": {
-                  "fields": [
-                     "previewUrl",
-                     "url",
-                     "name",
-                     "alternativeText",
-                     "caption"
+                     "heroTitle",
+                     "heroSubTitle"
                   ],
-                  "populate": {}
-               }
-            }
-         },
-         "customerLogos": {
-            "fields": [
-               "sectionTitle"
-            ],
-            "populate": {
-               "customersLogos": {
                   "populate": {
-                     "logo": {
+                     "leftButton": {
                         "fields": [
-                           "url",
-                           "previewUrl",
+                           "title",
+                           "href",
+                           "target"
+                        ]
+                     },
+                     "rightButton": {
+                        "fields": [
+                           "target",
+                           "href",
+                           "title"
+                        ]
+                     },
+                     "heroMedia": {
+                        "fields": [
                            "name",
                            "alternativeText",
-                           "caption"
+                           "caption",
+                           "width",
+                           "height",
+                           "formats",
+                           "size",
+                           "url",
+                           "previewUrl",
+                           "documentId"
                         ]
                      }
                   }
+               },
+               "customerLogos": {
+                  "fields": [
+                     "sectionTitle"
+                  ],
+                  "populate": {
+                     "customersLogos": {
+                        "fields": [
+                           "name",
+                           "url"
+                        ],
+                        "populate": {
+                           "logo": {
+                              "fields": [
+                                 "name",
+                                 "alternativeText",
+                                 "caption",
+                                 "width",
+                                 "height",
+                                 "size",
+                                 "url",
+                                 "previewUrl",
+                                 "documentId"
+                              ]
+                           }
+                        }
+                     }
+                  }
                }
-            }
+            },
+            "fields": [
+               "locale",
+               "documentId"
+            ]
          }
       }
    }
