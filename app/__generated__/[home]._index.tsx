@@ -11,7 +11,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-01-30T17:43:08.215Z";
+      export const lastPublished = "2026-02-01T08:00:28.008Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -31,7 +31,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       const Page = (_props: { system: any; }) => {
 let homepagedatacms = useResource("homepagedatacms_1")
-let [cmsMediaUrlLocal, set$cmsMediaUrlLocal] = useVariableState<any>("https://admin.devmat.spirosroadto.info")
+let [cmsMediaUrlLocal, set$cmsMediaUrlLocal] = useVariableState<any>("http://localhost:1337")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
 <div
@@ -286,6 +286,7 @@ className={`w-element c3c9r1c c1ihasyt c1fq6v54 cpf8n67 c1s55wh8`}>
 </p>
 <div
 className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl c2yan1w cynjatq`}>
+{(!!homepagedatacms?.data?.data?.heroSection?.primaryButton?.title) &&
 <Link_1
 href={homepagedatacms?.data?.data?.heroSection?.primaryButton?.href}
 target={homepagedatacms?.data?.data?.heroSection?.primaryButton?.target}
@@ -293,6 +294,8 @@ title={homepagedatacms?.data?.data?.heroSection?.primaryButton?.title}
 className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1wbt3eu cxjyi5z c1kd0iqv c2t1vc3 cmx5vkr c53v5zz c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}>
 {homepagedatacms?.data?.data?.heroSection?.primaryButton?.title}
 </Link_1>
+}
+{(!!homepagedatacms?.data?.data?.heroSection?.secondaryButton?.title) &&
 <Link_1
 title={homepagedatacms?.data?.data?.heroSection?.secondaryButton?.title}
 href={homepagedatacms?.data?.data?.heroSection?.secondaryButton?.href}
@@ -300,6 +303,7 @@ target={homepagedatacms?.data?.data?.heroSection?.secondaryButton?.target}
 className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1pk2abd c1om2ni4 c1t9kc3 caxks0e c199gza7 c1ox04z8 c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}>
 {homepagedatacms?.data?.data?.heroSection?.secondaryButton?.title}
 </Link_1>
+}
 </div>
 {(!!homepagedatacms?.data?.data?.heroSection?.heroMedia?.length) &&
 <Box
@@ -391,13 +395,13 @@ className={`w-box cv37voi cyksmbj c1oji2iw c7pv373 c1ejoj25 cy0z055 c1rc0m8f czz
   return (
 <Fragment key={index_1}>
 <div
-className={`w-element c2ace6m cjaeftc c15ykucn cb65ij0 c1pt0jgm c3txa2i`}>
+className={`w-element c2ace6m cjaeftc c15ykucn cb65ij0 c16dp33l c3txa2i`}>
 <Image
 optimize={false}
 alt={collectionItem_1?.logo?.name}
 loading={"eager"}
 src={cmsMediaUrlLocal+collectionItem_1?.logo?.url}
-className={`w-image c11w9ocq cq9s6sa cxpdds9 c4eb266 cyiufop`} />
+className={`w-image c11w9ocq cq9s6sa c1lpmvvg c1q5766j cyiufop`} />
 </div>
 </Fragment>
 )

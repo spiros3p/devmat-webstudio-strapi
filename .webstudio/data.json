@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "661d396a-0cbe-4205-88d2-4f8b97a3bb6f",
+    "id": "04ec49c8-b483-4b5b-b3d4-22b1921d3164",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 1164,
-    "createdAt": "2026-01-30T17:43:08.215+00:00",
-    "updatedAt": "2026-01-30T17:43:08.215+00:00",
+    "version": 1201,
+    "createdAt": "2026-02-01T08:00:28.008+00:00",
+    "updatedAt": "2026-02-01T08:00:28.008+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -15174,7 +15174,7 @@
           "property": "width",
           "value": {
             "type": "unit",
-            "value": 170,
+            "value": 125,
             "unit": "px"
           }
         }
@@ -15187,7 +15187,7 @@
           "property": "height",
           "value": {
             "type": "unit",
-            "value": 70,
+            "value": 45,
             "unit": "px"
           }
         }
@@ -17323,8 +17323,8 @@
           "property": "borderTopLeftRadius",
           "value": {
             "type": "unit",
-            "unit": "px",
-            "value": 10
+            "value": 10,
+            "unit": "px"
           }
         }
       ],
@@ -17336,8 +17336,8 @@
           "property": "borderTopRightRadius",
           "value": {
             "type": "unit",
-            "unit": "px",
-            "value": 10
+            "value": 10,
+            "unit": "px"
           }
         }
       ],
@@ -17349,8 +17349,8 @@
           "property": "borderBottomLeftRadius",
           "value": {
             "type": "unit",
-            "unit": "px",
-            "value": 10
+            "value": 10,
+            "unit": "px"
           }
         }
       ],
@@ -17362,8 +17362,8 @@
           "property": "borderBottomRightRadius",
           "value": {
             "type": "unit",
-            "unit": "px",
-            "value": 10
+            "value": 10,
+            "unit": "px"
           }
         }
       ],
@@ -17396,7 +17396,7 @@
                 },
                 "spread": {
                   "type": "unit",
-                  "value": 10,
+                  "value": 30,
                   "unit": "px"
                 },
                 "color": {
@@ -17407,7 +17407,7 @@
                     0,
                     0
                   ],
-                  "alpha": 0.2
+                  "alpha": 0.1
                 }
               }
             ]
@@ -19634,6 +19634,26 @@
           "type": "expression",
           "value": "$ws$dataSource$t2XG6gKGshwkCpg4A91zR+$ws$dataSource$UC4idxLgrilwHpuq9AtRp.url"
         }
+      ],
+      [
+        "A3lt3sY-EialdcPzeVt1p",
+        {
+          "id": "A3lt3sY-EialdcPzeVt1p",
+          "instanceId": "AtDML6A553xgGBReMCZA2",
+          "name": "data-ws-show",
+          "type": "expression",
+          "value": "!!$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.primaryButton.title"
+        }
+      ],
+      [
+        "_MPfwk3oMVthM-J--x3Cx",
+        {
+          "id": "_MPfwk3oMVthM-J--x3Cx",
+          "instanceId": "c9yPSn1UaNn6emqL_zRr9",
+          "name": "data-ws-show",
+          "type": "expression",
+          "value": "!!$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.secondaryButton.title"
+        }
       ]
     ],
     "dataSources": [
@@ -19692,7 +19712,7 @@
           "name": "cmsMediaUrlLocal",
           "value": {
             "type": "string",
-            "value": "https://admin.devmat.spirosroadto.info"
+            "value": "http://localhost:1337"
           }
         }
       ],
