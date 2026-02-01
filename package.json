@@ -67,10 +67,10 @@
   },
   "lint-staged": {
     "**/.webstudio/data.json": [
-      "node scripts/fix-urls.mjs"
+      "node scripts/fix-url.js"
     ],
     "**/app/__generated__/[home]._index.tsx": [
-      "node scripts/fix-urls.mjs"
+      "node scripts/fix-url.js"
     ]
   },
   "prettier": {
