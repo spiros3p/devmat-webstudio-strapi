@@ -100,7 +100,7 @@ const EmptyVariables = () => {
   return (
     <Flex direction="column" gap="2">
       <Flex justify="center" align="center">
-        <Text variant="labelsSentenceCase" align="center">
+        <Text variant="labels" align="center">
           No data variables created
           <br /> on this instance
         </Text>
@@ -264,7 +264,7 @@ const VariablesList = () => {
   );
 };
 
-const label = "Data Variables";
+const label = "Data variables";
 
 export const VariablesSection = () => {
   const [isOpen, setIsOpen] = useOpenState(label);
@@ -290,7 +290,7 @@ export const VariablesSection = () => {
             </VariablePopoverTrigger>
           }
         >
-          <SectionTitleLabel>Data Variables</SectionTitleLabel>
+          <SectionTitleLabel>Data variables</SectionTitleLabel>
         </SectionTitle>
       }
     >

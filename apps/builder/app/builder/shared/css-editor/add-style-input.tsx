@@ -177,7 +177,6 @@ export const AddStyleInput = forwardRef<
     getItems: getAutocompleteItems,
     itemToString: (item) => item?.label ?? "",
     value: item,
-    defaultHighlightedIndex: 0,
     getItemProps: () => ({ text: "sentence" }),
     match: matchOrSuggestToCreate,
     onChange: (input) => {
@@ -301,11 +300,7 @@ export const AddStyleInput = forwardRef<
                   {...combobox.getItemProps({ item, index })}
                   key={index}
                 >
-                  <Text
-                    variant="labelsSentenceCase"
-                    truncate
-                    css={{ maxWidth: "25ch" }}
-                  >
+                  <Text variant="labels" truncate css={{ maxWidth: "25ch" }}>
                     {item.label}
                   </Text>
                 </ComboboxListboxItem>

@@ -3,6 +3,7 @@ import { useStore } from "@nanostores/react";
 import { nanoid } from "nanoid";
 import { computed } from "nanostores";
 import { pseudoClassesByTag } from "@webstudio-is/html-data";
+import { isPseudoElement } from "@webstudio-is/css-data";
 import {
   type Instance,
   type StyleSource,
@@ -36,7 +37,6 @@ import { serverSyncStore } from "~/shared/sync/sync-stores";
 import { subscribe } from "~/shared/pubsub";
 import { $selectedInstance } from "~/shared/awareness";
 import { $instanceTags } from "./shared/model";
-import { humanizeString } from "~/shared/string-utils";
 
 // Declare command for this module
 declare module "~/shared/pubsub" {
@@ -87,7 +87,7 @@ const getOrCreateStyleSourceSelectionMutable = (
   return styleSourceSelection;
 };
 
-const addStyleSourceToInstaceMutable = (
+const addStyleSourceToInstanceMutable = (
   styleSourceSelections: StyleSourceSelections,
   styleSources: StyleSources,
   instanceId: Instance["id"],
@@ -126,7 +126,7 @@ const createStyleSource = (id: StyleSource["id"], name: string) => {
     [$styleSources, $styleSourceSelections],
     (styleSources, styleSourceSelections) => {
       styleSources.set(newStyleSource.id, newStyleSource);
-      addStyleSourceToInstaceMutable(
+      addStyleSourceToInstanceMutable(
         styleSourceSelections,
         styleSources,
         instanceId,
@@ -147,7 +147,7 @@ export const addStyleSourceToInstance = (
   serverSyncStore.createTransaction(
     [$styleSourceSelections, $styleSources],
     (styleSourceSelections, styleSources) => {
-      addStyleSourceToInstaceMutable(
+      addStyleSourceToInstanceMutable(
         styleSourceSelections,
         styleSources,
         instanceId,
@@ -278,27 +278,102 @@ const clearStyles = (styleSourceId: StyleSource["id"]) => {
   });
 };
 
+type SelectorConfig = {
+  type: "state" | "pseudoElement";
+  selector: string;
+  label: string;
+  source: "native" | "component" | "custom";
+};
+
+const getComponentStates = ({
+  predefinedStates,
+  componentStates,
+  instanceStyleSourceIds,
+  styles,
+  selectedStyleState,
+}: {
+  predefinedStates: string[];
+  componentStates: Array<{ label: string; selector: string }>;
+  instanceStyleSourceIds: Set<StyleSource["id"]>;
+  styles: Iterable<Pick<StyleDecl, "state" | "styleSourceId">>;
+  selectedStyleState: string | undefined;
+}): SelectorConfig[] => {
+  const allStates = [...pseudoClassesByTag["*"], ...predefinedStates];
+
+  const usedSelectors = new Set<string>();
+  for (const styleDecl of styles) {
+    if (
+      styleDecl.state &&
+      styleDecl.state.trim() &&
+      instanceStyleSourceIds.has(styleDecl.styleSourceId)
+    ) {
+      usedSelectors.add(styleDecl.state);
+    }
+  }
+
+  // Show selected state in menu immediately, before any styles are added
+  if (selectedStyleState && selectedStyleState.trim()) {
+    usedSelectors.add(selectedStyleState);
+  }
+
+  const allStateSelectors = new Set([...allStates, ...usedSelectors]);
+
+  const toConfig = (selector: string): SelectorConfig => ({
+    type: isPseudoElement(selector) ? "pseudoElement" : "state",
+    label: selector,
+    selector,
+    source: allStates.includes(selector) ? "native" : "custom",
+  });
+
+  const states = Array.from(allStateSelectors)
+    .filter((state) => !isPseudoElement(state))
+    .map(toConfig);
+
+  const pseudoElements = Array.from(allStateSelectors)
+    .filter(isPseudoElement)
+    .map(toConfig);
+
+  const componentStatesConfig = componentStates.map((item) => ({
+    type: "state" as const,
+    ...item,
+    source: "component" as const,
+  }));
+
+  return [...states, ...componentStatesConfig, ...pseudoElements];
+};
+
 const $componentStates = computed(
-  [$selectedInstance, $registeredComponentMetas, $instanceTags],
-  (selectedInstance, registeredComponentMetas, instanceTags) => {
+  [
+    $selectedInstance,
+    $registeredComponentMetas,
+    $instanceTags,
+    $styles,
+    $selectedStyleState,
+    $styleSourceSelections,
+  ],
+  (
+    selectedInstance,
+    registeredComponentMetas,
+    instanceTags,
+    styles,
+    selectedStyleState,
+    styleSourceSelections
+  ) => {
     if (selectedInstance === undefined) {
       return;
     }
     const tag = instanceTags.get(selectedInstance.id);
-    const tagStates = [
-      ...pseudoClassesByTag["*"],
-      ...(pseudoClassesByTag[tag ?? ""] ?? []),
-    ].map((state) => ({
-      category: "states" as const,
-      label: humanizeString(state),
-      selector: state,
-    }));
     const meta = registeredComponentMetas.get(selectedInstance.component);
-    const componentStates = (meta?.states ?? []).map((item) => ({
-      category: "component-states" as const,
-      ...item,
-    }));
-    return [...tagStates, ...componentStates];
+
+    return getComponentStates({
+      predefinedStates: pseudoClassesByTag[tag ?? ""] ?? [],
+      componentStates: meta?.states ?? [],
+      instanceStyleSourceIds: new Set(
+        styleSourceSelections.get(selectedInstance.id)?.values
+      ),
+      styles: styles.values(),
+      selectedStyleState,
+    });
   }
 );
 
@@ -323,9 +398,6 @@ const convertToInputItem = (
   };
 };
 
-/**
- * find all non-local and component style sources
- */
 const $availableStyleSources = computed([$styleSources], (styleSources) => {
   const availableStylesSources: StyleSourceInputItem[] = [];
   for (const styleSource of styleSources.values()) {
@@ -345,6 +417,9 @@ export const StyleSourcesSection = () => {
   const selectedInstanceStatesByStyleSourceId = useStore(
     $selectedInstanceStatesByStyleSourceId
   );
+  const selectedOrLastStyleSourceSelector = useStore(
+    $selectedOrLastStyleSourceSelector
+  );
 
   // Subscribe to focusStyleSourceInput command
   useEffect(() => {
@@ -361,9 +436,6 @@ export const StyleSourcesSection = () => {
       styleSource,
       selectedInstanceStatesByStyleSourceId.get(styleSource.id) ?? []
     )
-  );
-  const selectedOrLastStyleSourceSelector = useStore(
-    $selectedOrLastStyleSourceSelector
   );
 
   const [editingItemId, setEditingItemId] = useState<StyleSource["id"]>();
@@ -454,3 +526,5 @@ export const StyleSourcesSection = () => {
     </>
   );
 };
+
+export const __testing__ = { getComponentStates };

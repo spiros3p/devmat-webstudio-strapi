@@ -14,7 +14,7 @@
     "build:http-client": "pnpm --filter=@webstudio-is/http-client build",
     "dev": "pnpm build:http-client && remix vite:dev",
     "dev:auth": "pnpm build:http-client && DEBUG=OAuth2Strategy,ws:* remix vite:dev",
-    "typecheck": "tsc --noEmit --emitDeclarationOnly false",
+    "typecheck": "tsgo --noEmit --emitDeclarationOnly false",
     "test": "vitest run"
   },
   "dependencies": {
@@ -73,7 +73,7 @@
     "@webstudio-is/http-client": "workspace:*",
     "@webstudio-is/icons": "workspace:*",
     "@webstudio-is/image": "workspace:*",
-    "@webstudio-is/postrest": "workspace:*",
+    "@webstudio-is/postgrest": "workspace:*",
     "@webstudio-is/project": "workspace:*",
     "@webstudio-is/project-build": "workspace:*",
     "@webstudio-is/react-sdk": "workspace:*",

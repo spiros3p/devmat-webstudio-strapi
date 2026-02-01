@@ -58,7 +58,8 @@ const ViewMenuItem = () => {
 };
 
 export const Menu = () => {
-  const { hasProPlan } = useStore($userPlanFeatures);
+  const userPlanFeatures = useStore($userPlanFeatures);
+  const hasPaidPlan = userPlanFeatures.purchases.length > 0;
   const authPermit = useStore($authPermit);
   const authTokenPermission = useStore($authTokenPermissions);
   const authToken = useStore($authToken);
@@ -96,7 +97,7 @@ export const Menu = () => {
               $openProjectSettings.set("general");
             }}
           >
-            Project Settings
+            Project settings
           </DropdownMenuItem>
         </Tooltip>
         <DropdownMenuItem onSelect={() => emitCommand("openBreakpointsMenu")}>
@@ -246,7 +247,7 @@ export const Menu = () => {
 
         {isDesignMode && (
           <DropdownMenuItem onSelect={() => emitCommand("openCommandPanel")}>
-            Search & Commands
+            Search & commands
             <DropdownMenuItemRightSlot>
               <Kbd value={["meta", "k"]} />
             </DropdownMenuItemRightSlot>
@@ -254,7 +255,7 @@ export const Menu = () => {
         )}
 
         <DropdownMenuItem onSelect={() => emitCommand("openKeyboardShortcuts")}>
-          Keyboard Shortcuts
+          Keyboard shortcuts
           <DropdownMenuItemRightSlot>
             <Kbd value={["shift", "?"]} />
           </DropdownMenuItemRightSlot>
@@ -284,7 +285,7 @@ export const Menu = () => {
           </DropdownMenuSubContent>
         </DropdownMenuSub>
 
-        {hasProPlan === false && (
+        {hasPaidPlan === false && (
           <>
             <DropdownMenuSeparator />
             <DropdownMenuItem
