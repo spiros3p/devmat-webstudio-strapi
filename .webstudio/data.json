@@ -3,7 +3,7 @@
     "id": "04ec49c8-b483-4b5b-b3d4-22b1921d3164",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
     "version": 1201,
-    "createdAt": "2026-02-01T08:00:28.008+00:00",
+    "createdAt": "2026-02-01T08:00:28.008+00:01",
     "updatedAt": "2026-02-01T08:00:28.008+00:00",
     "pages": {
       "meta": {
@@ -19712,7 +19712,7 @@
           "name": "cmsMediaUrlLocal",
           "value": {
             "type": "string",
-            "value": "http://localhost:1337"
+            "value": "https://admin.devmat.spirosroadto.info"
           }
         }
       ],

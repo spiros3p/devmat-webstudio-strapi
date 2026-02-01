@@ -24,7 +24,8 @@
     "local:release": "pnpm build && pnpm dts && pnpm local:version-snapshot && pnpm local:publish-snapshot && pnpm local:dangerously-undo-version-snapshot && echo \"now execute\npnpm up -r -L '@webstudio-is/*' --registry http://localhost:4873\"",
     "typecheck": "tsc",
     "start:app": "PORT=3030 react-router-serve ./build/server/index.js",
-    "discardThem": "git restore .dockerignore Dockerfile package.json"
+    "discardThem": "git restore .dockerignore Dockerfile package.json",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
@@ -44,6 +45,8 @@
     "eslint": "^9.22.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-unicorn": "^57.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "nano-staged": "^0.8.0",
     "prettier": "3.5.3",
     "react": "18.3.0-canary-14898b6a9-20240318",
@@ -61,6 +64,14 @@
   },
   "nano-staged": {
     "*.{ts,tsx,js,json,css,md}": "prettier --write"
+  },
+  "lint-staged": {
+    "**/.webstudio/data.json": [
+      "node scripts/fix-urls.mjs"
+    ],
+    "**/app/__generated__/[home]._index.tsx": [
+      "node scripts/fix-urls.mjs"
+    ]
   },
   "prettier": {
     "trailingComma": "es5",
