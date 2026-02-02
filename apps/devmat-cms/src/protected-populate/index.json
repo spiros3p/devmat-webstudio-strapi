@@ -1,38 +1,61 @@
 {
    "GET /api/general": {
       "content-type": "api::general.general",
-      "roles": {
-         "authenticated": {},
-         "public": {
+      "populate": {
+         "heroSection": {
+            "fields": [
+               "heroTitle",
+               "heroSubTitle"
+            ],
             "populate": {
-               "heroSection": {
+               "leftButton": {
                   "fields": [
-                     "heroTitle",
-                     "heroSubTitle"
+                     "title",
+                     "href",
+                     "target"
+                  ]
+               },
+               "rightButton": {
+                  "fields": [
+                     "target",
+                     "href",
+                     "title"
+                  ]
+               },
+               "heroMedia": {
+                  "fields": [
+                     "name",
+                     "alternativeText",
+                     "caption",
+                     "width",
+                     "height",
+                     "formats",
+                     "size",
+                     "url",
+                     "previewUrl",
+                     "documentId"
+                  ]
+               }
+            }
+         },
+         "customerLogos": {
+            "fields": [
+               "sectionTitle"
+            ],
+            "populate": {
+               "customersLogos": {
+                  "fields": [
+                     "name",
+                     "url"
                   ],
                   "populate": {
-                     "leftButton": {
-                        "fields": [
-                           "title",
-                           "href",
-                           "target"
-                        ]
-                     },
-                     "rightButton": {
-                        "fields": [
-                           "target",
-                           "href",
-                           "title"
-                        ]
-                     },
-                     "heroMedia": {
+                     "logo": {
                         "fields": [
                            "name",
                            "alternativeText",
                            "caption",
                            "width",
                            "height",
-                           "formats",
                            "size",
                            "url",
                            "previewUrl",
@@ -40,48 +63,26 @@
                         ]
                      }
                   }
-               },
-               "customerLogos": {
-                  "fields": [
-                     "sectionTitle"
-                  ],
-                  "populate": {
-                     "customersLogos": {
-                        "fields": [
-                           "name",
-                           "url"
-                        ],
-                        "populate": {
-                           "logo": {
-                              "fields": [
-                                 "name",
-                                 "alternativeText",
-                                 "caption",
-                                 "width",
-                                 "height",
-                                 "size",
-                                 "url",
-                                 "previewUrl",
-                                 "documentId"
-                              ]
-                           }
-                        }
-                     }
-                  }
-               },
-               "benefitsSection": {
-                  "fields": [
-                     "title",
-                     "subtitle"
-                  ]
                }
-            },
+            }
+         },
+         "benefitsSection": {
             "fields": [
-               "locale",
-               "documentId"
+               "title",
+               "subtitle"
+            ]
+         },
+         "gettingStartedSection": {
+            "fields": [
+               "title",
+               "subtitle"
             ]
          }
-      }
+      },
+      "fields": [
+         "locale",
+         "documentId"
+      ]
    },
    "GET /api/benefits": {
       "content-type": "api::benefit.benefit",
@@ -120,6 +121,16 @@
          }
       },
       "fields": [
+         "title",
+         "subtitle",
+         "locale",
+         "id"
+      ]
+   },
+   "GET /api/getting-started-steps": {
+      "content-type": "api::getting-started-step.getting-started-step",
+      "fields": [
+         "index",
          "title",
          "subtitle",
          "locale",

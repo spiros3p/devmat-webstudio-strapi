@@ -44,6 +44,17 @@
       },
       "component": "home-page.benefits-section",
       "repeatable": false
+    },
+    "gettingStartedSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "home-page.getting-started-section",
+      "repeatable": false,
+      "required": false
     }
   }
 }
