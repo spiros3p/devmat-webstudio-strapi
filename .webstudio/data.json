@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "340c608e-f073-4241-ac4b-04e7ab836c31",
+    "id": "0c2b865a-9845-4510-85a1-a534c8de57af",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 1373,
-    "createdAt": "2026-02-02T14:40:20.272+00:00",
-    "updatedAt": "2026-02-02T14:40:20.272+00:00",
+    "version": 1374,
+    "createdAt": "2026-02-02T14:57:18.006+00:00",
+    "updatedAt": "2026-02-02T14:57:18.006+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -20774,6 +20774,16 @@
           "name": "optimize",
           "type": "boolean",
           "value": false
+        }
+      ],
+      [
+        "okyXJybL6LPzhm2p_XCM7",
+        {
+          "id": "okyXJybL6LPzhm2p_XCM7",
+          "instanceId": "oTglMSGRZFJzbNRl8TjP4",
+          "name": "data-ws-show",
+          "type": "expression",
+          "value": "!!$ws$dataSource$ZKsmreDzNkyXJGbuWF3_8.data.data.length"
         }
       ]
     ],
