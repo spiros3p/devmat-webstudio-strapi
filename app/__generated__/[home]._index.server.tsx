@@ -5,6 +5,7 @@
       import type { PageMeta } from "@webstudio-is/sdk";
       import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
+  let cmsUrl = "http://172.18.0.23:1337"
   const homepagedatacms_1: ResourceRequest = {
     name: "home page data | cms",
     url: "http://172.18.0.23:1337/api/general",
@@ -14,8 +15,18 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
+  const benfitsOfDevmat_1: ResourceRequest = {
+    name: "benfitsOfDevmat",
+    url: cmsUrl+"/api/benefits",
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["homepagedatacms_1", homepagedatacms_1],
+    ["benfitsOfDevmat_1", benfitsOfDevmat_1],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])

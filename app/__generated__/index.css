@@ -28,6 +28,12 @@
   h2.w-element {
     box-sizing: border-box
   }
+  h3.w-element {
+    box-sizing: border-box
+  }
+  h4.w-element {
+    box-sizing: border-box
+  }
   p.w-element {
     box-sizing: border-box
   }
@@ -627,8 +633,8 @@
   .cyiufop {
     object-fit: cover
   }
-  .cpo4c4l {
-    margin-bottom: 50px
+  .c1sb8ohy {
+    margin-bottom: 70px
   }
   .c9s2vs7 {
     margin-top: 70px
@@ -641,6 +647,9 @@
   }
   .c1ht3eul {
     padding-bottom: 40px
+  }
+  .cjocp00 {
+    margin-bottom: 0px
   }
   .cpii4el {
     max-width: 620px
@@ -887,11 +896,71 @@
   .cb65ij0 {
     border-bottom-right-radius: 10px
   }
-  .c16dp33l {
-    box-shadow: 0px 0px 20px 30px rgb(0 0 0 / 0.1) inset
+  .cec8bqd {
+    box-shadow: 0px 0px 20px 30px rgb(0 0 0 / 0.1) inset, 0px 2px 3px 0px rgb(0 0 0 / 0.2)
   }
   .c3txa2i {
     padding: 4px
+  }
+  .c1735zj0 {
+    font-size: 2rem
+  }
+  .c1nr3lww {
+    font-size: 1rem
+  }
+  .crl2cyx {
+    max-width: 600px
+  }
+  .c7k8dvj {
+    margin-bottom: 28px
+  }
+  .cxd2r2c {
+    width: 370px
+  }
+  .ckj6qkx {
+    height: 320px
+  }
+  .cwscl0b {
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 0.2)
+  }
+  .c13y6mwa {
+    background-color: ghostwhite
+  }
+  .cz1ncie {
+    padding: 2rem
+  }
+  .cp01muw {
+    margin-top: 8px
+  }
+  .ccn41lv {
+    line-height: 1.6
+  }
+  .c1yral3q {
+    font-size: 14px
+  }
+  .chgofs2 {
+    margin-top: 0em
+  }
+  .cfymgcs {
+    margin-bottom: 0em
+  }
+  .c1va13rh {
+    text-align: justify
+  }
+  .c19dwi73 {
+    width: 100px
+  }
+  .c1tl8dvd {
+    height: 100px
+  }
+  .csdhugg {
+    background-color: rgb(245 247 250 / 1)
+  }
+  .ccgn8hl {
+    padding-top: 30px
+  }
+  .c1g0sytn {
+    padding-bottom: 50px
   }
 }
 @media all and (max-width: 991px) {
@@ -1054,5 +1123,11 @@
   }
   .c8n6rm {
     padding: 0
+  }
+  .c6g143x {
+    width: 280px
+  }
+  .c15pb7kq {
+    height: 330px
   }
 }
