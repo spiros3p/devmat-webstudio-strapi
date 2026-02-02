@@ -68,6 +68,12 @@
                         }
                      }
                   }
+               },
+               "benefitsSection": {
+                  "fields": [
+                     "title",
+                     "subtitle"
+                  ]
                }
             },
             "fields": [
@@ -76,5 +82,48 @@
             ]
          }
       }
+   },
+   "GET /api/benefits": {
+      "content-type": "api::benefit.benefit",
+      "populate": {
+         "icon": {
+            "fields": [
+               "name",
+               "id"
+            ],
+            "populate": {
+               "icon": {
+                  "fields": [
+                     "name",
+                     "alternativeText",
+                     "caption",
+                     "width",
+                     "height",
+                     "size",
+                     "url",
+                     "id"
+                  ]
+               }
+            }
+         },
+         "image": {
+            "fields": [
+               "name",
+               "alternativeText",
+               "caption",
+               "width",
+               "height",
+               "size",
+               "url",
+               "id"
+            ]
+         }
+      },
+      "fields": [
+         "title",
+         "subtitle",
+         "locale",
+         "id"
+      ]
    }
 }

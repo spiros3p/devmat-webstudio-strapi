@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "icon_assets",
+  "info": {
+    "singularName": "icon-asset",
+    "pluralName": "icon-assets",
+    "displayName": "Icon asset"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

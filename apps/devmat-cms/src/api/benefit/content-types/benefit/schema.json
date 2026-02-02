@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "benefits",
+  "info": {
+    "singularName": "benefit",
+    "pluralName": "benefits",
+    "displayName": "Benefits of product"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "icon": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::icon-asset.icon-asset"
+    },
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true,
+      "unique": true
+    },
+    "subtitle": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": false
+    },
+    "image": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

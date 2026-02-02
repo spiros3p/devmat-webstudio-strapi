@@ -34,6 +34,16 @@
       },
       "component": "home-page.customer-s-logos-section",
       "repeatable": false
+    },
+    "benefitsSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "home-page.benefits-section",
+      "repeatable": false
     }
   }
 }
