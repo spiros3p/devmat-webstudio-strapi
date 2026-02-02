@@ -11,7 +11,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-02T14:57:18.006Z";
+      export const lastPublished = "2026-02-02T22:49:02.451Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -33,6 +33,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 let homepagedatacms = useResource("homepagedatacms_1")
 let [cmsMediaUrlLocal, set$cmsMediaUrlLocal] = useVariableState<any>("https://admin.devmat.spirosroadto.info")
 let benfitsOfDevmat = useResource("benfitsOfDevmat_1")
+let gettingStartedSteps = useResource("gettingStartedSteps_1")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
 <div
@@ -415,11 +416,11 @@ className={`w-image c11w9ocq cq9s6sa c1lpmvvg c1q5766j cyiufop`} />
 <div
 className={`w-element csdhugg ccgn8hl c1g0sytn`}>
 <h2
-className={`w-element cavlpe c53v5zz c1735zj0`}>
+className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
 {homepagedatacms?.data?.data?.benefitsSection?.title}
 </h2>
 <h3
-className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c7k8dvj`}>
+className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c7k8dvj cseqxw9 c1g7thye`}>
 {  homepagedatacms?.data?.data?.benefitsSection?.subtitle}
 </h3>
 <div
@@ -432,7 +433,7 @@ className={`w-element cyksmbj c1oji2iw c7pv373 c1rc0m8f c1ejoj25 cy0z055`}>
   return (
 <Fragment key={collectionItemKey}>
 <div
-className={`w-element cyksmbj c1oji2iw ceh8ohp c1i7snbb cxd2r2c ckj6qkx cwscl0b c2ace6m cjaeftc c15ykucn cb65ij0 c13y6mwa cz1ncie c6g143x c15pb7kq`}>
+className={`w-element cyksmbj c1oji2iw ceh8ohp c1i7snbb cxd2r2c ckj6qkx cwscl0b c2ace6m cjaeftc c15ykucn cb65ij0 c11w6vg0 c11pah1h c1albq49 cug67g7 c13y6mwa c6g143x c15pb7kq`}>
 <div
 className={`w-element c19dwi73 c1tl8dvd cu3uc3t cyksmbj c1oji2iw c7pv373`}>
 {(!(collectionItem_2?.image)) &&
@@ -454,12 +455,57 @@ className={`w-image c1pwlyx4 ctvij5o cyiufop`} />
 }
 </div>
 <h4
-className={`w-element c53v5zz c19jcr0r cp01muw`}>
+className={`w-element c53v5zz c19jcr0r cp01muw c1przhxw`}>
 {collectionItem_2?.title}
 </h4>
 <p
 className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs c1va13rh`}>
 {collectionItem_2?.subtitle}
+</p>
+</div>
+</Fragment>
+)
+})
+}
+</div>
+</div>
+}
+{(!!gettingStartedSteps?.data?.data?.length) &&
+<div
+className={`w-element c1w5qiyf c7pv373 ccgn8hl c13imvs7`}>
+<h2
+className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
+{homepagedatacms?.data?.data?.gettingStartedSection?.title}
+</h2>
+<h3
+className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j cs0vytw cseqxw9 c1g7thye`}>
+{  homepagedatacms?.data?.data?.gettingStartedSection?.subtitle}
+</h3>
+<div
+className={`w-element cyksmbj cgocsqs c7pv373 cfg2sgc c1qmi4iq c1rc0m8f csjbh93 c2zh38f`}>
+{Object.entries(
+  // @ts-ignore
+  gettingStartedSteps?.data?.data ?? {}
+).map(([_key, collectionItem_3]: any) => {
+  const collectionItemKey_1 = Array.isArray(gettingStartedSteps?.data?.data) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_1}>
+<div
+className={`w-element chxr0yu cavlpe`}>
+<div
+className={`w-element`}>
+<span
+className={`w-element c1edpqcq c1ym4vzx cqgrdaa c12w5tc0 c1gdf85e ch2shl c1ox04z8 c57zjvh c143tev2 cu2xsck cavlpe c1w5qiyf cv7jxuo`}>
+{collectionItem_3?.index}
+</span>
+</div>
+<h4
+className={`w-element c53v5zz c19jcr0r cp01muw c1przhxw`}>
+{collectionItem_3?.title}
+</h4>
+<p
+className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs cavlpe`}>
+{collectionItem_3?.subtitle}
 </p>
 </div>
 </Fragment>

@@ -37,6 +37,9 @@
   p.w-element {
     box-sizing: border-box
   }
+  span.w-element {
+    box-sizing: border-box
+  }
   img.w-image {
     box-sizing: border-box;
     max-width: 100%;
@@ -905,6 +908,12 @@
   .c1735zj0 {
     font-size: 2rem
   }
+  .cseqxw9 {
+    padding-left: 8px
+  }
+  .c1g7thye {
+    padding-right: 8px
+  }
   .c1nr3lww {
     font-size: 1rem
   }
@@ -923,11 +932,20 @@
   .cwscl0b {
     box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 0.2)
   }
+  .c11w6vg0 {
+    padding-left: 2rem
+  }
+  .c11pah1h {
+    padding-top: 1.6rem
+  }
+  .c1albq49 {
+    padding-bottom: 2rem
+  }
+  .cug67g7 {
+    padding-right: 2rem
+  }
   .c13y6mwa {
     background-color: ghostwhite
-  }
-  .cz1ncie {
-    padding: 2rem
   }
   .cp01muw {
     margin-top: 8px
@@ -961,6 +979,45 @@
   }
   .c1g0sytn {
     padding-bottom: 50px
+  }
+  .cs0vytw {
+    margin-bottom: 36px
+  }
+  .cfg2sgc {
+    column-gap: 20px
+  }
+  .c1qmi4iq {
+    row-gap: 20px
+  }
+  .c2zh38f {
+    padding-bottom: 20px
+  }
+  .chxr0yu {
+    width: 320px
+  }
+  .c1w5qiyf {
+    align-content: center
+  }
+  .c13imvs7 {
+    padding-bottom: 60px
+  }
+  .c1edpqcq {
+    background-color: rgb(0 102 204 / 1)
+  }
+  .c1ym4vzx {
+    border-top-left-radius: 50%
+  }
+  .cqgrdaa {
+    border-top-right-radius: 50%
+  }
+  .c12w5tc0 {
+    border-bottom-left-radius: 50%
+  }
+  .c1gdf85e {
+    border-bottom-right-radius: 50%
+  }
+  .cv7jxuo {
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 0.46)
   }
 }
 @media all and (max-width: 991px) {
