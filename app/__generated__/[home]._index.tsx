@@ -11,7 +11,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-02T22:49:02.451Z";
+      export const lastPublished = "2026-02-02T23:53:45.736Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -34,6 +34,7 @@ let homepagedatacms = useResource("homepagedatacms_1")
 let [cmsMediaUrlLocal, set$cmsMediaUrlLocal] = useVariableState<any>("https://admin.devmat.spirosroadto.info")
 let benfitsOfDevmat = useResource("benfitsOfDevmat_1")
 let gettingStartedSteps = useResource("gettingStartedSteps_1")
+let solutions = useResource("solutions_1")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
 <div
@@ -506,6 +507,55 @@ className={`w-element c53v5zz c19jcr0r cp01muw c1przhxw`}>
 <p
 className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs cavlpe`}>
 {collectionItem_3?.subtitle}
+</p>
+</div>
+</Fragment>
+)
+})
+}
+</div>
+</div>
+}
+{(!!solutions?.data?.data?.length) &&
+<div
+className={`w-element ccgn8hl c13imvs7 csdhugg`}>
+<h2
+className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
+{homepagedatacms?.data?.data?.solutions?.title}
+</h2>
+<h3
+className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j cs0vytw cseqxw9 c1g7thye`}>
+{homepagedatacms?.data?.data?.solutions?.subtitle}
+</h3>
+<div
+className={`w-element cyksmbj c1rc0m8f cgocsqs c7pv373 c132tfj6 cravwn1`}>
+{Object.entries(
+  // @ts-ignore
+  solutions?.data?.data ?? {}
+).map(([_key, collectionItem_4]: any) => {
+  const collectionItemKey_2 = Array.isArray(solutions?.data?.data) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_2}>
+<div
+className={`w-element chxr0yu c4tl1wi c2ace6m cjaeftc c15ykucn cb65ij0 cmx5vkr cwscl0b c1kelpe5 ct2ibbp c14pkkrt c1ldhh9k czzvbuw`}>
+<h4
+className={`w-element c53v5zz c19jcr0r cp01muw c1przhxw cbbmne5 cu3uc3t cyksmbj c1oji2iw c1029aa7 c1tjvjms`}>
+{(!!collectionItem_4?.icon) &&
+<Image
+src={cmsMediaUrlLocal+collectionItem_4?.icon?.icon?.url}
+width={20}
+height={20}
+optimize={false}
+className={`w-image`} />
+}
+<span
+className={`w-element c2a889p`}>
+{collectionItem_4?.title}
+</span>
+</h4>
+<p
+className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs cu3uc3t`}>
+{collectionItem_4?.subtitle}
 </p>
 </div>
 </Fragment>
