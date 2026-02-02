@@ -77,6 +77,12 @@
                "title",
                "subtitle"
             ]
+         },
+         "solutions": {
+            "fields": [
+               "title",
+               "subtitle"
+            ]
          }
       },
       "fields": [
@@ -136,5 +142,35 @@
          "locale",
          "id"
       ]
+   },
+   "GET /api/solutions": {
+      "content-type": "api::solution.solution",
+      "fields": [
+         "title",
+         "id",
+         "locale",
+         "subtitle"
+      ],
+      "populate": {
+         "icon": {
+            "fields": [
+               "name",
+               "id"
+            ],
+            "populate": {
+               "icon": {
+                  "fields": [
+                     "name",
+                     "alternativeText",
+                     "caption",
+                     "width",
+                     "height",
+                     "url",
+                     "id"
+                  ]
+               }
+            }
+         }
+      }
    }
 }

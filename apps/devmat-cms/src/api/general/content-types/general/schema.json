@@ -55,6 +55,16 @@
       "component": "home-page.getting-started-section",
       "repeatable": false,
       "required": false
+    },
+    "solutions": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "home-page.solutions",
+      "repeatable": false
     }
   }
 }
