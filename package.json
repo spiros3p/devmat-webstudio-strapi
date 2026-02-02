@@ -67,6 +67,9 @@
     "*.{ts,tsx,js,json,css,md}": "prettier --write"
   },
   "lint-staged": {
+    "apps/devmat-cms/**/*": [
+      "echo 'Skipping CMS changes'"
+    ],
     "**/.webstudio/data.json": [
       "node scripts/fix-url.js"
     ],
