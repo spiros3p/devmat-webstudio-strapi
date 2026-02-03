@@ -11,7 +11,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-02T23:53:45.736Z";
+      export const lastPublished = "2026-02-03T00:11:01.914Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -425,7 +425,7 @@ className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j
 {  homepagedatacms?.data?.data?.benefitsSection?.subtitle}
 </h3>
 <div
-className={`w-element cyksmbj c1oji2iw c7pv373 c1rc0m8f c1ejoj25 cy0z055`}>
+className={`w-element cyksmbj c1oji2iw c7pv373 c1rc0m8f c1ejoj25 cy0z055 cax2fkw c1xz0hfv c1nn1c1j`}>
 {Object.entries(
   // @ts-ignore
   benfitsOfDevmat?.data?.data ?? {}
@@ -483,7 +483,7 @@ className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j
 {  homepagedatacms?.data?.data?.gettingStartedSection?.subtitle}
 </h3>
 <div
-className={`w-element cyksmbj cgocsqs c7pv373 cfg2sgc c1qmi4iq c1rc0m8f csjbh93 c2zh38f`}>
+className={`w-element cyksmbj cgocsqs c7pv373 cfg2sgc c1qmi4iq c1rc0m8f csjbh93 c2zh38f c1xz0hfv c1nn1c1j cax2fkw`}>
 {Object.entries(
   // @ts-ignore
   gettingStartedSteps?.data?.data ?? {}
@@ -492,7 +492,7 @@ className={`w-element cyksmbj cgocsqs c7pv373 cfg2sgc c1qmi4iq c1rc0m8f csjbh93 
   return (
 <Fragment key={collectionItemKey_1}>
 <div
-className={`w-element chxr0yu cavlpe`}>
+className={`w-element chxr0yu cavlpe cu19h6b`}>
 <div
 className={`w-element`}>
 <span
@@ -528,7 +528,7 @@ className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j
 {homepagedatacms?.data?.data?.solutions?.subtitle}
 </h3>
 <div
-className={`w-element cyksmbj c1rc0m8f cgocsqs c7pv373 c132tfj6 cravwn1`}>
+className={`w-element cyksmbj c1rc0m8f cgocsqs c7pv373 c132tfj6 cravwn1 cax2fkw c1xz0hfv c1nn1c1j`}>
 {Object.entries(
   // @ts-ignore
   solutions?.data?.data ?? {}
@@ -537,7 +537,7 @@ className={`w-element cyksmbj c1rc0m8f cgocsqs c7pv373 c132tfj6 cravwn1`}>
   return (
 <Fragment key={collectionItemKey_2}>
 <div
-className={`w-element chxr0yu c4tl1wi c2ace6m cjaeftc c15ykucn cb65ij0 cmx5vkr cwscl0b c1kelpe5 ct2ibbp c14pkkrt c1ldhh9k czzvbuw`}>
+className={`w-element chxr0yu c4tl1wi c2ace6m cjaeftc c15ykucn cb65ij0 cmx5vkr cwscl0b c1kelpe5 ct2ibbp c14pkkrt c1ldhh9k czzvbuw cu19h6b c1noyxyb`}>
 <h4
 className={`w-element c53v5zz c19jcr0r cp01muw c1przhxw cbbmne5 cu3uc3t cyksmbj c1oji2iw c1029aa7 c1tjvjms`}>
 {(!!collectionItem_4?.icon) &&
