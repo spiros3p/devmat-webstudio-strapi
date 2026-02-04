@@ -5,13 +5,13 @@
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
-import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuLink as NavigationMenuLink, NavigationMenuViewport as NavigationMenuViewport } from "@webstudio-is/sdk-components-react-radix";
-import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Paragraph as Paragraph, Fragment as Fragment_1, Image as Image, Slot as Slot } from "@webstudio-is/sdk-components-react";
+import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuLink as NavigationMenuLink, NavigationMenuViewport as NavigationMenuViewport, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
+import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Paragraph as Paragraph, Fragment as Fragment_1, Image as Image, Slot as Slot, MarkdownEmbed as MarkdownEmbed } from "@webstudio-is/sdk-components-react";
 
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-04T20:36:21.730Z";
+      export const lastPublished = "2026-02-04T21:37:41.622Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -36,6 +36,7 @@ let benfitsOfDevmat = useResource("benfitsOfDevmat_1")
 let gettingStartedSteps = useResource("gettingStartedSteps_1")
 let solutions = useResource("solutions_1")
 let clientReviewsReq = useResource("clientReviewsReq_1")
+let FAQs = useResource("FAQs_1")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
 <div
@@ -621,6 +622,71 @@ className={`w-element cseqxw9 c1g7thye cu3uc3t ccn41lv c16wa6q4`}>
 }
 </div>
 </div>
+}
+{(!!FAQs?.data?.data?.length) &&
+<Box
+tag={"section"}
+className={`w-box ccgn8hl c13imvs7 c1f5y87x c1y6e6gy`}>
+<h2
+className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
+{homepagedatacms?.data?.data?.faqs?.title}
+</h2>
+<h3
+className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1cf4c3b cseqxw9 c1g7thye`}>
+{homepagedatacms?.data?.data?.faqs?.subtitle}
+</h3>
+<Box
+className={`w-box c1nn1c1j c1xz0hfv c1przhxw cxg5738 cyksmbj c1i7snbb c1oji2iw c7pv373 cqs24yx crq0lw5 c12c3gfp c19d7s0z`}>
+<Accordion
+collapsible={true}
+defaultValue={"0"}
+className={`w-accordion cyksmbj c1i7snbb cpoffl7 cqf8bry c1przhxw c1dqo4lx`}>
+{Object.entries(
+  // @ts-ignore
+  FAQs?.data?.data ?? {}
+).map(([_key, collectionItem_6]: any) => {
+  const collectionItemKey_4 = Array.isArray(FAQs?.data?.data) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_4}>
+<AccordionItem
+data-ws-index="0"
+value={collectionItem_6?.id}
+className={`w-item csdhugg c2ace6m cjaeftc c15ykucn cb65ij0 c17lpirz`}>
+<AccordionHeader
+className={`w-item-header`}>
+<AccordionTrigger
+className={`w-item-trigger c19ayrcm cm1hduf criptam c1wt1jtj cyksmbj cz7blj3 c1q7lfpp c1oji2iw c15rivg7 c2ueswb c12lbw13 cu3uc3t c19wjuga cnkf3ke cjtheg6 clmafat c1rkdu33 c2i0qoz c1przhxw c1sptf7h c13vx7e3 cqdt8qy c1r327ph c1rz3epl c1vfrllj c12vkfrs c1659ldh c1gaf8ah c13tjyny ca0pwlj`}>
+<Text
+className={`w-text c71ptit ca5o0vn ca158u0 ck8bb3l c53v5zz`}>
+{collectionItem_6?.question}
+</Text>
+<Box
+className={`w-box c1kb9p4l co4vxu0 c1wpuplm c1lo2dsu cvqk5mf c1sh59al c1fsquqg c1mucujo c1o70tqg`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\" width=\"24px\" fill=\"#14457b\"><path d=\"M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z\"/></svg>"}
+className={`w-html-embed c1rupdtc`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+data-ani={"expand"}
+className={`w-item-content`}>
+<Box
+className={`w-box c72otkl cseqxw9 c1g7thye`}>
+<MarkdownEmbed
+code={collectionItem_6?.answer}
+className={`w-markdown-embed ccn41lv c1bjxlr9 clh9rxp`}>
+</MarkdownEmbed>
+</Box>
+</AccordionContent>
+</AccordionItem>
+</Fragment>
+)
+})
+}
+</Accordion>
+</Box>
+</Box>
 }
 </Body>
 }

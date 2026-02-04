@@ -60,6 +60,15 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
+  const FAQs: ResourceRequest = {
+    name: "FAQs ",
+    url: cmsUrl+'/api/faqs',
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["SiteState_1", SiteState_1],
     ["homepagedatacms", homepagedatacms],
@@ -67,6 +76,7 @@ export const getResources = (_props: { system: System }) => {
     ["gettingStartedSteps", gettingStartedSteps],
     ["solutions", solutions],
     ["clientReviewsReq", clientReviewsReq],
+    ["FAQs", FAQs],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])
