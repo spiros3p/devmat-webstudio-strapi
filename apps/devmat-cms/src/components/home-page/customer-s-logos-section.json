@@ -7,7 +7,8 @@
   "options": {},
   "attributes": {
     "sectionTitle": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "customersLogos": {
       "type": "component",

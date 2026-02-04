@@ -83,6 +83,12 @@
                "title",
                "subtitle"
             ]
+         },
+         "clientReviews": {
+            "fields": [
+               "title",
+               "subtitle"
+            ]
          }
       },
       "fields": [
@@ -172,5 +178,38 @@
             }
          }
       }
+   },
+   "GET /api/client-reviews": {
+      "content-type": "api::client-review.client-review",
+      "populate": {
+         "icon": {
+            "fields": [
+               "name",
+               "id"
+            ],
+            "populate": {
+               "icon": {
+                  "fields": [
+                     "name",
+                     "alternativeText",
+                     "caption",
+                     "width",
+                     "height",
+                     "formats",
+                     "url",
+                     "documentId",
+                     "size"
+                  ]
+               }
+            }
+         }
+      },
+      "fields": [
+         "name",
+         "title",
+         "message",
+         "locale",
+         "id"
+      ]
    }
 }

@@ -65,6 +65,16 @@
       },
       "component": "home-page.solutions",
       "repeatable": false
+    },
+    "clientReviews": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "home-page.client-reviews",
+      "repeatable": false
     }
   }
 }

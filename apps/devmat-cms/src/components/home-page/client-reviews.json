@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_home_page_getting_started_sections",
+  "collectionName": "components_home_page_client_reviews",
   "info": {
-    "displayName": "Getting started section",
-    "icon": "brush"
+    "displayName": "clientReviews",
+    "icon": "cup"
   },
   "options": {},
   "attributes": {
@@ -11,7 +11,8 @@
       "required": true
     },
     "subtitle": {
-      "type": "text"
+      "type": "text",
+      "required": false
     }
   },
   "config": {}
