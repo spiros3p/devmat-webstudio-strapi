@@ -11,7 +11,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-03T00:11:01.914Z";
+      export const lastPublished = "2026-02-04T12:11:54.544Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -35,6 +35,7 @@ let [cmsMediaUrlLocal, set$cmsMediaUrlLocal] = useVariableState<any>("https://ad
 let benfitsOfDevmat = useResource("benfitsOfDevmat_1")
 let gettingStartedSteps = useResource("gettingStartedSteps_1")
 let solutions = useResource("solutions_1")
+let clientReviewsReq = useResource("clientReviewsReq_1")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
 <div
@@ -556,6 +557,62 @@ className={`w-element c2a889p`}>
 <p
 className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs cu3uc3t`}>
 {collectionItem_4?.subtitle}
+</p>
+</div>
+</Fragment>
+)
+})
+}
+</div>
+</div>
+}
+{(!!clientReviewsReq?.data?.data?.length) &&
+<div
+className={`w-element ccgn8hl c13imvs7`}>
+<h2
+className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
+{homepagedatacms?.data?.data?.clientReviews?.title}
+</h2>
+<h3
+className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1cf4c3b cseqxw9 c1g7thye`}>
+{homepagedatacms?.data?.data?.clientReviews?.subtitle}
+</h3>
+<div
+className={`w-element cyksmbj cgocsqs c7pv373 c1rc0m8f cax2fkw c1xz0hfv c1nn1c1j c132tfj6 cravwn1`}>
+{Object.entries(
+  // @ts-ignore
+  clientReviewsReq?.data?.data ?? {}
+).map(([_key, collectionItem_5]: any) => {
+  const collectionItemKey_3 = Array.isArray(clientReviewsReq?.data?.data) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_3}>
+<div
+className={`w-element cxd2r2c c6xo9yz csjbh93 c2zh38f ci9iosc ckscsr3 csdhugg c2ace6m cjaeftc c15ykucn cb65ij0 cwscl0b cu19h6b c1ltbvr`}>
+<div
+className={`w-element cyksmbj cn2cawe ceqpkba c1r678ej`}>
+{(!!collectionItem_5?.icon) &&
+<Image
+optimize={false}
+width={40}
+height={40}
+src={cmsMediaUrlLocal+collectionItem_5?.icon?.icon?.url}
+className={`w-image c1ym4vzx cqgrdaa c12w5tc0 c1gdf85e c18vsw38 cmx5vkr c57zjvh c143tev2 c1o9f9gj`} />
+}
+<div
+className={`w-element c1przhxw cyksmbj c1i7snbb c1029aa7 c1tjvjms`}>
+<span
+className={`w-element c53v5zz cjocp00 c1kgmnno c1przhxw cbbmne5 cu3uc3t cyksmbj c1oji2iw c1029aa7 c1tjvjms ch2shl c71ptit`}>
+{collectionItem_5?.name}
+</span>
+<span
+className={`w-element c1bjxlr9 c1yral3q`}>
+{collectionItem_5?.title}
+</span>
+</div>
+</div>
+<p
+className={`w-element cseqxw9 c1g7thye cu3uc3t ccn41lv c16wa6q4`}>
+{collectionItem_5?.message}
 </p>
 </div>
 </Fragment>

@@ -42,11 +42,21 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
+  const clientReviewsReq: ResourceRequest = {
+    name: "clientReviewsReq",
+    url: cmsUrl+'/api/client-reviews',
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["homepagedatacms", homepagedatacms],
     ["benfitsOfDevmat", benfitsOfDevmat],
     ["gettingStartedSteps", gettingStartedSteps],
     ["solutions", solutions],
+    ["clientReviewsReq", clientReviewsReq],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])
