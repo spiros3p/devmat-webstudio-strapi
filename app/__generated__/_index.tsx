@@ -10,7 +10,7 @@ import { Image as Image } from "@webstudio-is/sdk-components-react";
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-04T12:11:54.544Z";
+      export const lastPublished = "2026-02-04T20:36:21.730Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 

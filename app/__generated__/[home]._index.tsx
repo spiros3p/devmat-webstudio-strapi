@@ -11,7 +11,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-04T12:11:54.544Z";
+      export const lastPublished = "2026-02-04T20:36:21.730Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -384,7 +384,7 @@ className={`w-html-embed`} />
 </div>
 {(!!homepagedatacms?.data?.data?.customerLogos?.customersLogos?.length) &&
 <div
-className={`w-element c1sb8ohy c9s2vs7`}>
+className={`w-element c1sb8ohy c9s2vs7 c1f5y87x c1y6e6gy`}>
 <h3
 className={`w-element cavlpe c1bjxlr9 cntodcp csa87u c1u6lavf c1dhh8cz`}>
 {homepagedatacms?.data?.data?.customerLogos?.sectionTitle}
@@ -416,7 +416,7 @@ className={`w-image c11w9ocq cq9s6sa c1lpmvvg c1q5766j cyiufop`} />
 }
 {(!!benfitsOfDevmat?.data?.data?.length) &&
 <div
-className={`w-element csdhugg ccgn8hl c1g0sytn`}>
+className={`w-element csdhugg ccgn8hl c1g0sytn c1f5y87x c1y6e6gy c1g91ykm`}>
 <h2
 className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
 {homepagedatacms?.data?.data?.benefitsSection?.title}
@@ -435,9 +435,9 @@ className={`w-element cyksmbj c1oji2iw c7pv373 c1rc0m8f c1ejoj25 cy0z055 cax2fkw
   return (
 <Fragment key={collectionItemKey}>
 <div
-className={`w-element cyksmbj c1oji2iw ceh8ohp c1i7snbb cxd2r2c ckj6qkx cwscl0b c2ace6m cjaeftc c15ykucn cb65ij0 c11w6vg0 c11pah1h c1albq49 cug67g7 c13y6mwa c6g143x c15pb7kq`}>
+className={`w-element cyksmbj c1oji2iw ceh8ohp c1i7snbb cxd2r2c ckj6qkx cwscl0b c2ace6m cjaeftc c15ykucn cb65ij0 c11w6vg0 c11pah1h c1albq49 cug67g7 c13y6mwa clehr3x c1shz9cy`}>
 <div
-className={`w-element c19dwi73 c1tl8dvd cu3uc3t cyksmbj c1oji2iw c7pv373`}>
+className={`w-element c19dwi73 c1tl8dvd cu3uc3t cyksmbj c1oji2iw c7pv373 c1shz9cy c139wi4d`}>
 {(!(collectionItem_2?.image)) &&
 <Image
 src={cmsMediaUrlLocal+collectionItem_2?.icon?.icon?.url}
@@ -474,7 +474,7 @@ className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs c1va13rh`}>
 }
 {(!!gettingStartedSteps?.data?.data?.length) &&
 <div
-className={`w-element c1w5qiyf c7pv373 ccgn8hl c13imvs7`}>
+className={`w-element c1w5qiyf c7pv373 ccgn8hl c13imvs7 c1f5y87x c1y6e6gy`}>
 <h2
 className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
 {homepagedatacms?.data?.data?.gettingStartedSection?.title}
@@ -493,7 +493,7 @@ className={`w-element cyksmbj cgocsqs c7pv373 cfg2sgc c1qmi4iq c1rc0m8f csjbh93 
   return (
 <Fragment key={collectionItemKey_1}>
 <div
-className={`w-element chxr0yu cavlpe cu19h6b`}>
+className={`w-element chxr0yu cavlpe clehr3x`}>
 <div
 className={`w-element`}>
 <span
@@ -519,7 +519,7 @@ className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs cavlpe`}>
 }
 {(!!solutions?.data?.data?.length) &&
 <div
-className={`w-element ccgn8hl c13imvs7 csdhugg`}>
+className={`w-element ccgn8hl c13imvs7 csdhugg c1f5y87x c1y6e6gy`}>
 <h2
 className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
 {homepagedatacms?.data?.data?.solutions?.title}
@@ -538,7 +538,7 @@ className={`w-element cyksmbj c1rc0m8f cgocsqs c7pv373 c132tfj6 cravwn1 cax2fkw 
   return (
 <Fragment key={collectionItemKey_2}>
 <div
-className={`w-element chxr0yu c4tl1wi c2ace6m cjaeftc c15ykucn cb65ij0 cmx5vkr cwscl0b c1kelpe5 ct2ibbp c14pkkrt c1ldhh9k czzvbuw cu19h6b c1noyxyb`}>
+className={`w-element chxr0yu c4tl1wi c2ace6m cjaeftc c15ykucn cb65ij0 cmx5vkr cwscl0b c1kelpe5 ct2ibbp c14pkkrt c1ldhh9k czzvbuw clehr3x c1shz9cy`}>
 <h4
 className={`w-element c53v5zz c19jcr0r cp01muw c1przhxw cbbmne5 cu3uc3t cyksmbj c1oji2iw c1029aa7 c1tjvjms`}>
 {(!!collectionItem_4?.icon) &&
@@ -568,7 +568,7 @@ className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs cu3uc3t`}>
 }
 {(!!clientReviewsReq?.data?.data?.length) &&
 <div
-className={`w-element ccgn8hl c13imvs7`}>
+className={`w-element ccgn8hl c13imvs7 c1f5y87x c1y6e6gy`}>
 <h2
 className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
 {homepagedatacms?.data?.data?.clientReviews?.title}
@@ -587,7 +587,7 @@ className={`w-element cyksmbj cgocsqs c7pv373 c1rc0m8f cax2fkw c1xz0hfv c1nn1c1j
   return (
 <Fragment key={collectionItemKey_3}>
 <div
-className={`w-element cxd2r2c c6xo9yz csjbh93 c2zh38f ci9iosc ckscsr3 csdhugg c2ace6m cjaeftc c15ykucn cb65ij0 cwscl0b cu19h6b c1ltbvr`}>
+className={`w-element cxd2r2c c6xo9yz csjbh93 c2zh38f ci9iosc ckscsr3 csdhugg c2ace6m cjaeftc c15ykucn cb65ij0 cwscl0b clehr3x c1shz9cy`}>
 <div
 className={`w-element cyksmbj cn2cawe ceqpkba c1r678ej`}>
 {(!!collectionItem_5?.icon) &&
