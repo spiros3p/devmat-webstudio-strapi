@@ -89,6 +89,12 @@
                "title",
                "subtitle"
             ]
+         },
+         "faqs": {
+            "fields": [
+               "title",
+               "subtitle"
+            ]
          }
       },
       "fields": [
@@ -210,6 +216,21 @@
          "message",
          "locale",
          "id"
+      ]
+   },
+   "GET /api/site-state": {
+      "content-type": "api::site-state.site-state",
+      "fields": [
+         "siteStatus"
+      ]
+   },
+   "GET /api/faqs": {
+      "content-type": "api::faq.faq",
+      "fields": [
+         "question",
+         "id",
+         "locale",
+         "answer"
       ]
    }
 }

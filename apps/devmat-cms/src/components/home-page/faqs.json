@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_page_faqs",
+  "info": {
+    "displayName": "faqs",
+    "icon": "question"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
