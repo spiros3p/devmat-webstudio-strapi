@@ -16,5 +16,4 @@ COPY . ./
 
 RUN pnpm build:app
 
-
 CMD ["pnpm", "start:app"]

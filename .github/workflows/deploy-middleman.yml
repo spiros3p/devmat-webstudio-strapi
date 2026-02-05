@@ -1,11 +1,11 @@
-name: Deploy APP to VPS
+name: Deploy MIDDLEMAN to VPS
 
 on:
   push:
     branches:
       - main
     paths:
-      - "app/**"
+      - "apps/middleman-to-strapi/**"
   workflow_dispatch:
 
 env:
@@ -40,5 +40,5 @@ jobs:
             cd ${{ env.APP_DIR }}
             git pull
             export BUILD_CONFIG=${{ env.BUILD_CONFIG }}
-            BUILD_CONFIG=${BUILD_CONFIG} COMPOSE_BAKE=true docker compose up --build -d app
+            BUILD_CONFIG=${BUILD_CONFIG} COMPOSE_BAKE=true docker compose up --build -d middleman
           EOF

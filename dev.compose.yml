@@ -10,6 +10,15 @@ services:
       common_network:
         ipv4_address: 172.18.0.22
     # command: sleep infinity
+  
+  middleman:
+    container_name: middleman-to-strapi
+    build: apps/middleman-to-strapi
+    ports:
+      - 5151:5151
+    networks:
+      common_network:
+        ipv4_address: 172.18.0.25
 
 networks:
   common_network:
