@@ -13,7 +13,7 @@ services:
 
   middleman:
     container_name: middleman-to-strapi
-    build: apps/middleman-to-strapi/Dockerfile
+    build: apps/middleman-to-strapi
     # ports:
     #   - 5151:5151
     expose:
