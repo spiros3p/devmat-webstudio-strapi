@@ -11,7 +11,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-05T14:59:58.266Z";
+      export const lastPublished = "2026-02-05T15:17:43.704Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -30,13 +30,13 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
       
 
       const Page = (_props: { system: any; }) => {
-let homepagedatacms = useResource("homepagedatacms_1")
-let [cmsMediaUrlLocal, set$cmsMediaUrlLocal] = useVariableState<any>("https://admin.devmat.spirosroadto.info")
-let benfitsOfDevmat = useResource("benfitsOfDevmat_1")
-let gettingStartedSteps = useResource("gettingStartedSteps_1")
-let solutions = useResource("solutions_1")
-let clientReviewsReq = useResource("clientReviewsReq_1")
-let FAQs = useResource("FAQs_1")
+let REQHomePage = useResource("REQHomePage_1")
+let [URLcmsMediaLocal, set$URLcmsMediaLocal] = useVariableState<any>("https://admin.devmat.spirosroadto.info")
+let REQBenfitsDevmat = useResource("REQBenfitsDevmat_1")
+let REQGetStartedSteps = useResource("REQGetStartedSteps_1")
+let REQSolutions = useResource("REQSolutions_1")
+let REQClientReviews = useResource("REQClientReviews_1")
+let REQFAQs = useResource("REQFAQs_1")
 let [formState, set$formState] = useVariableState<any>("initial")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
@@ -279,39 +279,39 @@ className={`w-link ccqry52 c1oji2iw c7pv373 cyidosu cfxgbuw c1w3iq2x cmd2k6o c1a
 </div>
 <div
 className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j cyidosu cu3uc3t cqkrgkz csjbh93 c1ht3eul cjocp00 c190h4xw c1ua5e08 c1rt2b5x celrewe ceuzb9a`}>
-{(!!homepagedatacms?.data?.data?.heroSection?.heroMedia?.[0]) &&
+{(!!REQHomePage?.data?.data?.heroSection?.heroMedia?.[0]) &&
 <div
 className={`w-element c1321bjb c140tk4r cavlpe c1ox04z8 cyksmbj c1i7snbb c1oji2iw c7pv373`}>
 <h1
 className={`w-element c1fh2qkn cyiizu9 cqvjdig crmjlkc c1ihasyt c3c9r1c cpii4el c19jcr0r c1fb947j c1l3k9y7`}>
-{homepagedatacms?.data?.data?.heroSection?.heroTitle}
+{REQHomePage?.data?.data?.heroSection?.heroTitle}
 </h1>
 <p
 className={`w-element c3c9r1c c1ihasyt c1fq6v54 cpf8n67 c1s55wh8`}>
-{homepagedatacms?.data?.data?.heroSection?.heroSubTitle}
+{REQHomePage?.data?.data?.heroSection?.heroSubTitle}
 </p>
 <div
 className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl c2yan1w cynjatq`}>
-{(!!homepagedatacms?.data?.data?.heroSection?.primaryButton?.title) &&
+{(!!REQHomePage?.data?.data?.heroSection?.primaryButton?.title) &&
 <Link_1
-href={homepagedatacms?.data?.data?.heroSection?.primaryButton?.href}
-target={homepagedatacms?.data?.data?.heroSection?.primaryButton?.target}
-title={homepagedatacms?.data?.data?.heroSection?.primaryButton?.title}
+href={REQHomePage?.data?.data?.heroSection?.primaryButton?.href}
+target={REQHomePage?.data?.data?.heroSection?.primaryButton?.target}
+title={REQHomePage?.data?.data?.heroSection?.primaryButton?.title}
 className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1wbt3eu cxjyi5z c1kd0iqv c2t1vc3 cmx5vkr c53v5zz c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}>
-{homepagedatacms?.data?.data?.heroSection?.primaryButton?.title}
+{REQHomePage?.data?.data?.heroSection?.primaryButton?.title}
 </Link_1>
 }
-{(!!homepagedatacms?.data?.data?.heroSection?.secondaryButton?.title) &&
+{(!!REQHomePage?.data?.data?.heroSection?.secondaryButton?.title) &&
 <Link_1
-title={homepagedatacms?.data?.data?.heroSection?.secondaryButton?.title}
-href={homepagedatacms?.data?.data?.heroSection?.secondaryButton?.href}
-target={homepagedatacms?.data?.data?.heroSection?.secondaryButton?.target}
+title={REQHomePage?.data?.data?.heroSection?.secondaryButton?.title}
+href={REQHomePage?.data?.data?.heroSection?.secondaryButton?.href}
+target={REQHomePage?.data?.data?.heroSection?.secondaryButton?.target}
 className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1pk2abd c1om2ni4 c1t9kc3 caxks0e c199gza7 c1ox04z8 c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}>
-{homepagedatacms?.data?.data?.heroSection?.secondaryButton?.title}
+{REQHomePage?.data?.data?.heroSection?.secondaryButton?.title}
 </Link_1>
 }
 </div>
-{(!!homepagedatacms?.data?.data?.heroSection?.heroMedia?.length) &&
+{(!!REQHomePage?.data?.data?.heroSection?.heroMedia?.length) &&
 <Box
 className={`w-box chwyzxr cc65596 c8h0kd1 c1jmoocp c1ulw3bq cc6w7r cnzj5wj`}>
 <Box
@@ -330,9 +330,9 @@ className={`w-box c1jmoocp c1gbr3z6 c1xz0hfv c1nn1c1j c14ukf1q cb38r9g c1pwlyx4 
 className={`w-box c1przhxw c1gbr3z6 c14ukf1q c9z7hxy cyksmbj cgocsqs ceh8ohp c1jmoocp cvgvkkz coy7gv6 ${"swiper-wrapper"}`}>
 {Object.entries(
   // @ts-ignore
-  homepagedatacms?.data?.data?.heroSection?.heroMedia ?? {}
+  REQHomePage?.data?.data?.heroSection?.heroMedia ?? {}
 ).map(([_key, collectionItem]: any) => {
-  const index = Array.isArray(homepagedatacms?.data?.data?.heroSection?.heroMedia) ? Number(_key) : _key;
+  const index = Array.isArray(REQHomePage?.data?.data?.heroSection?.heroMedia) ? Number(_key) : _key;
   return (
 <Fragment key={index}>
 <Box
@@ -343,7 +343,7 @@ className={`w-box cjtheg6 clmafat c1rkdu33 c2i0qoz c1f5j10l cmk688s cejznww cp88
 data-swiper-parallax={"75%"}
 data-swiper-parallax-scale={"1.1"}
 optimize={false}
-src={cmsMediaUrlLocal+collectionItem?.url}
+src={URLcmsMediaLocal+collectionItem?.url}
 className={`w-image c1ca1opd cyiufop c12t5nos c1jmoocp c1a7h4u9 c1przhxw cgtklm7 cgzsvfq c1gkl50b`} />
 <Box
 className={`w-box cyksmbj c1i7snbb c125js0i cgocsqs c7m897 c1oaz3g3 cpstobg c1m9hz2e c3qj012 c1vhk8r2 cfoyo6b ctqyu0d c1su9msf c1ca1opd c1iqp751 ctoeblo c1c40y1i c7ghkhh c194hou3 c13pklef c16caxk5`} />
@@ -384,20 +384,20 @@ className={`w-html-embed`} />
 </div>
 }
 </div>
-{(!!homepagedatacms?.data?.data?.customerLogos?.customersLogos?.length) &&
+{(!!REQHomePage?.data?.data?.customerLogos?.customersLogos?.length) &&
 <div
 className={`w-element c1sb8ohy c9s2vs7 c1f5y87x c1y6e6gy`}>
 <h3
 className={`w-element cavlpe c1bjxlr9 cntodcp csa87u c1u6lavf c1dhh8cz`}>
-{homepagedatacms?.data?.data?.customerLogos?.sectionTitle}
+{REQHomePage?.data?.data?.customerLogos?.sectionTitle}
 </h3>
 <Box
 className={`w-box cv37voi cyksmbj c1oji2iw c7pv373 c1ejoj25 cy0z055 c1rc0m8f czzvbuw`}>
 {Object.entries(
   // @ts-ignore
-  homepagedatacms?.data?.data?.customerLogos?.customersLogos ?? {}
+  REQHomePage?.data?.data?.customerLogos?.customersLogos ?? {}
 ).map(([_key, collectionItem_1]: any) => {
-  const index_1 = Array.isArray(homepagedatacms?.data?.data?.customerLogos?.customersLogos) ? Number(_key) : _key;
+  const index_1 = Array.isArray(REQHomePage?.data?.data?.customerLogos?.customersLogos) ? Number(_key) : _key;
   return (
 <Fragment key={index_1}>
 <div
@@ -406,7 +406,7 @@ className={`w-element c2ace6m cjaeftc c15ykucn cb65ij0 cec8bqd c3txa2i`}>
 optimize={false}
 alt={collectionItem_1?.logo?.name}
 loading={"eager"}
-src={cmsMediaUrlLocal+collectionItem_1?.logo?.url}
+src={URLcmsMediaLocal+collectionItem_1?.logo?.url}
 className={`w-image c11w9ocq cq9s6sa c1lpmvvg c1q5766j cyiufop`} />
 </div>
 </Fragment>
@@ -416,24 +416,24 @@ className={`w-image c11w9ocq cq9s6sa c1lpmvvg c1q5766j cyiufop`} />
 </Box>
 </div>
 }
-{(!!benfitsOfDevmat?.data?.data?.length) &&
+{(!!REQBenfitsDevmat?.data?.data?.length) &&
 <div
 className={`w-element csdhugg ccgn8hl c1g0sytn c1f5y87x c1y6e6gy c1g91ykm`}>
 <h2
 className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
-{homepagedatacms?.data?.data?.benefitsSection?.title}
+{REQHomePage?.data?.data?.benefitsSection?.title}
 </h2>
 <h3
 className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c7k8dvj cseqxw9 c1g7thye`}>
-{  homepagedatacms?.data?.data?.benefitsSection?.subtitle}
+{  REQHomePage?.data?.data?.benefitsSection?.subtitle}
 </h3>
 <div
 className={`w-element cyksmbj c1oji2iw c7pv373 c1rc0m8f c1ejoj25 cy0z055 cax2fkw c1xz0hfv c1nn1c1j`}>
 {Object.entries(
   // @ts-ignore
-  benfitsOfDevmat?.data?.data ?? {}
+  REQBenfitsDevmat?.data?.data ?? {}
 ).map(([_key, collectionItem_2]: any) => {
-  const collectionItemKey = Array.isArray(benfitsOfDevmat?.data?.data) ? Number(_key) : _key;
+  const collectionItemKey = Array.isArray(REQBenfitsDevmat?.data?.data) ? Number(_key) : _key;
   return (
 <Fragment key={collectionItemKey}>
 <div
@@ -442,7 +442,7 @@ className={`w-element cyksmbj c1oji2iw ceh8ohp c1i7snbb cxd2r2c ckj6qkx cwscl0b 
 className={`w-element c19dwi73 c1tl8dvd cu3uc3t cyksmbj c1oji2iw c7pv373 c1shz9cy c139wi4d`}>
 {(!(collectionItem_2?.image)) &&
 <Image
-src={cmsMediaUrlLocal+collectionItem_2?.icon?.icon?.url}
+src={URLcmsMediaLocal+collectionItem_2?.icon?.icon?.url}
 optimize={false}
 width={35}
 height={35}
@@ -451,7 +451,7 @@ className={`w-image cu3uc3t`} />
 }
 {(!!(collectionItem_2?.image)) &&
 <Image
-src={cmsMediaUrlLocal+collectionItem_2?.image?.url}
+src={URLcmsMediaLocal+collectionItem_2?.image?.url}
 width={150}
 height={150}
 optimize={false}
@@ -474,24 +474,24 @@ className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs c1va13rh`}>
 </div>
 </div>
 }
-{(!!gettingStartedSteps?.data?.data?.length) &&
+{(!!REQGetStartedSteps?.data?.data?.length) &&
 <div
 className={`w-element c1w5qiyf c7pv373 ccgn8hl c13imvs7 c1f5y87x c1y6e6gy`}>
 <h2
 className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
-{homepagedatacms?.data?.data?.gettingStartedSection?.title}
+{REQHomePage?.data?.data?.gettingStartedSection?.title}
 </h2>
 <h3
 className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j cs0vytw cseqxw9 c1g7thye`}>
-{  homepagedatacms?.data?.data?.gettingStartedSection?.subtitle}
+{  REQHomePage?.data?.data?.gettingStartedSection?.subtitle}
 </h3>
 <div
 className={`w-element cyksmbj cgocsqs c7pv373 cfg2sgc c1qmi4iq c1rc0m8f csjbh93 c2zh38f c1xz0hfv c1nn1c1j cax2fkw`}>
 {Object.entries(
   // @ts-ignore
-  gettingStartedSteps?.data?.data ?? {}
+  REQGetStartedSteps?.data?.data ?? {}
 ).map(([_key, collectionItem_3]: any) => {
-  const collectionItemKey_1 = Array.isArray(gettingStartedSteps?.data?.data) ? Number(_key) : _key;
+  const collectionItemKey_1 = Array.isArray(REQGetStartedSteps?.data?.data) ? Number(_key) : _key;
   return (
 <Fragment key={collectionItemKey_1}>
 <div
@@ -519,24 +519,24 @@ className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs cavlpe`}>
 </div>
 </div>
 }
-{(!!solutions?.data?.data?.length) &&
+{(!!REQSolutions?.data?.data?.length) &&
 <div
 className={`w-element ccgn8hl c13imvs7 csdhugg c1f5y87x c1y6e6gy`}>
 <h2
 className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
-{homepagedatacms?.data?.data?.solutions?.title}
+{REQHomePage?.data?.data?.solutions?.title}
 </h2>
 <h3
 className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j cs0vytw cseqxw9 c1g7thye`}>
-{homepagedatacms?.data?.data?.solutions?.subtitle}
+{REQHomePage?.data?.data?.solutions?.subtitle}
 </h3>
 <div
 className={`w-element cyksmbj c1rc0m8f cgocsqs c7pv373 c132tfj6 cravwn1 cax2fkw c1xz0hfv c1nn1c1j`}>
 {Object.entries(
   // @ts-ignore
-  solutions?.data?.data ?? {}
+  REQSolutions?.data?.data ?? {}
 ).map(([_key, collectionItem_4]: any) => {
-  const collectionItemKey_2 = Array.isArray(solutions?.data?.data) ? Number(_key) : _key;
+  const collectionItemKey_2 = Array.isArray(REQSolutions?.data?.data) ? Number(_key) : _key;
   return (
 <Fragment key={collectionItemKey_2}>
 <div
@@ -545,7 +545,7 @@ className={`w-element chxr0yu c4tl1wi c2ace6m cjaeftc c15ykucn cb65ij0 cmx5vkr c
 className={`w-element c53v5zz c19jcr0r cp01muw c1przhxw cbbmne5 cu3uc3t cyksmbj c1oji2iw c1029aa7 c1tjvjms`}>
 {(!!collectionItem_4?.icon) &&
 <Image
-src={cmsMediaUrlLocal+collectionItem_4?.icon?.icon?.url}
+src={URLcmsMediaLocal+collectionItem_4?.icon?.icon?.url}
 width={20}
 height={20}
 optimize={false}
@@ -568,24 +568,24 @@ className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs cu3uc3t`}>
 </div>
 </div>
 }
-{(!!clientReviewsReq?.data?.data?.length) &&
+{(!!REQClientReviews?.data?.data?.length) &&
 <div
 className={`w-element ccgn8hl c13imvs7 c1f5y87x c1y6e6gy`}>
 <h2
 className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
-{homepagedatacms?.data?.data?.clientReviews?.title}
+{REQHomePage?.data?.data?.clientReviews?.title}
 </h2>
 <h3
 className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1cf4c3b cseqxw9 c1g7thye`}>
-{homepagedatacms?.data?.data?.clientReviews?.subtitle}
+{REQHomePage?.data?.data?.clientReviews?.subtitle}
 </h3>
 <div
 className={`w-element cyksmbj cgocsqs c7pv373 c1rc0m8f cax2fkw c1xz0hfv c1nn1c1j c132tfj6 cravwn1`}>
 {Object.entries(
   // @ts-ignore
-  clientReviewsReq?.data?.data ?? {}
+  REQClientReviews?.data?.data ?? {}
 ).map(([_key, collectionItem_5]: any) => {
-  const collectionItemKey_3 = Array.isArray(clientReviewsReq?.data?.data) ? Number(_key) : _key;
+  const collectionItemKey_3 = Array.isArray(REQClientReviews?.data?.data) ? Number(_key) : _key;
   return (
 <Fragment key={collectionItemKey_3}>
 <div
@@ -597,7 +597,7 @@ className={`w-element cyksmbj cn2cawe ceqpkba c1r678ej`}>
 optimize={false}
 width={40}
 height={40}
-src={cmsMediaUrlLocal+collectionItem_5?.icon?.icon?.url}
+src={URLcmsMediaLocal+collectionItem_5?.icon?.icon?.url}
 className={`w-image c1ym4vzx cqgrdaa c12w5tc0 c1gdf85e c18vsw38 cmx5vkr c57zjvh c143tev2 c1o9f9gj`} />
 }
 <div
@@ -624,17 +624,17 @@ className={`w-element cseqxw9 c1g7thye cu3uc3t ccn41lv c16wa6q4`}>
 </div>
 </div>
 }
-{(!!FAQs?.data?.data?.length) &&
+{(!!REQFAQs?.data?.data?.length) &&
 <Box
 tag={"section"}
 className={`w-box ccgn8hl c13imvs7 c1f5y87x c1y6e6gy`}>
 <h2
 className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
-{homepagedatacms?.data?.data?.faqs?.title}
+{REQHomePage?.data?.data?.faqs?.title}
 </h2>
 <h3
 className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1cf4c3b cseqxw9 c1g7thye`}>
-{homepagedatacms?.data?.data?.faqs?.subtitle}
+{REQHomePage?.data?.data?.faqs?.subtitle}
 </h3>
 <Box
 className={`w-box c1nn1c1j c1xz0hfv c1przhxw cxg5738 cyksmbj c1i7snbb c1oji2iw c7pv373 cqs24yx crq0lw5 c12c3gfp c19d7s0z`}>
@@ -644,9 +644,9 @@ defaultValue={"0"}
 className={`w-accordion cyksmbj c1i7snbb cpoffl7 cqf8bry c1przhxw c1dqo4lx`}>
 {Object.entries(
   // @ts-ignore
-  FAQs?.data?.data ?? {}
+  REQFAQs?.data?.data ?? {}
 ).map(([_key, collectionItem_6]: any) => {
-  const collectionItemKey_4 = Array.isArray(FAQs?.data?.data) ? Number(_key) : _key;
+  const collectionItemKey_4 = Array.isArray(REQFAQs?.data?.data) ? Number(_key) : _key;
   return (
 <Fragment key={collectionItemKey_4}>
 <AccordionItem
@@ -693,11 +693,11 @@ className={`w-markdown-embed ccn41lv c1bjxlr9 clh9rxp`}>
 className={`w-element ccgn8hl c13imvs7 c1y6e6gy c1f5y87x cyidosu`}>
 <h2
 className={`w-element cavlpe c1ox04z8 c1735zj0 cseqxw9 c1g7thye`}>
-{homepagedatacms?.data?.data?.contactForm?.title}
+{REQHomePage?.data?.data?.contactForm?.title}
 </h2>
 <h3
 className={`w-element cavlpe c1ox04z8 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1d80dtg cseqxw9 c1g7thye`}>
-{homepagedatacms?.data?.data?.contactForm?.subtitle}
+{REQHomePage?.data?.data?.contactForm?.subtitle}
 </h3>
 <div
 className={`w-element`}>
@@ -718,18 +718,18 @@ className={`w-element cyksmbj c1i7snbb c1e12a07 chn9tnv`}>
 className={`w-label cc3itzg c1n9d4u8 ch2shl`}>
 <span
 className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck ch2shl`}>
-{homepagedatacms?.data?.data?.contactForm?.formInputNames?.subjectInputName}
+{REQHomePage?.data?.data?.contactForm?.formInputNames?.subjectInputName}
 </span>
 <Select
-name={homepagedatacms?.data?.data?.contactForm?.formInputNames?.subjectInputName}
+name={REQHomePage?.data?.data?.contactForm?.formInputNames?.subjectInputName}
 required={true}
-value={homepagedatacms?.data?.data?.contactForm?.formSubjects?.[0]?.formSubject}
+value={REQHomePage?.data?.data?.contactForm?.formSubjects?.[0]?.formSubject}
 className={`w-element c1k5mt0p c1w9irg3 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 cpf8n67 c1s43d56 c1xhvr2q c16vucp1 crafl4a czh82uq cbq1r21`}>
 {Object.entries(
   // @ts-ignore
-  homepagedatacms?.data?.data?.contactForm?.formSubjects ?? {}
+  REQHomePage?.data?.data?.contactForm?.formSubjects ?? {}
 ).map(([_key, collectionItem_8]: any) => {
-  const collectionItemKey_6 = Array.isArray(homepagedatacms?.data?.data?.contactForm?.formSubjects) ? Number(_key) : _key;
+  const collectionItemKey_6 = Array.isArray(REQHomePage?.data?.data?.contactForm?.formSubjects) ? Number(_key) : _key;
   return (
 <Fragment key={collectionItemKey_6}>
 <option
@@ -751,13 +751,13 @@ className={`w-element cyksmbj c1i7snbb c1e12a07 chn9tnv c19ayrcm cleis16 cmxafh8
 className={`w-label cc3itzg c1n9d4u8 cyjqqjx`}>
 <span
 className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck ch2shl`}>
-{homepagedatacms?.data?.data?.contactForm?.formInputNames?.nameInputName}
+{REQHomePage?.data?.data?.contactForm?.formInputNames?.nameInputName}
 </span>
 <Input
 type={"text"}
 required={false}
-name={homepagedatacms?.data?.data?.contactForm?.formInputNames?.nameInputName}
-placeholder={homepagedatacms?.data?.data?.contactForm?.formInputNames?.nameInputName}
+name={REQHomePage?.data?.data?.contactForm?.formInputNames?.nameInputName}
+placeholder={REQHomePage?.data?.data?.contactForm?.formInputNames?.nameInputName}
 className={`w-element c1k5mt0p c1w9irg3 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 cpf8n67 c1s43d56 c1xhvr2q ckhmb2v c16vucp1 crafl4a czh82uq cbq1r21`} />
 </Label>
 </div>
@@ -767,13 +767,13 @@ className={`w-element cyksmbj c1i7snbb c1e12a07 chn9tnv c19ayrcm cleis16 cmxafh8
 className={`w-label cc3itzg c1n9d4u8 cyjqqjx`}>
 <span
 className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck ch2shl`}>
-{homepagedatacms?.data?.data?.contactForm?.formInputNames?.emailInputName}
+{REQHomePage?.data?.data?.contactForm?.formInputNames?.emailInputName}
 </span>
 <Input
 type={"email"}
 required={true}
-name={homepagedatacms?.data?.data?.contactForm?.formInputNames?.emailInputName}
-placeholder={homepagedatacms?.data?.data?.contactForm?.formInputNames?.emailInputName}
+name={REQHomePage?.data?.data?.contactForm?.formInputNames?.emailInputName}
+placeholder={REQHomePage?.data?.data?.contactForm?.formInputNames?.emailInputName}
 className={`w-element c1k5mt0p c1w9irg3 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 cpf8n67 c1s43d56 c1xhvr2q ckhmb2v c16vucp1 crafl4a czh82uq cbq1r21`} />
 </Label>
 </div>
@@ -784,31 +784,31 @@ className={`w-element cyksmbj c1i7snbb c1e12a07 chn9tnv`}>
 className={`w-label cc3itzg c1n9d4u8 cyjqqjx`}>
 <span
 className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck ch2shl`}>
-{homepagedatacms?.data?.data?.contactForm?.formInputNames?.messageInputName}
+{REQHomePage?.data?.data?.contactForm?.formInputNames?.messageInputName}
 </span>
 <Textarea
 required={true}
-name={homepagedatacms?.data?.data?.contactForm?.formInputNames?.messageInputName}
+name={REQHomePage?.data?.data?.contactForm?.formInputNames?.messageInputName}
 className={`w-element c1k5mt0p c10q1xg1 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 cpf8n67 c1s43d56 c1xhvr2q c16vucp1 crafl4a czh82uq cbq1r21`} />
 </Label>
 </div>
 <button
 type={"submit"}
 className={`w-element c1xz0hfv c1nn1c1j c1ii509t c143tev2 c2ace6m cjaeftc c15ykucn cb65ij0 ccfiqmq c1dhh8cz c53v5zz ch2shl cjtheg6 clmafat c1rkdu33 c2i0qoz c1eqwf0y cevelsr c1lc8yfv c1mucujo c1o70tqg cmx5vkr c11r2gzv c152jaq9 c2tdqda`}>
-{homepagedatacms?.data?.data?.contactForm?.formSubmitBtnText}
+{REQHomePage?.data?.data?.contactForm?.formSubmitBtnText}
 </button>
 </div>
 }
 {(formState === 'success') &&
 <div
 className={`w-element cavlpe c1ox04z8 ccn41lv c1s55wh8 c7cd9ps c1xz0hfv c1nn1c1j c17l107q c1axzkds cpofr2j c1lflnfx c2ace6m cjaeftc c15ykucn cb65ij0 c1l06n22 c1u6lavf c1q2liwv`}>
-{homepagedatacms?.data?.data?.contactForm?.successMessage}
+{REQHomePage?.data?.data?.contactForm?.successMessage}
 </div>
 }
 {(formState === 'error') &&
 <div
 className={`w-element cavlpe c1thowfs c17l107q c1axzkds cpofr2j c1lflnfx c2ace6m cjaeftc c15ykucn cb65ij0 c40rd93 c163bfw4 c7gmv7x cszm7qs c5ccpqx c1q2liwv`}>
-{homepagedatacms?.data?.data?.contactForm?.errorMessage}
+{REQHomePage?.data?.data?.contactForm?.errorMessage}
 </div>
 }
 </Form>

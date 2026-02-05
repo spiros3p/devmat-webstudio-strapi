@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "b195df02-5b2d-4bc8-9c53-a049418f0999",
+    "id": "b35820e4-c048-4536-989f-71af8ea82190",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 2311,
-    "createdAt": "2026-02-05T14:59:58.266+00:00",
-    "updatedAt": "2026-02-05T14:59:58.266+00:00",
+    "version": 2332,
+    "createdAt": "2026-02-05T15:17:43.704+00:00",
+    "updatedAt": "2026-02-05T15:17:43.704+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -33372,7 +33372,7 @@
           "type": "resource",
           "id": "eAVK7uMysV6RJPcYcWLDc",
           "scopeInstanceId": ":root",
-          "name": "home page data | cms",
+          "name": "REQ | Home Page",
           "resourceId": "5uuGe9AEIeanc7JRhz_Dk"
         }
       ],
@@ -33382,7 +33382,7 @@
           "type": "variable",
           "id": "kttkTQ9ptJhyVJcBoBOrw",
           "scopeInstanceId": ":root",
-          "name": "cmsUrl",
+          "name": "URL | cms docker",
           "value": {
             "type": "string",
             "value": "http://172.18.0.23:1337"
@@ -33395,7 +33395,7 @@
           "type": "variable",
           "id": "BXUAVSyjbccTYH8iqgfZt",
           "scopeInstanceId": ":root",
-          "name": "cmsMediaUrl",
+          "name": "URL. | cms Media",
           "value": {
             "type": "string",
             "value": "https://admin.devmat.spirosroadto.info"
@@ -33408,7 +33408,7 @@
           "type": "variable",
           "id": "t2XG6gKGshwkCpg4A91zR",
           "scopeInstanceId": ":root",
-          "name": "cmsMediaUrlLocal",
+          "name": "URL. | cms Media Local",
           "value": {
             "type": "string",
             "value": "https://admin.devmat.spirosroadto.info"
@@ -33457,7 +33457,7 @@
           "type": "resource",
           "id": "ZKsmreDzNkyXJGbuWF3_8",
           "scopeInstanceId": ":root",
-          "name": "benfitsOfDevmat",
+          "name": "REQ | Benfits Devmat",
           "resourceId": "Xf0zgA5YiIUTAhS-87kNZ"
         }
       ],
@@ -33467,7 +33467,7 @@
           "type": "resource",
           "id": "NuhVrz6vXo01FA9e4vDtY",
           "scopeInstanceId": ":root",
-          "name": "gettingStartedSteps",
+          "name": "REQ | Get Started Steps",
           "resourceId": "eUaxiccmnLQ-RZEsjvrDy"
         }
       ],
@@ -33495,7 +33495,7 @@
           "type": "resource",
           "id": "-xarWr8uk2muPNl4YG_-a",
           "scopeInstanceId": ":root",
-          "name": "solutions",
+          "name": "REQ | Solutions",
           "resourceId": "fT8o1XWpuSO-S--XnxNV1"
         }
       ],
@@ -33541,7 +33541,7 @@
           "type": "resource",
           "id": "cvq2ZX4z09yOZTPYEIDbO",
           "scopeInstanceId": ":root",
-          "name": "clientReviewsReq",
+          "name": "REQ | Client Reviews",
           "resourceId": "_thYc3f7eH396cN6XMt8l"
         }
       ],
@@ -33551,7 +33551,7 @@
           "type": "resource",
           "id": "knSdCbj8ubQo006LGIBRw",
           "scopeInstanceId": ":root",
-          "name": "FAQs ",
+          "name": "REQ | FAQs ",
           "resourceId": "PnyKjSvaI2k_-AkehW-R6"
         }
       ],
@@ -33665,9 +33665,9 @@
         "5uuGe9AEIeanc7JRhz_Dk",
         {
           "id": "5uuGe9AEIeanc7JRhz_Dk",
-          "name": "home page data | cms",
+          "name": "REQ | Home Page",
           "method": "get",
-          "url": "\"http://172.18.0.23:1337/api/general\"",
+          "url": "$ws$dataSource$kttkTQ9ptJhyVJcBoBOrw+\"/api/general\"",
           "searchParams": [],
           "headers": []
         }
@@ -33676,7 +33676,7 @@
         "Xf0zgA5YiIUTAhS-87kNZ",
         {
           "id": "Xf0zgA5YiIUTAhS-87kNZ",
-          "name": "benfitsOfDevmat",
+          "name": "REQ | Benfits Devmat",
           "method": "get",
           "url": "$ws$dataSource$kttkTQ9ptJhyVJcBoBOrw+\"/api/benefits\"",
           "searchParams": [],
@@ -33687,7 +33687,7 @@
         "eUaxiccmnLQ-RZEsjvrDy",
         {
           "id": "eUaxiccmnLQ-RZEsjvrDy",
-          "name": "gettingStartedSteps",
+          "name": "REQ | Get Started Steps",
           "method": "get",
           "url": "$ws$dataSource$kttkTQ9ptJhyVJcBoBOrw+'/api/getting-started-steps'",
           "searchParams": [],
@@ -33698,7 +33698,7 @@
         "fT8o1XWpuSO-S--XnxNV1",
         {
           "id": "fT8o1XWpuSO-S--XnxNV1",
-          "name": "solutions",
+          "name": "REQ | Solutions",
           "method": "get",
           "url": "$ws$dataSource$kttkTQ9ptJhyVJcBoBOrw+'/api/solutions'",
           "searchParams": [],
@@ -33709,7 +33709,7 @@
         "_thYc3f7eH396cN6XMt8l",
         {
           "id": "_thYc3f7eH396cN6XMt8l",
-          "name": "clientReviewsReq",
+          "name": "REQ | Client Reviews",
           "method": "get",
           "url": "$ws$dataSource$kttkTQ9ptJhyVJcBoBOrw+'/api/client-reviews'",
           "searchParams": [],
@@ -33720,7 +33720,7 @@
         "PnyKjSvaI2k_-AkehW-R6",
         {
           "id": "PnyKjSvaI2k_-AkehW-R6",
-          "name": "FAQs ",
+          "name": "REQ | FAQs ",
           "method": "get",
           "url": "$ws$dataSource$kttkTQ9ptJhyVJcBoBOrw+'/api/faqs'",
           "searchParams": [],

@@ -5,57 +5,57 @@
       import type { PageMeta } from "@webstudio-is/sdk";
       import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
-  let cmsUrl = "http://172.18.0.23:1337"
+  let URLcmsdocker = "http://172.18.0.23:1337"
   let URLmiddlemanproxy = "http://172.18.0.25:5151"
   let ENDPOINTproxysubmitcontactform = "/proxy/submit-contact-form"
-  const homepagedatacms_1: ResourceRequest = {
-    name: "home page data | cms",
-    url: "http://172.18.0.23:1337/api/general",
+  const REQHomePage_1: ResourceRequest = {
+    name: "REQ | Home Page",
+    url: URLcmsdocker+"/api/general",
     searchParams: [
     ],
     method: "get",
     headers: [
     ],
   }
-  const benfitsOfDevmat_1: ResourceRequest = {
-    name: "benfitsOfDevmat",
-    url: cmsUrl+"/api/benefits",
+  const REQBenfitsDevmat_1: ResourceRequest = {
+    name: "REQ | Benfits Devmat",
+    url: URLcmsdocker+"/api/benefits",
     searchParams: [
     ],
     method: "get",
     headers: [
     ],
   }
-  const gettingStartedSteps_1: ResourceRequest = {
-    name: "gettingStartedSteps",
-    url: cmsUrl+'/api/getting-started-steps',
+  const REQGetStartedSteps_1: ResourceRequest = {
+    name: "REQ | Get Started Steps",
+    url: URLcmsdocker+'/api/getting-started-steps',
     searchParams: [
     ],
     method: "get",
     headers: [
     ],
   }
-  const solutions_1: ResourceRequest = {
-    name: "solutions",
-    url: cmsUrl+'/api/solutions',
+  const REQSolutions_1: ResourceRequest = {
+    name: "REQ | Solutions",
+    url: URLcmsdocker+'/api/solutions',
     searchParams: [
     ],
     method: "get",
     headers: [
     ],
   }
-  const clientReviewsReq_1: ResourceRequest = {
-    name: "clientReviewsReq",
-    url: cmsUrl+'/api/client-reviews',
+  const REQClientReviews_1: ResourceRequest = {
+    name: "REQ | Client Reviews",
+    url: URLcmsdocker+'/api/client-reviews',
     searchParams: [
     ],
     method: "get",
     headers: [
     ],
   }
-  const FAQs_1: ResourceRequest = {
-    name: "FAQs ",
-    url: cmsUrl+'/api/faqs',
+  const REQFAQs_1: ResourceRequest = {
+    name: "REQ | FAQs ",
+    url: URLcmsdocker+'/api/faqs',
     searchParams: [
     ],
     method: "get",
@@ -73,12 +73,12 @@ export const getResources = (_props: { system: System }) => {
     ],
   }
   const _data = new Map<string, ResourceRequest>([
-    ["homepagedatacms_1", homepagedatacms_1],
-    ["benfitsOfDevmat_1", benfitsOfDevmat_1],
-    ["gettingStartedSteps_1", gettingStartedSteps_1],
-    ["solutions_1", solutions_1],
-    ["clientReviewsReq_1", clientReviewsReq_1],
-    ["FAQs_1", FAQs_1],
+    ["REQHomePage_1", REQHomePage_1],
+    ["REQBenfitsDevmat_1", REQBenfitsDevmat_1],
+    ["REQGetStartedSteps_1", REQGetStartedSteps_1],
+    ["REQSolutions_1", REQSolutions_1],
+    ["REQClientReviews_1", REQClientReviews_1],
+    ["REQFAQs_1", REQFAQs_1],
   ])
   const _action = new Map<string, ResourceRequest>([
     ["action", action],
