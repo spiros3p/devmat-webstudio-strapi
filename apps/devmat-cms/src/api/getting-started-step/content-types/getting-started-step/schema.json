@@ -4,7 +4,7 @@
   "info": {
     "singularName": "getting-started-step",
     "pluralName": "getting-started-steps",
-    "displayName": "Getting Started steps"
+    "displayName": "Getting Started Steps"
   },
   "options": {
     "draftAndPublish": false

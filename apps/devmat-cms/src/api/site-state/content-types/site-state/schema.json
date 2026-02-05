@@ -4,7 +4,7 @@
   "info": {
     "singularName": "site-state",
     "pluralName": "site-states",
-    "displayName": "siteState"
+    "displayName": "Website States"
   },
   "options": {
     "draftAndPublish": false
