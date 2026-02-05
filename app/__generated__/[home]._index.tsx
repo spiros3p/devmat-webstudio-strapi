@@ -11,7 +11,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-05T15:42:40.036Z";
+      export const lastPublished = "2026-02-05T23:39:48.926Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -627,7 +627,7 @@ className={`w-element cseqxw9 c1g7thye cu3uc3t ccn41lv c16wa6q4`}>
 {(!!REQFAQs?.data?.data?.length) &&
 <Box
 tag={"section"}
-className={`w-box ccgn8hl c13imvs7 c1f5y87x c1y6e6gy`}>
+className={`w-box ccgn8hl c1tmfs83 c1f5y87x c1y6e6gy`}>
 <h2
 className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
 {REQHomePage?.data?.data?.faqs?.title}
@@ -755,7 +755,7 @@ className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck ch2shl`}>
 </span>
 <Input
 type={"text"}
-required={false}
+required={true}
 name={REQHomePage?.data?.data?.contactForm?.formInputNames?.nameInputName}
 placeholder={REQHomePage?.data?.data?.contactForm?.formInputNames?.nameInputName}
 className={`w-element c1k5mt0p c1w9irg3 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 cpf8n67 c1s43d56 c1xhvr2q ckhmb2v c16vucp1 crafl4a czh82uq cbq1r21`} />
@@ -814,6 +814,8 @@ className={`w-element cavlpe c1thowfs c17l107q c1axzkds cpofr2j c1lflnfx c2ace6m
 </Form>
 </div>
 </div>
+<div
+className={`w-element`} />
 </Body>
 }
 

@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "fdf34ff5-4077-42f1-b2f2-45f352cda6b9",
+    "id": "5745e311-a4d5-4bc3-8386-e9cfd39d9fe9",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 2352,
-    "createdAt": "2026-02-05T15:42:40.036+00:00",
-    "updatedAt": "2026-02-05T15:42:40.036+00:00",
+    "version": 2360,
+    "createdAt": "2026-02-05T23:39:48.926+00:00",
+    "updatedAt": "2026-02-05T23:39:48.926+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -22693,7 +22693,7 @@
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 60
+            "value": 80
           }
         }
       ],
@@ -33177,7 +33177,7 @@
           "instanceId": "rWGPHfQatVbcPRhnVRGr6",
           "name": "required",
           "type": "boolean",
-          "value": false
+          "value": true
         }
       ],
       [
@@ -33622,7 +33622,7 @@
           "name": "ENDPOINT | proxy-submit-contact-form",
           "value": {
             "type": "string",
-            "value": "/proxy/submit-contact-form"
+            "value": "/proxy/contact-form-submits"
           }
         }
       ],
@@ -34027,6 +34027,10 @@
             {
               "type": "id",
               "value": "ty1mCgsLLjK5-dlO-5wsG"
+            },
+            {
+              "type": "id",
+              "value": "Rn9B-iKC88b5TWvoVlH_l"
             }
           ]
         }
@@ -34038,7 +34042,7 @@
           "id": "B11o_3Bvv-DcDfg_dcR-R",
           "component": "ws:element",
           "tag": "div",
-          "label": "container navbar",
+          "label": "container Navbar",
           "children": [
             {
               "type": "id",
@@ -37587,6 +37591,17 @@
               "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.customerLogos.sectionTitle"
             }
           ]
+        }
+      ],
+      [
+        "Rn9B-iKC88b5TWvoVlH_l",
+        {
+          "type": "instance",
+          "id": "Rn9B-iKC88b5TWvoVlH_l",
+          "component": "ws:element",
+          "tag": "div",
+          "label": "container Footer",
+          "children": []
         }
       ]
     ],

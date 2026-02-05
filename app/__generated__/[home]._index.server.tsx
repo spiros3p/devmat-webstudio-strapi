@@ -7,7 +7,7 @@
 export const getResources = (_props: { system: System }) => {
   let URLcmsdocker = "http://172.18.0.23:1337"
   let URLmiddlemanproxy = "http://172.18.0.25:5151"
-  let ENDPOINTproxysubmitcontactform = "/proxy/submit-contact-form"
+  let ENDPOINTproxysubmitcontactform = "/proxy/contact-form-submits"
   const REQHomePage_1: ResourceRequest = {
     name: "REQ | Home Page",
     url: URLcmsdocker+"/api/general",
