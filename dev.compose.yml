@@ -4,8 +4,6 @@ services:
     build: .
     # expose:
     #   - 3030
-    volumes:
-      - /app/node_modules
     ports:
       - 3030:3030
     networks:

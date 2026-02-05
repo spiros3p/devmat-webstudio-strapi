@@ -2,10 +2,19 @@
 
 FROM node:22-alpine
 
-COPY . /app/
 WORKDIR /app
 
-RUN npm i --omit=dev
-RUN npm run build:app
+COPY package.json pnpm-lock.yaml ./
+COPY ./patches/* /app/patches/
 
-CMD ["npm", "run", "start:app"]
+RUN npm install -g pnpm@9
+
+RUN pnpm install
+RUN pnpm prune --prod
+
+COPY . ./
+
+RUN pnpm build:app
+
+
+CMD ["pnpm", "start:app"]
