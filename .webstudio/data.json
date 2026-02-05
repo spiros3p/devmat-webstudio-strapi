@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "b35820e4-c048-4536-989f-71af8ea82190",
+    "id": "fdf34ff5-4077-42f1-b2f2-45f352cda6b9",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 2332,
-    "createdAt": "2026-02-05T15:17:43.704+00:00",
-    "updatedAt": "2026-02-05T15:17:43.704+00:00",
+    "version": 2352,
+    "createdAt": "2026-02-05T15:42:40.036+00:00",
+    "updatedAt": "2026-02-05T15:42:40.036+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -14936,87 +14936,6 @@
         }
       ],
       [
-        "vM7EWgp7lFs-uo-gN01tB:IOEBbQqW2Zb9XucSe4u8N:textAlign:",
-        {
-          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
-          "styleSourceId": "vM7EWgp7lFs-uo-gN01tB",
-          "property": "textAlign",
-          "value": {
-            "type": "keyword",
-            "value": "center"
-          }
-        }
-      ],
-      [
-        "vM7EWgp7lFs-uo-gN01tB:IOEBbQqW2Zb9XucSe4u8N:color:",
-        {
-          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
-          "styleSourceId": "vM7EWgp7lFs-uo-gN01tB",
-          "property": "color",
-          "value": {
-            "type": "color",
-            "colorSpace": "srgb",
-            "components": [
-              0.4,
-              0.4,
-              0.4
-            ],
-            "alpha": 1
-          }
-        }
-      ],
-      [
-        "vM7EWgp7lFs-uo-gN01tB:IOEBbQqW2Zb9XucSe4u8N:fontSize:",
-        {
-          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
-          "styleSourceId": "vM7EWgp7lFs-uo-gN01tB",
-          "property": "fontSize",
-          "value": {
-            "type": "unit",
-            "value": 20,
-            "unit": "px"
-          }
-        }
-      ],
-      [
-        "vM7EWgp7lFs-uo-gN01tB:IOEBbQqW2Zb9XucSe4u8N:lineHeight:",
-        {
-          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
-          "styleSourceId": "vM7EWgp7lFs-uo-gN01tB",
-          "property": "lineHeight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 1.2
-          }
-        }
-      ],
-      [
-        "vM7EWgp7lFs-uo-gN01tB:IOEBbQqW2Zb9XucSe4u8N:marginBottom:",
-        {
-          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
-          "styleSourceId": "vM7EWgp7lFs-uo-gN01tB",
-          "property": "marginBottom",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 30
-          }
-        }
-      ],
-      [
-        "vM7EWgp7lFs-uo-gN01tB:IOEBbQqW2Zb9XucSe4u8N:textTransform:",
-        {
-          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
-          "styleSourceId": "vM7EWgp7lFs-uo-gN01tB",
-          "property": "textTransform",
-          "value": {
-            "type": "keyword",
-            "value": "uppercase"
-          }
-        }
-      ],
-      [
         "kEsxzSWx85ze9_AtOwiYz:IOEBbQqW2Zb9XucSe4u8N:display:",
         {
           "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
@@ -28492,6 +28411,73 @@
             "value": "block"
           }
         }
+      ],
+      [
+        "dIzdASIYIpmYgCW1wMwLE:Cau1OpnQLcB8-xVPpUhsW:fontWeight:",
+        {
+          "breakpointId": "Cau1OpnQLcB8-xVPpUhsW",
+          "styleSourceId": "dIzdASIYIpmYgCW1wMwLE",
+          "property": "fontWeight",
+          "value": {
+            "type": "keyword",
+            "value": "600"
+          }
+        }
+      ],
+      [
+        "dIzdASIYIpmYgCW1wMwLE:Cau1OpnQLcB8-xVPpUhsW:textTransform:",
+        {
+          "breakpointId": "Cau1OpnQLcB8-xVPpUhsW",
+          "styleSourceId": "dIzdASIYIpmYgCW1wMwLE",
+          "property": "textTransform",
+          "value": {
+            "type": "keyword",
+            "value": "uppercase"
+          }
+        }
+      ],
+      [
+        "dIzdASIYIpmYgCW1wMwLE:Cau1OpnQLcB8-xVPpUhsW:fontSize:",
+        {
+          "breakpointId": "Cau1OpnQLcB8-xVPpUhsW",
+          "styleSourceId": "dIzdASIYIpmYgCW1wMwLE",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": 1
+          }
+        }
+      ],
+      [
+        "dIzdASIYIpmYgCW1wMwLE:Cau1OpnQLcB8-xVPpUhsW:textAlign:",
+        {
+          "breakpointId": "Cau1OpnQLcB8-xVPpUhsW",
+          "styleSourceId": "dIzdASIYIpmYgCW1wMwLE",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "dIzdASIYIpmYgCW1wMwLE:Cau1OpnQLcB8-xVPpUhsW:color:",
+        {
+          "breakpointId": "Cau1OpnQLcB8-xVPpUhsW",
+          "styleSourceId": "dIzdASIYIpmYgCW1wMwLE",
+          "property": "color",
+          "value": {
+            "type": "color",
+            "colorSpace": "srgb",
+            "components": [
+              0.4,
+              0.4,
+              0.4
+            ],
+            "alpha": 1
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -29109,13 +29095,6 @@
         {
           "type": "local",
           "id": "kEsxzSWx85ze9_AtOwiYz"
-        }
-      ],
-      [
-        "vM7EWgp7lFs-uo-gN01tB",
-        {
-          "type": "local",
-          "id": "vM7EWgp7lFs-uo-gN01tB"
         }
       ],
       [
@@ -30007,6 +29986,13 @@
           "type": "local",
           "id": "D3PaI-sIDyRJvWv1FdYwc"
         }
+      ],
+      [
+        "dIzdASIYIpmYgCW1wMwLE",
+        {
+          "type": "local",
+          "id": "dIzdASIYIpmYgCW1wMwLE"
+        }
       ]
     ],
     "styleSourceSelections": [
@@ -30583,15 +30569,6 @@
           "instanceId": "loTbHqNoY5bFE6fzU-98H",
           "values": [
             "kEsxzSWx85ze9_AtOwiYz"
-          ]
-        }
-      ],
-      [
-        "zpLeqml02oebeyu6blV7N",
-        {
-          "instanceId": "zpLeqml02oebeyu6blV7N",
-          "values": [
-            "vM7EWgp7lFs-uo-gN01tB"
           ]
         }
       ],
@@ -31619,6 +31596,15 @@
             "D3PaI-sIDyRJvWv1FdYwc"
           ]
         }
+      ],
+      [
+        "0DW6GX5DUa7Zd1jxTCUya",
+        {
+          "instanceId": "0DW6GX5DUa7Zd1jxTCUya",
+          "values": [
+            "dIzdASIYIpmYgCW1wMwLE"
+          ]
+        }
       ]
     ],
     "props": [
@@ -31840,16 +31826,6 @@
           "name": "executeScriptOnCanvas",
           "type": "boolean",
           "value": false
-        }
-      ],
-      [
-        "EkbtYgUdaKGjC_P87iic0",
-        {
-          "id": "EkbtYgUdaKGjC_P87iic0",
-          "instanceId": "zpLeqml02oebeyu6blV7N",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
         }
       ],
       [
@@ -33352,6 +33328,26 @@
           "name": "value",
           "type": "expression",
           "value": "$ws$dataSource$aqxtBQ__DASH__2D0M54PRXbxwQB.formSubject"
+        }
+      ],
+      [
+        "t32OZAdL2sYxRiWST0AOB",
+        {
+          "id": "t32OZAdL2sYxRiWST0AOB",
+          "instanceId": "ty1mCgsLLjK5-dlO-5wsG",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "H7aCCufBchSB7eMdey4IO",
+        {
+          "id": "H7aCCufBchSB7eMdey4IO",
+          "instanceId": "B11o_3Bvv-DcDfg_dcR-R",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
         }
       ]
     ],
@@ -35188,7 +35184,7 @@
           "children": [
             {
               "type": "id",
-              "value": "zpLeqml02oebeyu6blV7N"
+              "value": "0DW6GX5DUa7Zd1jxTCUya"
             },
             {
               "type": "id",
@@ -35208,21 +35204,6 @@
             {
               "type": "id",
               "value": "1CxmD4LcOHYHhWR379qPO"
-            }
-          ]
-        }
-      ],
-      [
-        "zpLeqml02oebeyu6blV7N",
-        {
-          "type": "instance",
-          "id": "zpLeqml02oebeyu6blV7N",
-          "component": "ws:element",
-          "tag": "h3",
-          "children": [
-            {
-              "type": "expression",
-              "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.customerLogos.sectionTitle"
             }
           ]
         }
@@ -37591,6 +37572,21 @@
           "component": "ws:element",
           "tag": "option",
           "children": []
+        }
+      ],
+      [
+        "0DW6GX5DUa7Zd1jxTCUya",
+        {
+          "type": "instance",
+          "id": "0DW6GX5DUa7Zd1jxTCUya",
+          "component": "ws:element",
+          "tag": "h3",
+          "children": [
+            {
+              "type": "expression",
+              "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.customerLogos.sectionTitle"
+            }
+          ]
         }
       ]
     ],

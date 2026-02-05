@@ -11,7 +11,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-05T15:17:43.704Z";
+      export const lastPublished = "2026-02-05T15:42:40.036Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -388,7 +388,7 @@ className={`w-html-embed`} />
 <div
 className={`w-element c1sb8ohy c9s2vs7 c1f5y87x c1y6e6gy`}>
 <h3
-className={`w-element cavlpe c1bjxlr9 cntodcp csa87u c1u6lavf c1dhh8cz`}>
+className={`w-element c1vu70pc co7nfib chae98v cqp1iu8 c1dxgzic`}>
 {REQHomePage?.data?.data?.customerLogos?.sectionTitle}
 </h3>
 <Box

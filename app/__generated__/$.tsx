@@ -10,7 +10,7 @@ import { HtmlEmbed as HtmlEmbed } from "@webstudio-is/sdk-components-react";
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-05T15:17:43.704Z";
+      export const lastPublished = "2026-02-05T15:42:40.036Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
