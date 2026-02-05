@@ -1,5 +1,3 @@
-# Builds the react UI inside the "app" directory 
-
 FROM node:22-alpine
 
 WORKDIR /app

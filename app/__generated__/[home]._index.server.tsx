@@ -2,9 +2,12 @@
       /* This is a auto generated file for building the project */ 
 
 
-      import type { PageMeta, ResourceRequest, System } from "@webstudio-is/sdk";
+      import type { PageMeta } from "@webstudio-is/sdk";
+      import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
   let cmsUrl = "http://172.18.0.23:1337"
+  let URLmiddlemanproxy = "http://172.18.0.25:5151"
+  let ENDPOINTproxysubmitcontactform = "/proxy/submit-contact-form"
   const homepagedatacms_1: ResourceRequest = {
     name: "home page data | cms",
     url: "http://172.18.0.23:1337/api/general",
@@ -61,7 +64,7 @@ export const getResources = (_props: { system: System }) => {
   }
   const action: ResourceRequest = {
     name: "action",
-    url: "http://localhost:3111/test",
+    url: URLmiddlemanproxy+ENDPOINTproxysubmitcontactform,
     searchParams: [
     ],
     method: "post",
