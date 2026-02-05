@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_home_page_contact_forms",
+  "info": {
+    "displayName": "Contact Form",
+    "icon": "doctor"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "formSubjects": {
+      "type": "component",
+      "component": "form.form-subject",
+      "repeatable": true,
+      "required": false
+    },
+    "formSubmitBtnText": {
+      "type": "string",
+      "required": true
+    },
+    "successMessage": {
+      "type": "text",
+      "required": true
+    },
+    "errorMessage": {
+      "type": "text",
+      "required": true
+    },
+    "formInputNames": {
+      "type": "component",
+      "component": "form.form-input-names",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

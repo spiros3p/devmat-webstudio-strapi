@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_form_form_input_names",
+  "info": {
+    "displayName": "formInputNames",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "subjectInputName": {
+      "type": "string",
+      "required": true
+    },
+    "nameInputName": {
+      "type": "string",
+      "required": true
+    },
+    "emailInputName": {
+      "type": "string",
+      "required": true
+    },
+    "messageInputName": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -95,6 +95,30 @@
                "title",
                "subtitle"
             ]
+         },
+         "contactForm": {
+            "fields": [
+               "title",
+               "subtitle",
+               "formSubmitBtnText",
+               "successMessage",
+               "errorMessage"
+            ],
+            "populate": {
+               "formSubjects": {
+                  "fields": [
+                     "formSubject"
+                  ]
+               },
+               "formInputNames": {
+                  "fields": [
+                     "subjectInputName",
+                     "nameInputName",
+                     "messageInputName",
+                     "emailInputName"
+                  ]
+               }
+            }
          }
       },
       "fields": [

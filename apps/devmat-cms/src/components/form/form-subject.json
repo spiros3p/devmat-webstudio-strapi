@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_form_form_subjects",
+  "info": {
+    "displayName": "formSubject",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "formSubject": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  },
+  "config": {}
+}

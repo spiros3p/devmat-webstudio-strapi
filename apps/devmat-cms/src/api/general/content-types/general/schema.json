@@ -85,6 +85,16 @@
       },
       "component": "home-page.faqs",
       "repeatable": false
+    },
+    "contactForm": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "home-page.contact-form",
+      "repeatable": false
     }
   }
 }
