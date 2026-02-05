@@ -4,14 +4,14 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
-import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuLink as NavigationMenuLink, NavigationMenuViewport as NavigationMenuViewport, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
-import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Paragraph as Paragraph, Fragment as Fragment_1, Image as Image, Slot as Slot, MarkdownEmbed as MarkdownEmbed } from "@webstudio-is/sdk-components-react";
+      import { Body as Body, Link as Link, Link as Link_1, Form as Form } from "@webstudio-is/sdk-components-react-router";
+import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent, NavigationMenuLink as NavigationMenuLink, NavigationMenuViewport as NavigationMenuViewport, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent, Label as Label, Select as Select, SelectTrigger as SelectTrigger, SelectValue as SelectValue, SelectContent as SelectContent, SelectViewport as SelectViewport, SelectItem as SelectItem, SelectItemIndicator as SelectItemIndicator, SelectItemText as SelectItemText } from "@webstudio-is/sdk-components-react-radix";
+import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Paragraph as Paragraph, Fragment as Fragment_1, Image as Image, Slot as Slot, MarkdownEmbed as MarkdownEmbed, Textarea as Textarea, Input as Input } from "@webstudio-is/sdk-components-react";
 
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-04T21:37:41.622Z";
+      export const lastPublished = "2026-02-05T12:08:29.528Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -37,6 +37,7 @@ let gettingStartedSteps = useResource("gettingStartedSteps_1")
 let solutions = useResource("solutions_1")
 let clientReviewsReq = useResource("clientReviewsReq_1")
 let FAQs = useResource("FAQs_1")
+let [formState, set$formState] = useVariableState<any>("initial")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
 <div
@@ -606,7 +607,7 @@ className={`w-element c53v5zz cjocp00 c1kgmnno c1przhxw cbbmne5 cu3uc3t cyksmbj 
 {collectionItem_5?.name}
 </span>
 <span
-className={`w-element c1bjxlr9 c1yral3q`}>
+className={`w-element c1bjxlr9 c1yral3q cib9e3x`}>
 {collectionItem_5?.title}
 </span>
 </div>
@@ -688,6 +689,151 @@ className={`w-markdown-embed ccn41lv c1bjxlr9 clh9rxp`}>
 </Box>
 </Box>
 }
+<div
+className={`w-element ccgn8hl c13imvs7 c1y6e6gy c1f5y87x cyidosu`}>
+<h2
+className={`w-element cavlpe c1ox04z8 c1735zj0 cseqxw9 c1g7thye`}>
+{homepagedatacms?.data?.data?.contactForm?.title}
+</h2>
+<h3
+className={`w-element cavlpe c1ox04z8 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1d80dtg cseqxw9 c1g7thye`}>
+{homepagedatacms?.data?.data?.contactForm?.subtitle}
+</h3>
+<div
+className={`w-element`}>
+<Form
+state={formState}
+onStateChange={(state: any) => {
+formState = state
+set$formState(formState)
+}}
+action={"action"}
+className={`w-webhook-form c1fq6v54 c1xz0hfv c1nn1c1j`}>
+{(formState === 'initial' || formState === 'error') &&
+<div
+className={`w-element cyksmbj c1i7snbb c18htm2o c41c50e c1xz0hfv c1nn1c1j`}>
+<div
+className={`w-element cyksmbj c1i7snbb c1e12a07 chn9tnv`}>
+<Label
+className={`w-label cc3itzg c1n9d4u8 ch2shl`}>
+<span
+className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck`}>
+{homepagedatacms?.data?.data?.contactForm?.formInputNames?.subjectInputName}
+</span>
+<Select
+required={false}
+open={false}
+name={homepagedatacms?.data?.data?.contactForm?.formInputNames?.subjectInputName}>
+<SelectTrigger
+className={`w-select-trigger cyksmbj c1w9irg3 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 ch2shl c1s43d56 c1xhvr2q c16vucp1 crafl4a czh82uq cbq1r21`}>
+<SelectValue
+placeholder={homepagedatacms?.data?.data?.contactForm?.formSubjects?.[0]?.formSubject}
+className={`w-value`} />
+</SelectTrigger>
+<SelectContent
+className={`w-select-content c1gbr3z6 c11ti0jn c14rgi1k c1pwlyx4 ctvij5o c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi cse038c c3bwd5r c1s43d56`}>
+<SelectViewport
+className={`w-select-viewport c10jd2sr c1przhxw cmonejl c12y3wgm`}>
+{Object.entries(
+  // @ts-ignore
+  homepagedatacms?.data?.data?.contactForm?.formSubjects ?? {}
+).map(([_key, collectionItem_8]: any) => {
+  const collectionItemKey_6 = Array.isArray(homepagedatacms?.data?.data?.contactForm?.formSubjects) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_6}>
+<SelectItem
+className={`w-select-item c1gbr3z6 cyksmbj c1przhxw cf5yzi2 clbsjag c1oji2iw c1scatng c12dglsd c18cn36h c1s0vdhp c1istxi8 c1d4uxfk c16mdrik c11w6vg0 cc3itzg cu15652 c1b9nnoh cfn2ywy c2bousg c1pm9f1j ct56228`}>
+<SelectItemIndicator
+className={`w-indicator c1ca1opd cuvqz1d cyksmbj c61vztv c1liicnf c1oji2iw c7pv373`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.091\" d=\"m13.636 3.667-8 8L2 8.03\"/></svg>"}
+className={`w-html-embed`} />
+</SelectItemIndicator>
+<SelectItemText
+className={`w-item-text`}>
+{collectionItem_8?.formSubject}
+</SelectItemText>
+</SelectItem>
+</Fragment>
+)
+})
+}
+</SelectViewport>
+</SelectContent>
+</Select>
+</Label>
+</div>
+<div
+className={`w-element cyksmbj cj4fr1t c41c50e c1rc0m8f`}>
+<div
+className={`w-element cyksmbj c1i7snbb c1e12a07 chn9tnv c19ayrcm cleis16 cmxafh8`}>
+<Label
+className={`w-label cc3itzg c1n9d4u8 cyjqqjx`}>
+<span
+className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck`}>
+{homepagedatacms?.data?.data?.contactForm?.formInputNames?.nameInputName}
+</span>
+<Input
+type={"text"}
+required={false}
+name={homepagedatacms?.data?.data?.contactForm?.formInputNames?.nameInputName}
+placeholder={homepagedatacms?.data?.data?.contactForm?.formInputNames?.nameInputName}
+className={`w-element c1k5mt0p c1w9irg3 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 ch2shl c1s43d56 c1xhvr2q ckhmb2v c16vucp1 crafl4a czh82uq cbq1r21`} />
+</Label>
+</div>
+<div
+className={`w-element cyksmbj c1i7snbb c1e12a07 chn9tnv c19ayrcm cleis16 cmxafh8`}>
+<Label
+className={`w-label cc3itzg c1n9d4u8 cyjqqjx`}>
+<span
+className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck`}>
+{homepagedatacms?.data?.data?.contactForm?.formInputNames?.emailInputName}
+</span>
+<Input
+type={"email"}
+required={false}
+name={homepagedatacms?.data?.data?.contactForm?.formInputNames?.emailInputName}
+placeholder={homepagedatacms?.data?.data?.contactForm?.formInputNames?.emailInputName}
+className={`w-element c1k5mt0p c1w9irg3 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 ch2shl c1s43d56 c1xhvr2q ckhmb2v c16vucp1 crafl4a czh82uq cbq1r21`} />
+</Label>
+</div>
+</div>
+<div
+className={`w-element cyksmbj c1i7snbb c1e12a07 chn9tnv`}>
+<Label
+className={`w-label cc3itzg c1n9d4u8 cyjqqjx`}>
+<span
+className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck`}>
+{homepagedatacms?.data?.data?.contactForm?.formInputNames?.messageInputName}
+</span>
+<Textarea
+required={false}
+name={homepagedatacms?.data?.data?.contactForm?.formInputNames?.messageInputName}
+className={`w-element c1k5mt0p c10q1xg1 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 ch2shl c1s43d56 c1xhvr2q c16vucp1 crafl4a czh82uq cbq1r21`} />
+</Label>
+</div>
+<button
+type={"submit"}
+className={`w-element c1xz0hfv c1nn1c1j c1ii509t c143tev2 c2ace6m cjaeftc c15ykucn cb65ij0 ccfiqmq c1dhh8cz c53v5zz ch2shl cjtheg6 clmafat c1rkdu33 c2i0qoz c1eqwf0y cevelsr c1lc8yfv c1mucujo c1o70tqg cmx5vkr c11r2gzv c152jaq9 c2tdqda`}>
+{homepagedatacms?.data?.data?.contactForm?.formSubmitBtnText}
+</button>
+</div>
+}
+{(formState === 'success') &&
+<div
+className={`w-element cavlpe c1ox04z8 ccn41lv c1s55wh8 c7cd9ps c1xz0hfv c1nn1c1j c17l107q c1axzkds cpofr2j c1lflnfx c2ace6m cjaeftc c15ykucn cb65ij0 c1l06n22 c1u6lavf c1q2liwv`}>
+{homepagedatacms?.data?.data?.contactForm?.successMessage}
+</div>
+}
+{(formState === 'error') &&
+<div
+className={`w-element cavlpe c1thowfs c17l107q c1axzkds cpofr2j c1lflnfx c2ace6m cjaeftc c15ykucn cb65ij0 c40rd93 c163bfw4 c7gmv7x cszm7qs c5ccpqx c1q2liwv`}>
+{homepagedatacms?.data?.data?.contactForm?.errorMessage}
+</div>
+}
+</Form>
+</div>
+</div>
 </Body>
 }
 

@@ -19,6 +19,18 @@
     -moz-osx-font-smoothing: grayscale;
     margin: 0
   }
+  button.w-element {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    box-sizing: border-box;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    text-transform: none;
+    margin: 0
+  }
   div.w-element {
     box-sizing: border-box
   }
@@ -34,11 +46,33 @@
   h4.w-element {
     box-sizing: border-box
   }
+  input.w-element {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    box-sizing: border-box;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    margin: 0
+  }
   p.w-element {
     box-sizing: border-box
   }
   span.w-element {
     box-sizing: border-box
+  }
+  textarea.w-element {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    box-sizing: border-box;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    margin: 0
   }
   img.w-image {
     box-sizing: border-box;
@@ -125,6 +159,42 @@
     display: contents;
     white-space: normal;
     white-space-collapse: collapse
+  }
+  form.w-webhook-form {
+    box-sizing: border-box
+  }
+  label.w-label {
+    box-sizing: border-box
+  }
+  button.w-select-trigger {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    box-sizing: border-box;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    text-transform: none;
+    margin: 0
+  }
+  span.w-value {
+    box-sizing: border-box
+  }
+  div.w-select-content {
+    box-sizing: border-box
+  }
+  div.w-select-viewport {
+    box-sizing: border-box
+  }
+  div.w-select-item {
+    box-sizing: border-box
+  }
+  span.w-indicator {
+    box-sizing: border-box
+  }
+  span.w-item-text {
+    box-sizing: border-box
   }
 }
 @media all {
@@ -1125,6 +1195,9 @@
   .c71ptit {
     font-size: 17px
   }
+  .cib9e3x {
+    text-transform: none
+  }
   .c16wa6q4 {
     font-size: 16px
   }
@@ -1268,6 +1341,132 @@
   }
   .c16l2zfk {
     transition-duration: 150ms
+  }
+  .c1d80dtg {
+    margin-bottom: 40px
+  }
+  .c1ii509t {
+    width: 250px
+  }
+  .ccfiqmq {
+    margin-top: 30px
+  }
+  .cevelsr {
+    transition-duration: 260ms
+  }
+  .c152jaq9:hover {
+    background-color: rgb(0 109 225 / 1)
+  }
+  .c2tdqda:hover {
+    cursor: pointer
+  }
+  .cj4fr1t {
+    column-gap: 40px
+  }
+  .c1e12a07 {
+    column-gap: 5px
+  }
+  .chn9tnv {
+    row-gap: 5px
+  }
+  .cmxafh8 {
+    min-width: 260px
+  }
+  .c10q1xg1 {
+    height: 80px
+  }
+  .c1o1lwe9 {
+    padding-top: 0.5rem
+  }
+  .c11ceujt {
+    padding-bottom: 0.5rem
+  }
+  .c1xhvr2q::placeholder {
+    color: rgb(100 116 139 / 1)
+  }
+  .crafl4a:focus-visible {
+    outline: medium none currentcolor
+  }
+  .czh82uq:disabled {
+    cursor: not-allowed
+  }
+  .c1w9irg3 {
+    height: 2.5rem
+  }
+  .ckhmb2v::placeholder {
+    text-transform: capitalize
+  }
+  .c14rgi1k {
+    min-width: 8rem
+  }
+  .c3bwd5r {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)
+  }
+  .c10jd2sr {
+    height: var(--radix-select-trigger-height)
+  }
+  .cmonejl {
+    min-width: var(--radix-select-trigger-width)
+  }
+  .c12y3wgm {
+    padding: 0.25rem
+  }
+  .cf5yzi2 {
+    cursor: default
+  }
+  .c1istxi8 {
+    padding-top: 0.375rem
+  }
+  .c1d4uxfk {
+    padding-right: 0.5rem
+  }
+  .c16mdrik {
+    padding-bottom: 0.375rem
+  }
+  .c1pm9f1j[data-disabled] {
+    pointer-events: none
+  }
+  .ct56228[data-disabled] {
+    opacity: 0.5
+  }
+  .cuvqz1d {
+    left: 0.5rem
+  }
+  .c61vztv {
+    height: 0.875rem
+  }
+  .c1liicnf {
+    width: 0.875rem
+  }
+  .c1qwscpl {
+    margin-bottom: 10px
+  }
+  .c7cd9ps {
+    max-width: 400px
+  }
+  .c1l06n22 {
+    margin-top: 60px
+  }
+  .c1q2liwv {
+    padding: 10px
+  }
+  .c1thowfs {
+    margin-top: 20px
+  }
+  .c40rd93 {
+    border-top-color: red
+  }
+  .c163bfw4 {
+    border-right-color: red
+  }
+  .c7gmv7x {
+    border-bottom-color: red
+  }
+  .cszm7qs {
+    border-left-color: red
+  }
+  .c5ccpqx {
+    color: red
   }
 }
 @media all and (max-width: 991px) {

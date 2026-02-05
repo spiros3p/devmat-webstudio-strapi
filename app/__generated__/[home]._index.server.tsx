@@ -2,8 +2,7 @@
       /* This is a auto generated file for building the project */ 
 
 
-      import type { PageMeta } from "@webstudio-is/sdk";
-      import type { System, ResourceRequest } from "@webstudio-is/sdk";
+      import type { PageMeta, ResourceRequest, System } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
   let cmsUrl = "http://172.18.0.23:1337"
   const homepagedatacms_1: ResourceRequest = {
@@ -60,6 +59,16 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
+  const action: ResourceRequest = {
+    name: "action",
+    url: "http://localhost:3111/test",
+    searchParams: [
+    ],
+    method: "post",
+    headers: [
+      { name: "Content-Type", value: "application/json" },
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["homepagedatacms_1", homepagedatacms_1],
     ["benfitsOfDevmat_1", benfitsOfDevmat_1],
@@ -69,6 +78,7 @@ export const getResources = (_props: { system: System }) => {
     ["FAQs_1", FAQs_1],
   ])
   const _action = new Map<string, ResourceRequest>([
+    ["action", action],
   ])
   return { data: _data, action: _action }
 }
