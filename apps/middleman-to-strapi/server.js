@@ -18,11 +18,14 @@ app.use(
 
 app.use(express.json());
 
-app.post("/proxy/submit-contact-form", async (req, res) => {
+app.post("/proxy/:collection", async (req, res) => {
   try {
+    const collectionName = req.params.collection;
+    const targetUrl = `${process.env.PROXY_TARGET_URL}/${collectionName}`;
     const webstudioData = req.body;
-    const targetUrl = process.env.PROXY_TARGET_URL;
     console.log("📥 Received from Webstudio:", webstudioData);
+    console.log(`🔀 Proxying request to collection: "${collectionName}"`);
+    console.log(`🔗 Target URL: ${targetUrl}`);
     const strapiPayload = {
       data: webstudioData,
     };
@@ -40,7 +43,7 @@ app.post("/proxy/submit-contact-form", async (req, res) => {
         error: responseData.error || "Failed to submit to Strapi",
       });
     }
-    console.log("✅ Success from Strapi:", responseData);
+    console.log("✅ Success from Strapi. documentId: ", responseData?.data['documentId']);
     res.status(200).json({ success: true, data: responseData });
   } catch (error) {
     console.error("❌ Network/Server Error:", error.message);
@@ -50,6 +53,5 @@ app.post("/proxy/submit-contact-form", async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`🚀 Proxy server running at http://localhost:${PORT}`);
-  console.log('Available endpoints: \n- /proxy/submit-contact-form');
   console.log(`🔗 Proxying to: ${process.env.PROXY_TARGET_URL}`);
 });
