@@ -11,7 +11,7 @@ import { Box as Box, Fragment as Fragment_1, HtmlEmbed as HtmlEmbed, Image as Im
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-06T23:12:01.447Z";
+      export const lastPublished = "2026-02-06T23:44:48.841Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -151,6 +151,7 @@ className={`w-menu-item cbanl4k`}>
 <NavigationMenuLink>
 {(!!REQNavigation?.data?.data?.specialLink) &&
 <Link
+href={REQNavigation?.data?.data?.specialLink?.href}
 className={`w-link ccqry52 c1oji2iw c7pv373 cyidosu cfxgbuw c1w3iq2x cmd2k6o c1aefk7h cc3itzg cu15652 cyjqqjx c152iurg c15q8tho c1kh7ybw c1rwsfc4 c16v3bxy cqjwob8 c1ox04z8 c1eqwf0y czk77kp c1lc8yfv c1mucujo c1o70tqg c1t98528 c6i07qh c16vucp1 c10wx85o c1q4fk80 cbq1r21 c11r2gzv ca9pb38`}>
 {"Book a demo"}
 </Link>
@@ -175,22 +176,22 @@ className={`w-element c3c9r1c c1ihasyt c1fq6v54 cpf8n67 c1s55wh8`}>
 </p>
 <div
 className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl c2yan1w cynjatq`}>
-{(!!REQHomePage?.data?.data?.heroSection?.primaryButton?.title) &&
+{(!!REQHomePage?.data?.data?.heroSection?.leftButton?.title) &&
 <Link_1
-href={REQHomePage?.data?.data?.heroSection?.primaryButton?.href}
-target={REQHomePage?.data?.data?.heroSection?.primaryButton?.target}
-title={REQHomePage?.data?.data?.heroSection?.primaryButton?.title}
+href={REQHomePage?.data?.data?.heroSection?.leftButton?.href}
+target={REQHomePage?.data?.data?.heroSection?.leftButton?.target}
+title={REQHomePage?.data?.data?.heroSection?.leftButton?.title}
 className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1wbt3eu cxjyi5z c1kd0iqv c2t1vc3 cmx5vkr c53v5zz c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}>
-{REQHomePage?.data?.data?.heroSection?.primaryButton?.title}
+{REQHomePage?.data?.data?.heroSection?.leftButton?.title}
 </Link_1>
 }
-{(!!REQHomePage?.data?.data?.heroSection?.secondaryButton?.title) &&
+{(!!REQHomePage?.data?.data?.heroSection?.rightButton?.title) &&
 <Link_1
-title={REQHomePage?.data?.data?.heroSection?.secondaryButton?.title}
-href={REQHomePage?.data?.data?.heroSection?.secondaryButton?.href}
-target={REQHomePage?.data?.data?.heroSection?.secondaryButton?.target}
+title={REQHomePage?.data?.data?.heroSection?.rightButton?.title}
+href={REQHomePage?.data?.data?.heroSection?.rightButton?.href}
+target={REQHomePage?.data?.data?.heroSection?.rightButton?.target}
 className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1pk2abd c1om2ni4 c1t9kc3 caxks0e c199gza7 c1ox04z8 c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}>
-{REQHomePage?.data?.data?.heroSection?.secondaryButton?.title}
+{REQHomePage?.data?.data?.heroSection?.rightButton?.title}
 </Link_1>
 }
 </div>

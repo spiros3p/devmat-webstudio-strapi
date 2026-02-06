@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "3086c759-d2c9-4b91-bd4d-dd59a45b4102",
+    "id": "002e4fb4-e34d-475c-be0e-aed41935246d",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 2885,
-    "createdAt": "2026-02-06T23:12:01.447+00:00",
-    "updatedAt": "2026-02-06T23:12:01.447+00:00",
+    "version": 2896,
+    "createdAt": "2026-02-06T23:44:48.841+00:00",
+    "updatedAt": "2026-02-06T23:44:48.841+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -28232,7 +28232,7 @@
           "instanceId": "AtDML6A553xgGBReMCZA2",
           "name": "href",
           "type": "expression",
-          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.primaryButton.href"
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.leftButton.href"
         }
       ],
       [
@@ -28242,7 +28242,7 @@
           "instanceId": "AtDML6A553xgGBReMCZA2",
           "name": "target",
           "type": "expression",
-          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.primaryButton.target"
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.leftButton.target"
         }
       ],
       [
@@ -28252,7 +28252,7 @@
           "instanceId": "AtDML6A553xgGBReMCZA2",
           "name": "title",
           "type": "expression",
-          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.primaryButton.title"
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.leftButton.title"
         }
       ],
       [
@@ -28262,7 +28262,7 @@
           "instanceId": "c9yPSn1UaNn6emqL_zRr9",
           "name": "title",
           "type": "expression",
-          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.secondaryButton.title"
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.rightButton.title"
         }
       ],
       [
@@ -28272,7 +28272,7 @@
           "instanceId": "c9yPSn1UaNn6emqL_zRr9",
           "name": "href",
           "type": "expression",
-          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.secondaryButton.href"
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.rightButton.href"
         }
       ],
       [
@@ -28282,7 +28282,7 @@
           "instanceId": "c9yPSn1UaNn6emqL_zRr9",
           "name": "target",
           "type": "expression",
-          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.secondaryButton.target"
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.rightButton.target"
         }
       ],
       [
@@ -28572,7 +28572,7 @@
           "instanceId": "AtDML6A553xgGBReMCZA2",
           "name": "data-ws-show",
           "type": "expression",
-          "value": "!!$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.primaryButton.title"
+          "value": "!!$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.leftButton.title"
         }
       ],
       [
@@ -28582,7 +28582,7 @@
           "instanceId": "c9yPSn1UaNn6emqL_zRr9",
           "name": "data-ws-show",
           "type": "expression",
-          "value": "!!$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.secondaryButton.title"
+          "value": "!!$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.rightButton.title"
         }
       ],
       [
@@ -30716,6 +30716,16 @@
           "type": "expression",
           "value": "$ws$dataSource$FArxfgS8hYIgWCz1wonSE.target"
         }
+      ],
+      [
+        "nq9DIb_dlXjIXN2sq41n0",
+        {
+          "id": "nq9DIb_dlXjIXN2sq41n0",
+          "instanceId": "H9636kCLvGheBL7snRwAI",
+          "name": "href",
+          "type": "expression",
+          "value": "$ws$dataSource$AgyFHLHePtY__DASH__mLetus2eL.data.data.specialLink.href"
+        }
       ]
     ],
     "dataSources": [
@@ -31897,7 +31907,7 @@
           "children": [
             {
               "type": "expression",
-              "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.primaryButton.title"
+              "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.leftButton.title"
             }
           ]
         }
@@ -31912,7 +31922,7 @@
           "children": [
             {
               "type": "expression",
-              "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.secondaryButton.title"
+              "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.rightButton.title"
             }
           ]
         }
