@@ -306,9 +306,6 @@
       "content-type": "api::navigation.navigation",
       "populate": {
          "navbar": {
-            "fields": [
-               "title"
-            ],
             "populate": {
                "navlink": {
                   "fields": [
@@ -321,7 +318,8 @@
                         "fields": [
                            "name",
                            "href",
-                           "target"
+                           "target",
+                           "description"
                         ]
                      }
                   }
@@ -335,21 +333,20 @@
             "populate": {
                "navlink": {
                   "fields": [
-                     "name",
                      "href",
-                     "target"
+                     "target",
+                     "name"
                   ],
-                  "populate": {
-                     "subnav": {
-                        "fields": [
-                           "name",
-                           "href",
-                           "target"
-                        ]
-                     }
-                  }
+                  "populate": {}
                }
             }
+         },
+         "specialLink": {
+            "fields": [
+               "name",
+               "target",
+               "href"
+            ]
          }
       },
       "fields": [

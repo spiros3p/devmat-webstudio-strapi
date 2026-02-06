@@ -25,6 +25,9 @@
         "_parent",
         "_top"
       ]
+    },
+    "description": {
+      "type": "text"
     }
   },
   "config": {}

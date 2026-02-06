@@ -34,6 +34,16 @@
       },
       "component": "navigation.navbar",
       "repeatable": false
+    },
+    "specialLink": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "navigation.subnav",
+      "repeatable": false
     }
   }
 }
