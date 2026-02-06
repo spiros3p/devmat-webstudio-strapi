@@ -19,8 +19,8 @@
     "scp:data": "scp exports/strapi_dt.tar.gz spiros@37.60.235.172:/home/spiros/apps/devmat/devmat-webstudio-strapi/apps/devmat-cms/exports"
   },
   "dependencies": {
-    "@strapi/plugin-users-permissions": "5.35.0",
-    "@strapi/strapi": "5.35.0",
+    "@strapi/plugin-users-permissions": "5.34.0",
+    "@strapi/strapi": "5.34.0",
     "mysql2": "3.9.8",
     "node-addon-api": "latest",
     "node-gyp": "latest",
