@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_media_devmats",
+  "info": {
+    "singularName": "social-media-devmat",
+    "pluralName": "social-media-devmats",
+    "displayName": "Social Media Devmat"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "icon": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::icon-asset.icon-asset"
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

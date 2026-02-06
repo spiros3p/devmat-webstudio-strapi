@@ -256,5 +256,42 @@
          "locale",
          "answer"
       ]
+   },
+   "GET /api/social-media-devmats": {
+      "content-type": "api::social-media-devmat.social-media-devmat",
+      "fields": [
+         "link",
+         "name",
+         "documentId"
+      ],
+      "populate": {
+         "icon": {
+            "fields": [
+               "name",
+               "documentId"
+            ],
+            "populate": {
+               "icon": {
+                  "fields": [
+                     "name",
+                     "alternativeText",
+                     "caption",
+                     "url",
+                     "documentId"
+                  ]
+               }
+            }
+         }
+      }
+   },
+   "GET /api/footer": {
+      "content-type": "api::footer.footer",
+      "fields": [
+         "siteSign",
+         "developerSign",
+         "locale",
+         "documentId",
+         "footerParagraph"
+      ]
    }
 }
