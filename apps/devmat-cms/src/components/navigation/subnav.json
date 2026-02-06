@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_navigation_subnavs",
+  "info": {
+    "displayName": "sublink",
+    "icon": "globe"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "default": "#",
+      "required": true
+    },
+    "target": {
+      "type": "enumeration",
+      "required": true,
+      "default": "_self",
+      "enum": [
+        "_blank",
+        "_self",
+        "_parent",
+        "_top"
+      ]
+    }
+  },
+  "config": {}
+}

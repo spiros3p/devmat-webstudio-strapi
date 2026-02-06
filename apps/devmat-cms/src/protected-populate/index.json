@@ -289,9 +289,72 @@
       "fields": [
          "siteSign",
          "developerSign",
-         "locale",
+         "footerParagraph",
          "documentId",
-         "footerParagraph"
+         "locale"
+      ]
+   },
+   "GET /api/contact-info": {
+      "content-type": "api::contact-info.contact-info",
+      "fields": [
+         "block",
+         "locale",
+         "documentId"
+      ]
+   },
+   "GET /api/navigation": {
+      "content-type": "api::navigation.navigation",
+      "populate": {
+         "navbar": {
+            "fields": [
+               "title"
+            ],
+            "populate": {
+               "navlink": {
+                  "fields": [
+                     "name",
+                     "href",
+                     "target"
+                  ],
+                  "populate": {
+                     "subnav": {
+                        "fields": [
+                           "name",
+                           "href",
+                           "target"
+                        ]
+                     }
+                  }
+               }
+            }
+         },
+         "footerNavbar": {
+            "fields": [
+               "title"
+            ],
+            "populate": {
+               "navlink": {
+                  "fields": [
+                     "name",
+                     "href",
+                     "target"
+                  ],
+                  "populate": {
+                     "subnav": {
+                        "fields": [
+                           "name",
+                           "href",
+                           "target"
+                        ]
+                     }
+                  }
+               }
+            }
+         }
+      },
+      "fields": [
+         "locale",
+         "documentId"
       ]
    }
 }

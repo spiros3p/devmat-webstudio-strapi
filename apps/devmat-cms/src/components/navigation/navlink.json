@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_navigation_navlinks",
+  "info": {
+    "displayName": "navlink",
+    "icon": "cursor"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "href": {
+      "type": "string",
+      "default": "#",
+      "required": true,
+      "unique": false
+    },
+    "target": {
+      "type": "enumeration",
+      "required": true,
+      "default": "_self",
+      "enum": [
+        "_blank",
+        "_self",
+        "_parent",
+        "_top"
+      ]
+    },
+    "subnav": {
+      "type": "component",
+      "component": "navigation.subnav",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

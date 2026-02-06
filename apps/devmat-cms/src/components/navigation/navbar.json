@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_navigation_navbars",
+  "info": {
+    "displayName": "Navbar",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "navlink": {
+      "type": "component",
+      "component": "navigation.navlink",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
