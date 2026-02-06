@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "d1db7abf-a5de-4a63-a7fa-bc1aae2d0b3d",
+    "id": "56557724-112f-44f2-bd0f-9a7e8cec05f5",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 2843,
-    "createdAt": "2026-02-06T21:22:03.405+00:00",
-    "updatedAt": "2026-02-06T21:22:03.405+00:00",
+    "version": 2851,
+    "createdAt": "2026-02-06T22:34:14.614+00:00",
+    "updatedAt": "2026-02-06T22:34:14.614+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -30615,6 +30615,76 @@
           "name": "title",
           "type": "expression",
           "value": "$ws$dataSource$RYO4fquU__DASH____DASH__WMI0W6BZtBp.link"
+        }
+      ],
+      [
+        "W14Oiy_7OakFhMdTAr665",
+        {
+          "id": "W14Oiy_7OakFhMdTAr665",
+          "instanceId": "_6jkVd54FgYcl-0aY1BSj",
+          "name": "id",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.customerLogos.idAttr"
+        }
+      ],
+      [
+        "PaIt0f_ayKJMqwPy0X5Vm",
+        {
+          "id": "PaIt0f_ayKJMqwPy0X5Vm",
+          "instanceId": "oTglMSGRZFJzbNRl8TjP4",
+          "name": "id",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.benefitsSection.idAttr"
+        }
+      ],
+      [
+        "zAk6Sk4QvDMYW7_W4uWKl",
+        {
+          "id": "zAk6Sk4QvDMYW7_W4uWKl",
+          "instanceId": "B20VPvy7G99bR5WwvhW3m",
+          "name": "id",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.gettingStartedSection.idAttr"
+        }
+      ],
+      [
+        "iGRD4CfuNBCye-fwWFDTR",
+        {
+          "id": "iGRD4CfuNBCye-fwWFDTR",
+          "instanceId": "IYDFow6dzSa3RWg7URbmA",
+          "name": "id",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.solutions.idAttr"
+        }
+      ],
+      [
+        "b8SGtRyHa_3XZlakEWwzN",
+        {
+          "id": "b8SGtRyHa_3XZlakEWwzN",
+          "instanceId": "C0PGQKUU88K1o9Ve1Jje6",
+          "name": "id",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.clientReviews.idAttr"
+        }
+      ],
+      [
+        "hOYuYvVB-oHFdITG_hkfO",
+        {
+          "id": "hOYuYvVB-oHFdITG_hkfO",
+          "instanceId": "LDDOAX5TNEIQoZGqNNJgg",
+          "name": "id",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.faqs.idAttr"
+        }
+      ],
+      [
+        "ivxZCWhkdCVTCfVPqgKg2",
+        {
+          "id": "ivxZCWhkdCVTCfVPqgKg2",
+          "instanceId": "ty1mCgsLLjK5-dlO-5wsG",
+          "name": "id",
+          "type": "expression",
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.contactForm.idAttr"
         }
       ]
     ],
