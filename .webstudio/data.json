@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "002e4fb4-e34d-475c-be0e-aed41935246d",
+    "id": "cfe43a06-790e-47a2-902f-994fc1596fea",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 2896,
-    "createdAt": "2026-02-06T23:44:48.841+00:00",
-    "updatedAt": "2026-02-06T23:44:48.841+00:00",
+    "version": 2908,
+    "createdAt": "2026-02-06T23:54:15.502+00:00",
+    "updatedAt": "2026-02-06T23:54:15.502+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -28252,7 +28252,7 @@
           "instanceId": "AtDML6A553xgGBReMCZA2",
           "name": "title",
           "type": "expression",
-          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.leftButton.title"
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.leftButton.href"
         }
       ],
       [
@@ -28262,7 +28262,7 @@
           "instanceId": "c9yPSn1UaNn6emqL_zRr9",
           "name": "title",
           "type": "expression",
-          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.rightButton.title"
+          "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.heroSection.rightButton.href"
         }
       ],
       [
@@ -30604,7 +30604,7 @@
           "instanceId": "leLiiycRLL_tRLlFGDoIX",
           "name": "title",
           "type": "expression",
-          "value": "$ws$dataSource$RYO4fquU__DASH____DASH__WMI0W6BZtBp.link"
+          "value": "$ws$dataSource$RYO4fquU__DASH____DASH__WMI0W6BZtBp.href"
         }
       ],
       [
@@ -30725,6 +30725,46 @@
           "name": "href",
           "type": "expression",
           "value": "$ws$dataSource$AgyFHLHePtY__DASH__mLetus2eL.data.data.specialLink.href"
+        }
+      ],
+      [
+        "1ac5R0sms0xHN4URms9_d",
+        {
+          "id": "1ac5R0sms0xHN4URms9_d",
+          "instanceId": "H9636kCLvGheBL7snRwAI",
+          "name": "target",
+          "type": "expression",
+          "value": "$ws$dataSource$AgyFHLHePtY__DASH__mLetus2eL.data.data.specialLink.target"
+        }
+      ],
+      [
+        "gpEXWlu2rk8TO3OrLu_A4",
+        {
+          "id": "gpEXWlu2rk8TO3OrLu_A4",
+          "instanceId": "lDpPkku1HeB2UN_TGXCDw",
+          "name": "title",
+          "type": "expression",
+          "value": "$ws$dataSource$PlmRtTNuWeAIPTQ6Czeib.href"
+        }
+      ],
+      [
+        "25tFHZyvzKJGnmmu0bTLn",
+        {
+          "id": "25tFHZyvzKJGnmmu0bTLn",
+          "instanceId": "H9636kCLvGheBL7snRwAI",
+          "name": "title",
+          "type": "expression",
+          "value": "$ws$dataSource$AgyFHLHePtY__DASH__mLetus2eL.data.data.specialLink.href"
+        }
+      ],
+      [
+        "fjbBPd1vXu2RU-MMBcvYk",
+        {
+          "id": "fjbBPd1vXu2RU-MMBcvYk",
+          "instanceId": "OWyWyPTj6vBXq16T6rFSX",
+          "name": "title",
+          "type": "expression",
+          "value": "$ws$dataSource$FArxfgS8hYIgWCz1wonSE.href"
         }
       ]
     ],

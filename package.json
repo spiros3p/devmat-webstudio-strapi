@@ -25,7 +25,8 @@
     "local:release": "pnpm build && pnpm dts && pnpm local:version-snapshot && pnpm local:publish-snapshot && pnpm local:dangerously-undo-version-snapshot && echo \"now execute\npnpm up -r -L '@webstudio-is/*' --registry http://localhost:4873\"",
     "typecheck": "tsc",
     "start:app": "PORT=3030 react-router-serve ./build/server/index.js",
-    "discardThem": "git restore .dockerignore Dockerfile package.json"
+    "discardThem": "git restore .dockerignore Dockerfile package.json",
+    "gen": "pnpm sync && pnpm build:builder"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",

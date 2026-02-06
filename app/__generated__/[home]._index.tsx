@@ -11,7 +11,7 @@ import { Box as Box, Fragment as Fragment_1, HtmlEmbed as HtmlEmbed, Image as Im
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-06T23:44:48.841Z";
+      export const lastPublished = "2026-02-06T23:54:15.502Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -76,6 +76,7 @@ className={`w-menu-item`}>
 <Link
 target={collectionItem?.target}
 href={collectionItem?.href}
+title={collectionItem?.href}
 className={`w-link ccqry52 c1oji2iw c7pv373 c199gza7 c1scatng c12dglsd c18cn36h c1s0vdhp cc3itzg cu15652 cyjqqjx c152iurg c15q8tho c1kh7ybw c1rwsfc4 c16v3bxy cqjwob8 c53v5zz cwl22p7 c6i07qh c16vucp1 c10wx85o c1q4fk80 cbq1r21 c3928kp c1jwpyv4`}>
 {collectionItem?.name}
 </Link>
@@ -118,6 +119,7 @@ className={`w-box c10kvjaq cyksmbj c125js0i c9ei9hc c1i7snbb`}>
 <Link
 href={collectionItem_1?.href}
 target={collectionItem_1?.target}
+title={collectionItem_1?.href}
 className={`w-link c1tjie79 cyksmbj c1i7snbb clbsjag c18tswnh c1avjyiw c1scatng c12dglsd c18cn36h c1s0vdhp c1n9d4u8 cqjwob8 c1b9nnoh cpxva6b c3928kp c1jwpyv4 cfn2ywy c2bousg`}>
 <Text
 className={`w-text cc3itzg cyjqqjx c1n9d4u8`}>
@@ -152,6 +154,8 @@ className={`w-menu-item cbanl4k`}>
 {(!!REQNavigation?.data?.data?.specialLink) &&
 <Link
 href={REQNavigation?.data?.data?.specialLink?.href}
+target={REQNavigation?.data?.data?.specialLink?.target}
+title={REQNavigation?.data?.data?.specialLink?.href}
 className={`w-link ccqry52 c1oji2iw c7pv373 cyidosu cfxgbuw c1w3iq2x cmd2k6o c1aefk7h cc3itzg cu15652 cyjqqjx c152iurg c15q8tho c1kh7ybw c1rwsfc4 c16v3bxy cqjwob8 c1ox04z8 c1eqwf0y czk77kp c1lc8yfv c1mucujo c1o70tqg c1t98528 c6i07qh c16vucp1 c10wx85o c1q4fk80 cbq1r21 c11r2gzv ca9pb38`}>
 {"Book a demo"}
 </Link>
@@ -180,14 +184,14 @@ className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiw
 <Link_1
 href={REQHomePage?.data?.data?.heroSection?.leftButton?.href}
 target={REQHomePage?.data?.data?.heroSection?.leftButton?.target}
-title={REQHomePage?.data?.data?.heroSection?.leftButton?.title}
+title={REQHomePage?.data?.data?.heroSection?.leftButton?.href}
 className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1wbt3eu cxjyi5z c1kd0iqv c2t1vc3 cmx5vkr c53v5zz c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}>
 {REQHomePage?.data?.data?.heroSection?.leftButton?.title}
 </Link_1>
 }
 {(!!REQHomePage?.data?.data?.heroSection?.rightButton?.title) &&
 <Link_1
-title={REQHomePage?.data?.data?.heroSection?.rightButton?.title}
+title={REQHomePage?.data?.data?.heroSection?.rightButton?.href}
 href={REQHomePage?.data?.data?.heroSection?.rightButton?.href}
 target={REQHomePage?.data?.data?.heroSection?.rightButton?.target}
 className={`w-element cu2xsck cfxgbuw c1w3iq2x c1aefk7h cmd2k6o c1pk2abd c1om2ni4 c1t9kc3 caxks0e c199gza7 c1ox04z8 c1vld03m cls8btf c17l107q c1axzkds cpofr2j c1lflnfx cqce9pz c1nwamx6 cqjwob8`}>
@@ -773,7 +777,7 @@ className={`w-element c6xnyar c1ox04z8`}>
 <Link_1
 href={collectionItem_12?.href}
 target={collectionItem_12?.target}
-title={collectionItem_12?.link}
+title={collectionItem_12?.href}
 className={`w-element cu2xsck c1ox04z8 c6xnyar cqjwob8`}>
 {collectionItem_12?.name}
 </Link_1>
