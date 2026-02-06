@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "56557724-112f-44f2-bd0f-9a7e8cec05f5",
+    "id": "3086c759-d2c9-4b91-bd4d-dd59a45b4102",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 2851,
-    "createdAt": "2026-02-06T22:34:14.614+00:00",
-    "updatedAt": "2026-02-06T22:34:14.614+00:00",
+    "version": 2885,
+    "createdAt": "2026-02-06T23:12:01.447+00:00",
+    "updatedAt": "2026-02-06T23:12:01.447+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -20580,19 +20580,6 @@
         }
       ],
       [
-        "iKDS9RCkH_MIVaqSGSdyq:C3TGAnuYbFrXJRwOz5IBY:fontSize:",
-        {
-          "breakpointId": "C3TGAnuYbFrXJRwOz5IBY",
-          "styleSourceId": "iKDS9RCkH_MIVaqSGSdyq",
-          "property": "fontSize",
-          "value": {
-            "type": "unit",
-            "value": 22,
-            "unit": "px"
-          }
-        }
-      ],
-      [
         "iKDS9RCkH_MIVaqSGSdyq:Cau1OpnQLcB8-xVPpUhsW:fontSize:",
         {
           "breakpointId": "Cau1OpnQLcB8-xVPpUhsW",
@@ -24960,6 +24947,19 @@
             "value": 99
           },
           "listed": true
+        }
+      ],
+      [
+        "_VTxa_ss-xyZA1C4v5MK2:IOEBbQqW2Zb9XucSe4u8N:rowGap:",
+        {
+          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
+          "styleSourceId": "_VTxa_ss-xyZA1C4v5MK2",
+          "property": "rowGap",
+          "value": {
+            "type": "unit",
+            "value": 10,
+            "unit": "px"
+          }
         }
       ]
     ],
@@ -30508,16 +30508,6 @@
         }
       ],
       [
-        "XtuzBQlUe6mptRul_cQxj",
-        {
-          "id": "XtuzBQlUe6mptRul_cQxj",
-          "instanceId": "lDpPkku1HeB2UN_TGXCDw",
-          "name": "href",
-          "type": "expression",
-          "value": "$ws$dataSource$PlmRtTNuWeAIPTQ6Czeib.href"
-        }
-      ],
-      [
         "uTEsMW3H4wxr0tyci4p5-",
         {
           "id": "uTEsMW3H4wxr0tyci4p5-",
@@ -30573,8 +30563,8 @@
           "id": "YdYTECPQXjS1oy9-YcsIX",
           "instanceId": "OWyWyPTj6vBXq16T6rFSX",
           "name": "href",
-          "type": "string",
-          "value": "https://ui.shadcn.com/docs/components/sheet"
+          "type": "expression",
+          "value": "$ws$dataSource$FArxfgS8hYIgWCz1wonSE.href"
         }
       ],
       [
@@ -30685,6 +30675,46 @@
           "name": "id",
           "type": "expression",
           "value": "$ws$dataSource$eAVK7uMysV6RJPcYcWLDc.data.data.contactForm.idAttr"
+        }
+      ],
+      [
+        "ueTiCAqZt-SffstvbgoTp",
+        {
+          "id": "ueTiCAqZt-SffstvbgoTp",
+          "instanceId": "Iv9S55n6fn_zvt_P5K3_h",
+          "name": "data-ws-show",
+          "type": "expression",
+          "value": "!!$ws$dataSource$OnoEPohZYQkEjbM0h1jNI.data.data.block"
+        }
+      ],
+      [
+        "JTOZJWau6wHuV9vrpw6jD",
+        {
+          "id": "JTOZJWau6wHuV9vrpw6jD",
+          "instanceId": "J1xA2PppyPw5uG9vUhl1L",
+          "name": "data-ws-show",
+          "type": "expression",
+          "value": "!!$ws$dataSource$AgyFHLHePtY__DASH__mLetus2eL.data.data.footerNavbar.navlink.length"
+        }
+      ],
+      [
+        "pgEozTgiFehxMCflnVvxi",
+        {
+          "id": "pgEozTgiFehxMCflnVvxi",
+          "instanceId": "lDpPkku1HeB2UN_TGXCDw",
+          "name": "href",
+          "type": "expression",
+          "value": "$ws$dataSource$PlmRtTNuWeAIPTQ6Czeib.href"
+        }
+      ],
+      [
+        "zAuzdaRilT0cfRQU02Ii8",
+        {
+          "id": "zAuzdaRilT0cfRQU02Ii8",
+          "instanceId": "OWyWyPTj6vBXq16T6rFSX",
+          "name": "target",
+          "type": "expression",
+          "value": "$ws$dataSource$FArxfgS8hYIgWCz1wonSE.target"
         }
       ]
     ],
@@ -31534,7 +31564,7 @@
           "type": "instance",
           "id": "B11o_3Bvv-DcDfg_dcR-R",
           "component": "ws:element",
-          "tag": "div",
+          "tag": "section",
           "label": "container Navbar",
           "children": [
             {
@@ -31695,7 +31725,7 @@
           "type": "instance",
           "id": "_6jkVd54FgYcl-0aY1BSj",
           "component": "ws:element",
-          "tag": "div",
+          "tag": "section",
           "label": "container customers",
           "children": [
             {
@@ -31769,7 +31799,7 @@
           "type": "instance",
           "id": "bRTCpExxb4Of2egkmo8I3",
           "component": "ws:element",
-          "tag": "div",
+          "tag": "section",
           "label": "container hero",
           "children": [
             {
@@ -32095,7 +32125,7 @@
           "type": "instance",
           "id": "oTglMSGRZFJzbNRl8TjP4",
           "component": "ws:element",
-          "tag": "div",
+          "tag": "section",
           "label": "container benefits",
           "children": [
             {
@@ -32269,7 +32299,7 @@
           "type": "instance",
           "id": "B20VPvy7G99bR5WwvhW3m",
           "component": "ws:element",
-          "tag": "div",
+          "tag": "section",
           "label": "container getting started",
           "children": [
             {
@@ -32435,7 +32465,7 @@
           "type": "instance",
           "id": "IYDFow6dzSa3RWg7URbmA",
           "component": "ws:element",
-          "tag": "div",
+          "tag": "section",
           "label": "container solutions",
           "children": [
             {
@@ -32595,7 +32625,7 @@
           "type": "instance",
           "id": "C0PGQKUU88K1o9Ve1Jje6",
           "component": "ws:element",
-          "tag": "div",
+          "tag": "section",
           "label": "container client review",
           "children": [
             {
@@ -33648,7 +33678,7 @@
           "type": "instance",
           "id": "ty1mCgsLLjK5-dlO-5wsG",
           "component": "ws:element",
-          "tag": "div",
+          "tag": "section",
           "label": "container Form",
           "children": [
             {
@@ -34111,7 +34141,7 @@
           "type": "instance",
           "id": "Rn9B-iKC88b5TWvoVlH_l",
           "component": "ws:element",
-          "tag": "div",
+          "tag": "footer",
           "label": "container Footer",
           "children": [
             {

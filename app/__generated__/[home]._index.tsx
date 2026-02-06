@@ -11,7 +11,7 @@ import { Box as Box, Fragment as Fragment_1, HtmlEmbed as HtmlEmbed, Image as Im
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-06T22:34:14.614Z";
+      export const lastPublished = "2026-02-06T23:12:01.447Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -44,12 +44,12 @@ let REQSocial = useResource("REQSocial_1")
 let REQContactInfo = useResource("REQContactInfo_1")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
-<div
+<section
 className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j c1nnj4xy caui1hn`}>
 <NavigationMenu
-className={`w-navigation-menu c1gbr3z6 c1b9a0j2 cyksmbj c1rc0m8f c1q7lfpp ciexhcn c1oji2iw crw0x0i c7k78s6 c1jfats1`}>
+className={`w-navigation-menu c1gbr3z6 c1b9a0j2 cyksmbj c1rc0m8f c1q7lfpp ciexhcn c1oji2iw crw0x0i c7k78s6 cz4er6w c1jfats1`}>
 <div
-className={`w-element c1anbojs c1kgg7oc c1uyinf6 c1wdeocc c4cayoo c53v5zz cj79p55 c1falt5c cfxgm5o c1dipgxw c1c9qrtl`}>
+className={`w-element c1anbojs c1kgg7oc c1uyinf6 c1wdeocc c4cayoo c53v5zz cj79p55 c1falt5c c1dipgxw c1c9qrtl`}>
 {"Devmat Solutions PC"}
 </div>
 <NavigationMenuList
@@ -74,8 +74,8 @@ data-ws-index="0"
 className={`w-menu-item`}>
 <NavigationMenuLink>
 <Link
-href={collectionItem?.href}
 target={collectionItem?.target}
+href={collectionItem?.href}
 className={`w-link ccqry52 c1oji2iw c7pv373 c199gza7 c1scatng c12dglsd c18cn36h c1s0vdhp cc3itzg cu15652 cyjqqjx c152iurg c15q8tho c1kh7ybw c1rwsfc4 c16v3bxy cqjwob8 c53v5zz cwl22p7 c6i07qh c16vucp1 c10wx85o c1q4fk80 cbq1r21 c3928kp c1jwpyv4`}>
 {collectionItem?.name}
 </Link>
@@ -116,7 +116,8 @@ className={`w-box c10kvjaq cyksmbj c125js0i c9ei9hc c1i7snbb`}>
 <Fragment key={collectionItemKey}>
 <NavigationMenuLink>
 <Link
-href={"https://ui.shadcn.com/docs/components/sheet"}
+href={collectionItem_1?.href}
+target={collectionItem_1?.target}
 className={`w-link c1tjie79 cyksmbj c1i7snbb clbsjag c18tswnh c1avjyiw c1scatng c12dglsd c18cn36h c1s0vdhp c1n9d4u8 cqjwob8 c1b9nnoh cpxva6b c3928kp c1jwpyv4 cfn2ywy c2bousg`}>
 <Text
 className={`w-text cc3itzg cyjqqjx c1n9d4u8`}>
@@ -158,8 +159,8 @@ className={`w-link ccqry52 c1oji2iw c7pv373 cyidosu cfxgbuw c1w3iq2x cmd2k6o c1a
 </NavigationMenuItem>
 </NavigationMenuList>
 </NavigationMenu>
-</div>
-<div
+</section>
+<section
 className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j cyidosu cu3uc3t cqkrgkz c3vcdka c1ht3eul cjocp00 c190h4xw c1ua5e08 c1rt2b5x celrewe ceuzb9a`}>
 {(!!REQHomePage?.data?.data?.heroSection?.heroMedia?.[0]) &&
 <div
@@ -265,9 +266,9 @@ className={`w-html-embed`} />
 }
 </div>
 }
-</div>
+</section>
 {(!!REQHomePage?.data?.data?.customerLogos?.customersLogos?.length) &&
-<div
+<section
 id={REQHomePage?.data?.data?.customerLogos?.idAttr}
 className={`w-element c1sb8ohy c9s2vs7 c1f5y87x c1y6e6gy`}>
 <h3
@@ -297,10 +298,10 @@ className={`w-image c11w9ocq cq9s6sa c1lpmvvg c1q5766j cyiufop`} />
 })
 }
 </Box>
-</div>
+</section>
 }
 {(!!REQBenfitsDevmat?.data?.data?.length) &&
-<div
+<section
 id={REQHomePage?.data?.data?.benefitsSection?.idAttr}
 className={`w-element csdhugg ccgn8hl c1g0sytn c1f5y87x c1y6e6gy c1g91ykm`}>
 <h2
@@ -356,10 +357,10 @@ className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs c1va13rh`}>
 })
 }
 </div>
-</div>
+</section>
 }
 {(!!REQGetStartedSteps?.data?.data?.length) &&
-<div
+<section
 id={REQHomePage?.data?.data?.gettingStartedSection?.idAttr}
 className={`w-element c1w5qiyf c7pv373 ccgn8hl c13imvs7 c1f5y87x c1y6e6gy`}>
 <h2
@@ -402,10 +403,10 @@ className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs cavlpe`}>
 })
 }
 </div>
-</div>
+</section>
 }
 {(!!REQSolutions?.data?.data?.length) &&
-<div
+<section
 id={REQHomePage?.data?.data?.solutions?.idAttr}
 className={`w-element ccgn8hl c13imvs7 csdhugg c1f5y87x c1y6e6gy`}>
 <h2
@@ -452,10 +453,10 @@ className={`w-element ccn41lv c1bjxlr9 c1yral3q chgofs2 cfymgcs cu3uc3t`}>
 })
 }
 </div>
-</div>
+</section>
 }
 {(!!REQClientReviews?.data?.data?.length) &&
-<div
+<section
 id={REQHomePage?.data?.data?.clientReviews?.idAttr}
 className={`w-element ccgn8hl c13imvs7 c1f5y87x c1y6e6gy`}>
 <h2
@@ -509,7 +510,7 @@ className={`w-element cseqxw9 c1g7thye cu3uc3t ccn41lv c16wa6q4`}>
 })
 }
 </div>
-</div>
+</section>
 }
 {(!!REQFAQs?.data?.data?.length) &&
 <Box
@@ -577,7 +578,7 @@ className={`w-markdown-embed ccn41lv c1bjxlr9 clh9rxp`}>
 </Box>
 </Box>
 }
-<div
+<section
 id={REQHomePage?.data?.data?.contactForm?.idAttr}
 className={`w-element ccgn8hl c13imvs7 c1y6e6gy c1f5y87x cyidosu`}>
 <h2
@@ -702,8 +703,8 @@ className={`w-element cavlpe c1thowfs c17l107q c1axzkds cpofr2j c1lflnfx c2ace6m
 }
 </Form>
 </div>
-</div>
-<div
+</section>
+<footer
 className={`w-element c1j6km2m ceohp8a c3vcdka c1ht3eul`}>
 <div
 className={`w-element cvq2wwp cyksmbj c1i7snbb c1029aa7 c1tjvjms cih7fsz c1xz0hfv c1nn1c1j c2ace6m cjaeftc c15ykucn cb65ij0 c17l107q c1axzkds cpofr2j c1lflnfx c1ezmlcj c9hm1t6 c440rna cscmz44 c1o9f9gj`}>
@@ -750,6 +751,7 @@ className={`w-image c5ccpqx`} />
 </div>
 <div
 className={`w-element cyksmbj c1rc0m8f c1qmi4iq c1pzb3bk ckfzd4e`}>
+{(!!REQNavigation?.data?.data?.footerNavbar?.navlink?.length) &&
 <div
 className={`w-element cm4wacd chxya58 cn3l2c4 crw0x0i`}>
 <h4
@@ -781,6 +783,8 @@ className={`w-element cu2xsck c1ox04z8 c6xnyar cqjwob8`}>
 }
 </div>
 </div>
+}
+{(!!REQContactInfo?.data?.data?.block) &&
 <div
 className={`w-element cm4wacd chxya58 cn3l2c4 crw0x0i`}>
 <MarkdownEmbed
@@ -788,6 +792,7 @@ code={REQContactInfo?.data?.data?.block}
 className={`w-markdown-embed c189u35v c16wa6q4 c1j26kzh cymfyx4 c11xdbs4 c1u4vt9x c1m580rh c17yn698 ckca6uk c1mbvols c1y8jsaf cyveut7`}>
 </MarkdownEmbed>
 </div>
+}
 </div>
 </div>
 <hr
@@ -810,7 +815,7 @@ className={`w-markdown-embed c1k5mt0p ceohp8a c6kddcu cqjwob8 c3l0smv c128652x c
 </div>
 </div>
 </div>
-</div>
+</footer>
 </Body>
 }
 

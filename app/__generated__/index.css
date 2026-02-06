@@ -34,6 +34,9 @@
   div.w-element {
     box-sizing: border-box
   }
+  footer.w-element {
+    box-sizing: border-box
+  }
   h1.w-element {
     box-sizing: border-box
   }
@@ -63,6 +66,9 @@
     margin: 0
   }
   p.w-element {
+    box-sizing: border-box
+  }
+  section.w-element {
     box-sizing: border-box
   }
   select.w-element {
@@ -386,6 +392,9 @@
   }
   .ciexhcn {
     width: auto
+  }
+  .cz4er6w {
+    row-gap: 10px
   }
   .c1wdeocc {
     padding-top: 8px
@@ -1642,9 +1651,6 @@
   .c1falt5c {
     margin-top: 12px
   }
-  .cfxgm5o {
-    font-size: 22px
-  }
   .cnzj5wj {
     width: 90svw
   }
@@ -1674,6 +1680,9 @@
   }
   .c12c2zig {
     font-size: 70%
+  }
+  .cfxgm5o {
+    font-size: 22px
   }
 }
 @media all and (max-width: 479px) {
