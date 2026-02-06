@@ -14,6 +14,11 @@
       "type": "component",
       "component": "home-page.customer-s-logo",
       "repeatable": true
+    },
+    "idAttr": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   },
   "config": {}

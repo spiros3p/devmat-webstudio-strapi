@@ -12,6 +12,11 @@
     },
     "subtitle": {
       "type": "text"
+    },
+    "idAttr": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   },
   "config": {}

@@ -35,6 +35,11 @@
       "type": "component",
       "component": "form.form-input-names",
       "repeatable": false
+    },
+    "idAttr": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   },
   "config": {}

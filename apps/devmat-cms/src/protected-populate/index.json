@@ -40,7 +40,8 @@
          },
          "customerLogos": {
             "fields": [
-               "sectionTitle"
+               "sectionTitle",
+               "idAttr"
             ],
             "populate": {
                "customersLogos": {
@@ -69,31 +70,36 @@
          "benefitsSection": {
             "fields": [
                "title",
-               "subtitle"
+               "subtitle",
+               "idAttr"
             ]
          },
          "gettingStartedSection": {
             "fields": [
                "title",
-               "subtitle"
+               "subtitle",
+               "idAttr"
             ]
          },
          "solutions": {
             "fields": [
                "title",
-               "subtitle"
+               "subtitle",
+               "idAttr"
             ]
          },
          "clientReviews": {
             "fields": [
                "title",
-               "subtitle"
+               "subtitle",
+               "idAttr"
             ]
          },
          "faqs": {
             "fields": [
                "title",
-               "subtitle"
+               "subtitle",
+               "idAttr"
             ]
          },
          "contactForm": {
@@ -102,7 +108,8 @@
                "subtitle",
                "formSubmitBtnText",
                "successMessage",
-               "errorMessage"
+               "errorMessage",
+               "idAttr"
             ],
             "populate": {
                "formSubjects": {
