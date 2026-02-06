@@ -69,6 +69,42 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
+  const REQfooter: ResourceRequest = {
+    name: "REQ | footer",
+    url: URLcmsdocker+'/api/footer',
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
+  const REQSocial: ResourceRequest = {
+    name: "REQ | Social",
+    url: URLcmsdocker+'/api/social-media-devmats',
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
+  const REQContactInfo: ResourceRequest = {
+    name: "REQ | Contact Info",
+    url: URLcmsdocker+'/api/contact-info',
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
+  const REQNavigation: ResourceRequest = {
+    name: "REQ | Navigation",
+    url: URLcmsdocker+'/api/navigation',
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["SiteState_1", SiteState_1],
     ["REQHomePage", REQHomePage],
@@ -77,6 +113,10 @@ export const getResources = (_props: { system: System }) => {
     ["REQSolutions", REQSolutions],
     ["REQClientReviews", REQClientReviews],
     ["REQFAQs", REQFAQs],
+    ["REQfooter", REQfooter],
+    ["REQSocial", REQSocial],
+    ["REQContactInfo", REQContactInfo],
+    ["REQNavigation", REQNavigation],
   ])
   const _action = new Map<string, ResourceRequest>([
   ])

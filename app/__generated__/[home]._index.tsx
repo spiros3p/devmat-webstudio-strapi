@@ -11,7 +11,7 @@ import { Button as Button, Text as Text, Box as Box, HtmlEmbed as HtmlEmbed, Par
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-05T23:39:48.926Z";
+      export const lastPublished = "2026-02-06T20:41:16.319Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -38,6 +38,10 @@ let REQSolutions = useResource("REQSolutions_1")
 let REQClientReviews = useResource("REQClientReviews_1")
 let REQFAQs = useResource("REQFAQs_1")
 let [formState, set$formState] = useVariableState<any>("initial")
+let REQfooter = useResource("REQfooter_1")
+let REQSocial = useResource("REQSocial_1")
+let REQNavigation = useResource("REQNavigation_1")
+let REQContactInfo = useResource("REQContactInfo_1")
 return <Body
 className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2j c1lflnfx cpf8n67`}>
 <div
@@ -45,7 +49,7 @@ className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j c1nnj4xy caui1hn`}>
 <NavigationMenu
 className={`w-navigation-menu c1gbr3z6 c1b9a0j2 cyksmbj c1rc0m8f c1q7lfpp ciexhcn c1oji2iw crw0x0i c7k78s6 c1jfats1`}>
 <div
-className={`w-element c1anbojs c6gi1xt c1uyinf6 c1wdeocc c4cayoo c53v5zz cj79p55 c1falt5c c1dipgxw`}>
+className={`w-element c1anbojs c1kgg7oc c1uyinf6 c1wdeocc c4cayoo c53v5zz cj79p55 c1falt5c cfxgm5o c1dipgxw c1c9qrtl`}>
 {"Devmat Solutions PC"}
 </div>
 <NavigationMenuList
@@ -388,11 +392,11 @@ className={`w-html-embed`} />
 <div
 className={`w-element c1sb8ohy c9s2vs7 c1f5y87x c1y6e6gy`}>
 <h3
-className={`w-element c1vu70pc co7nfib chae98v cqp1iu8 c1dxgzic`}>
+className={`w-element c1vu70pc co7nfib chae98v cqp1iu8 c1dxgzic cavlpe c1bjxlr9 ch2shl c1dhh8cz`}>
 {REQHomePage?.data?.data?.customerLogos?.sectionTitle}
 </h3>
 <Box
-className={`w-box cv37voi cyksmbj c1oji2iw c7pv373 c1ejoj25 cy0z055 c1rc0m8f czzvbuw`}>
+className={`w-box c1przhxw cyksmbj c1oji2iw c7pv373 c1ejoj25 cy0z055 c1rc0m8f czzvbuw`}>
 {Object.entries(
   // @ts-ignore
   REQHomePage?.data?.data?.customerLogos?.customersLogos ?? {}
@@ -815,7 +819,111 @@ className={`w-element cavlpe c1thowfs c17l107q c1axzkds cpofr2j c1lflnfx c2ace6m
 </div>
 </div>
 <div
-className={`w-element`} />
+className={`w-element c1j6km2m ceohp8a c3vcdka c1ht3eul`}>
+<div
+className={`w-element cvq2wwp cyksmbj c1i7snbb c1029aa7 c1tjvjms cih7fsz c1xz0hfv c1nn1c1j c2ace6m cjaeftc c15ykucn cb65ij0 c17l107q c1axzkds cpofr2j c1lflnfx c1ezmlcj c9hm1t6 c440rna cscmz44 c1o9f9gj`}>
+<div
+className={`w-element cyksmbj c1q7lfpp c1wdeocc cgqpu4r cziueud c1wh3e3g c1rc0m8f c22bnnu cy0z055`}>
+<div
+className={`w-element cyksmbj c1i7snbb c1s7cfds cgocsqs ceh8ohp cfspsgy c1jlm1rw`}>
+<div
+className={`w-element c1anbojs c1eqko4a chxya58 c1wdeocc c4cayoo c1ox04z8 cj79p55 c1falt5c cfxgm5o c1dipgxw c1c9qrtl`}>
+{"Devmat Solutions PC"}
+</div>
+<p
+className={`w-element cp01muw c1ihn9l4 c189u35v c1yral3q c17j7sop`}>
+{REQfooter?.data?.data?.footerParagraph}
+</p>
+<div
+className={`w-element cyksmbj ceqpkba c1s7cfds c1mvrzbm c17p4du2`}>
+{Object.entries(
+  // @ts-ignore
+  REQSocial?.data?.data ?? {}
+).map(([_key, collectionItem_9]: any) => {
+  const collectionItemKey_7 = Array.isArray(REQSocial?.data?.data) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_7}>
+<Link_1
+href={collectionItem_9?.link}
+target={"_blank"}
+className={`w-element cu2xsck`}>
+<Image
+src={URLcmsMediaLocal+collectionItem_9?.icon?.icon?.url
+}
+optimize={false}
+width={26}
+height={26}
+alt={collectionItem_9?.name}
+className={`w-image c5ccpqx`} />
+</Link_1>
+</Fragment>
+)
+})
+}
+</div>
+</div>
+<div
+className={`w-element cyksmbj c1rc0m8f c1qmi4iq c1pzb3bk ckfzd4e`}>
+<div
+className={`w-element cm4wacd chxya58 cn3l2c4 crw0x0i`}>
+<h4
+className={`w-element c1kgmnno c128qlnr c16wa6q4 ch2shl c19jcr0r`}>
+{REQNavigation?.data?.data?.footerNavbar?.title}
+</h4>
+<div
+className={`w-element cyksmbj c1i7snbb c1r678ej ceqpkba cqjwob8`}>
+{Object.entries(
+  // @ts-ignore
+  REQNavigation?.data?.data?.footerNavbar?.navlink ?? {}
+).map(([_key, collectionItem_10]: any) => {
+  const collectionItemKey_8 = Array.isArray(REQNavigation?.data?.data?.footerNavbar?.navlink) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_8}>
+<div
+className={`w-element c6xnyar c1ox04z8`}>
+<Link_1
+href={collectionItem_10?.href}
+target={collectionItem_10?.target}
+className={`w-element cu2xsck c1ox04z8 c6xnyar cqjwob8`}>
+{collectionItem_10?.name}
+</Link_1>
+</div>
+</Fragment>
+)
+})
+}
+</div>
+</div>
+<div
+className={`w-element cm4wacd chxya58 cn3l2c4 crw0x0i`}>
+<MarkdownEmbed
+code={REQContactInfo?.data?.data?.block}
+className={`w-markdown-embed c189u35v c16wa6q4 c1j26kzh cymfyx4 c11xdbs4 c1u4vt9x c1m580rh c17yn698 ckca6uk c1mbvols c1y8jsaf cyveut7`}>
+</MarkdownEmbed>
+</div>
+</div>
+</div>
+<hr
+className={`w-element c6kddcu c1igzqza c2ace6m cjaeftc c15ykucn cb65ij0 c1ihn9l4 cp01muw cajlrfu`} />
+<div
+className={`w-element cjtheg6 clmafat c1rkdu33 c2i0qoz cyksmbj c1q7lfpp c1rc0m8f c4cayoo ckscsr3 ci9iosc cfg2sgc c1r678ej clh9rxp cfxnsae c1bozzle c1jn2p7j c1jfats1`}>
+<div
+className={`w-element c6kddcu c86bv7 c61c8kn ceohp8a`}>
+<MarkdownEmbed
+code={REQfooter?.data?.data?.siteSign}
+className={`w-markdown-embed civ40sl c17yn698 c1k6ljxw c1rj2vk0 covdlgc`}>
+</MarkdownEmbed>
+</div>
+<div
+className={`w-element c6kddcu cqjwob8 c1b6ou4s c14dg725 c1db9cug`}>
+<MarkdownEmbed
+code={REQfooter?.data?.data?.developerSign}
+className={`w-markdown-embed c1k5mt0p ceohp8a c6kddcu cqjwob8 c3l0smv c128652x covdlgc civ40sl c17yn698 c1k6ljxw c1rj2vk0`}>
+</MarkdownEmbed>
+</div>
+</div>
+</div>
+</div>
 </Body>
 }
 
