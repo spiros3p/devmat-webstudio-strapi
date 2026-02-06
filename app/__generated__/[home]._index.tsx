@@ -612,4 +612,208 @@ className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck ch2shl`}>
 <Select
 name={REQHomePage?.data?.data?.contactForm?.formInputNames?.subjectInputName}
 required={true}
-valu
+value={REQHomePage?.data?.data?.contactForm?.formSubjects?.[0]?.formSubject}
+className={`w-element c1k5mt0p c1w9irg3 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 cpf8n67 c1s43d56 c1xhvr2q c16vucp1 crafl4a czh82uq cbq1r21`}>
+{Object.entries(
+  // @ts-ignore
+  REQHomePage?.data?.data?.contactForm?.formSubjects ?? {}
+).map(([_key, collectionItem_10]: any) => {
+  const collectionItemKey_8 = Array.isArray(REQHomePage?.data?.data?.contactForm?.formSubjects) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_8}>
+<option
+label={collectionItem_10?.formSubject}
+value={collectionItem_10?.formSubject}
+className={`w-element`} />
+</Fragment>
+)
+})
+}
+</Select>
+</Label>
+</div>
+<div
+className={`w-element cyksmbj cj4fr1t c41c50e c1rc0m8f`}>
+<div
+className={`w-element cyksmbj c1i7snbb c1e12a07 chn9tnv c19ayrcm cleis16 cmxafh8`}>
+<Label
+className={`w-label cc3itzg c1n9d4u8 cyjqqjx`}>
+<span
+className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck ch2shl`}>
+{REQHomePage?.data?.data?.contactForm?.formInputNames?.nameInputName}
+</span>
+<Input
+type={"text"}
+required={true}
+name={REQHomePage?.data?.data?.contactForm?.formInputNames?.nameInputName}
+placeholder={REQHomePage?.data?.data?.contactForm?.formInputNames?.nameInputName}
+className={`w-element c1k5mt0p c1w9irg3 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 cpf8n67 c1s43d56 c1xhvr2q ckhmb2v c16vucp1 crafl4a czh82uq cbq1r21`} />
+</Label>
+</div>
+<div
+className={`w-element cyksmbj c1i7snbb c1e12a07 chn9tnv c19ayrcm cleis16 cmxafh8`}>
+<Label
+className={`w-label cc3itzg c1n9d4u8 cyjqqjx`}>
+<span
+className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck ch2shl`}>
+{REQHomePage?.data?.data?.contactForm?.formInputNames?.emailInputName}
+</span>
+<Input
+type={"email"}
+required={true}
+name={REQHomePage?.data?.data?.contactForm?.formInputNames?.emailInputName}
+placeholder={REQHomePage?.data?.data?.contactForm?.formInputNames?.emailInputName}
+className={`w-element c1k5mt0p c1w9irg3 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 cpf8n67 c1s43d56 c1xhvr2q ckhmb2v c16vucp1 crafl4a czh82uq cbq1r21`} />
+</Label>
+</div>
+</div>
+<div
+className={`w-element cyksmbj c1i7snbb c1e12a07 chn9tnv`}>
+<Label
+className={`w-label cc3itzg c1n9d4u8 cyjqqjx`}>
+<span
+className={`w-element c1ox04z8 c1dhh8cz c1qwscpl cu2xsck ch2shl`}>
+{REQHomePage?.data?.data?.contactForm?.formInputNames?.messageInputName}
+</span>
+<Textarea
+required={true}
+name={REQHomePage?.data?.data?.contactForm?.formInputNames?.messageInputName}
+className={`w-element c1k5mt0p c10q1xg1 c1przhxw c1oji2iw c1izcx45 c1scatng c12dglsd c18cn36h c1s0vdhp c1tu7rdi c1o1lwe9 c1kh7ybw c11ceujt c16v3bxy cc3itzg cu15652 cpf8n67 c1s43d56 c1xhvr2q c16vucp1 crafl4a czh82uq cbq1r21`} />
+</Label>
+</div>
+<button
+type={"submit"}
+className={`w-element c1xz0hfv c1nn1c1j c1ii509t c143tev2 c2ace6m cjaeftc c15ykucn cb65ij0 ccfiqmq c1dhh8cz c53v5zz ch2shl cjtheg6 clmafat c1rkdu33 c2i0qoz c1eqwf0y cevelsr c1lc8yfv c1mucujo c1o70tqg cmx5vkr c11r2gzv c152jaq9 c2tdqda`}>
+{REQHomePage?.data?.data?.contactForm?.formSubmitBtnText}
+</button>
+</div>
+}
+{(formState === 'success') &&
+<div
+className={`w-element cavlpe c1ox04z8 ccn41lv c1s55wh8 c7cd9ps c1xz0hfv c1nn1c1j c17l107q c1axzkds cpofr2j c1lflnfx c2ace6m cjaeftc c15ykucn cb65ij0 c1l06n22 c1u6lavf c1q2liwv`}>
+{REQHomePage?.data?.data?.contactForm?.successMessage}
+</div>
+}
+{(formState === 'error') &&
+<div
+className={`w-element cavlpe c1thowfs c17l107q c1axzkds cpofr2j c1lflnfx c2ace6m cjaeftc c15ykucn cb65ij0 c40rd93 c163bfw4 c7gmv7x cszm7qs c5ccpqx c1q2liwv`}>
+{REQHomePage?.data?.data?.contactForm?.errorMessage}
+</div>
+}
+</Form>
+</div>
+</div>
+<div
+className={`w-element c1j6km2m ceohp8a c3vcdka c1ht3eul`}>
+<div
+className={`w-element cvq2wwp cyksmbj c1i7snbb c1029aa7 c1tjvjms cih7fsz c1xz0hfv c1nn1c1j c2ace6m cjaeftc c15ykucn cb65ij0 c17l107q c1axzkds cpofr2j c1lflnfx c1ezmlcj c9hm1t6 c440rna cscmz44 c1o9f9gj`}>
+<div
+className={`w-element cyksmbj c1q7lfpp c1wdeocc cgqpu4r cziueud c1wh3e3g c1rc0m8f c22bnnu cy0z055`}>
+<div
+className={`w-element cyksmbj c1i7snbb c1s7cfds cgocsqs ceh8ohp cfspsgy c1jlm1rw`}>
+<div
+className={`w-element c1anbojs c1eqko4a chxya58 c1wdeocc c4cayoo c1ox04z8 cj79p55 c1falt5c cfxgm5o c1dipgxw c1c9qrtl`}>
+{"Devmat Solutions PC"}
+</div>
+<p
+className={`w-element cp01muw c1ihn9l4 c189u35v c1yral3q c17j7sop`}>
+{REQfooter?.data?.data?.footerParagraph}
+</p>
+<div
+className={`w-element cyksmbj ceqpkba c1s7cfds c1mvrzbm c17p4du2`}>
+{Object.entries(
+  // @ts-ignore
+  REQSocial?.data?.data ?? {}
+).map(([_key, collectionItem_11]: any) => {
+  const collectionItemKey_9 = Array.isArray(REQSocial?.data?.data) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_9}>
+<Link_1
+href={collectionItem_11?.link}
+target={"_blank"}
+title={collectionItem_11?.link}
+className={`w-element cu2xsck`}>
+<Image
+src={URLcmsMediaLocal+collectionItem_11?.icon?.icon?.url
+}
+optimize={false}
+width={26}
+height={26}
+alt={collectionItem_11?.name}
+className={`w-image c5ccpqx`} />
+</Link_1>
+</Fragment>
+)
+})
+}
+</div>
+</div>
+<div
+className={`w-element cyksmbj c1rc0m8f c1qmi4iq c1pzb3bk ckfzd4e`}>
+<div
+className={`w-element cm4wacd chxya58 cn3l2c4 crw0x0i`}>
+<h4
+className={`w-element c1kgmnno c128qlnr c16wa6q4 ch2shl c19jcr0r`}>
+{REQNavigation?.data?.data?.footerNavbar?.title}
+</h4>
+<div
+className={`w-element cyksmbj c1i7snbb c1r678ej ceqpkba cqjwob8`}>
+{Object.entries(
+  // @ts-ignore
+  REQNavigation?.data?.data?.footerNavbar?.navlink ?? {}
+).map(([_key, collectionItem_12]: any) => {
+  const collectionItemKey_10 = Array.isArray(REQNavigation?.data?.data?.footerNavbar?.navlink) ? Number(_key) : _key;
+  return (
+<Fragment key={collectionItemKey_10}>
+<div
+className={`w-element c6xnyar c1ox04z8`}>
+<Link_1
+href={collectionItem_12?.href}
+target={collectionItem_12?.target}
+title={collectionItem_12?.link}
+className={`w-element cu2xsck c1ox04z8 c6xnyar cqjwob8`}>
+{collectionItem_12?.name}
+</Link_1>
+</div>
+</Fragment>
+)
+})
+}
+</div>
+</div>
+<div
+className={`w-element cm4wacd chxya58 cn3l2c4 crw0x0i`}>
+<MarkdownEmbed
+code={REQContactInfo?.data?.data?.block}
+className={`w-markdown-embed c189u35v c16wa6q4 c1j26kzh cymfyx4 c11xdbs4 c1u4vt9x c1m580rh c17yn698 ckca6uk c1mbvols c1y8jsaf cyveut7`}>
+</MarkdownEmbed>
+</div>
+</div>
+</div>
+<hr
+className={`w-element c6kddcu c1igzqza c2ace6m cjaeftc c15ykucn cb65ij0 c1ihn9l4 cp01muw cajlrfu`} />
+<div
+className={`w-element cjtheg6 clmafat c1rkdu33 c2i0qoz cyksmbj c1q7lfpp c1rc0m8f c4cayoo ckscsr3 ci9iosc cfg2sgc c1r678ej clh9rxp cfxnsae c1bozzle c1jn2p7j c1jfats1`}>
+<div
+className={`w-element c6kddcu c86bv7 c61c8kn ceohp8a`}>
+<MarkdownEmbed
+code={REQfooter?.data?.data?.siteSign}
+className={`w-markdown-embed civ40sl c17yn698 c1k6ljxw c1rj2vk0 covdlgc`}>
+</MarkdownEmbed>
+</div>
+<div
+className={`w-element c6kddcu cqjwob8 c1b6ou4s c14dg725 c1db9cug`}>
+<MarkdownEmbed
+code={REQfooter?.data?.data?.developerSign}
+className={`w-markdown-embed c1k5mt0p ceohp8a c6kddcu cqjwob8 c3l0smv c128652x covdlgc civ40sl c17yn698 c1k6ljxw c1rj2vk0`}>
+</MarkdownEmbed>
+</div>
+</div>
+</div>
+</div>
+</Body>
+}
+
+
+      export { Page }
+    
