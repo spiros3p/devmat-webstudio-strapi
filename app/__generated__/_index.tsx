@@ -2,16 +2,16 @@
       /* This is a auto generated file for building the project */ 
 
 
+      import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-import { Box, Button, Fragment as Fragment_1, HtmlEmbed, Image, Input, MarkdownEmbed, Paragraph, Select, Slot, Text, Textarea } from "@webstudio-is/sdk-components-react";
-import { Accordion, AccordionContent, AccordionHeader, AccordionItem, AccordionTrigger, Label, NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, NavigationMenuViewport } from "@webstudio-is/sdk-components-react-radix";
-import { Body, Form, Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
-import { Fragment } from "react";
+      import { Body as Body, Link as Link, Link as Link_1, Form as Form } from "@webstudio-is/sdk-components-react-router";
+import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuLink as NavigationMenuLink, NavigationMenuViewport as NavigationMenuViewport, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent, Label as Label, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent } from "@webstudio-is/sdk-components-react-radix";
+import { Box as Box, Fragment as Fragment_1, HtmlEmbed as HtmlEmbed, Image as Image, Slot as Slot, MarkdownEmbed as MarkdownEmbed, Text as Text, Textarea as Textarea, Input as Input, Select as Select, Button as Button, Paragraph as Paragraph } from "@webstudio-is/sdk-components-react";
 
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-07T09:08:11.828Z";
+      export const lastPublished = "2026-02-07T10:06:02.879Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -181,11 +181,11 @@ className={`w-element c1fh2qkn cyiizu9 cqvjdig crmjlkc c1ihasyt c3c9r1c cpii4el 
 {REQHomePage?.data?.data?.heroSection?.heroTitle}
 </h1>
 <p
-className={`w-element c3c9r1c c1ihasyt c1fq6v54 cpf8n67 c1s55wh8`}>
+className={`w-element c3c9r1c c1ihasyt c1fq6v54 cpf8n67 c1s55wh8 c19z55ud`}>
 {REQHomePage?.data?.data?.heroSection?.heroSubTitle}
 </p>
 <div
-className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl c2yan1w cynjatq`}>
+className={`w-element cyksmbj c1przhxw c1oji2iw c7pv373 c18htm2o c41c50e c1i7yiwk c13n5siq ch2shl c19z55ud cynjatq`}>
 {(!!REQHomePage?.data?.data?.heroSection?.leftButton?.title) &&
 <Link_1
 href={REQHomePage?.data?.data?.heroSection?.leftButton?.href}
@@ -284,7 +284,7 @@ className={`w-html-embed`} />
 id={REQHomePage?.data?.data?.customerLogos?.idAttr}
 className={`w-element c1sb8ohy c9s2vs7 c1f5y87x c1y6e6gy`}>
 <h3
-className={`w-element c1vu70pc co7nfib chae98v cqp1iu8 c1dxgzic cavlpe c1bjxlr9 ch2shl c1dhh8cz`}>
+className={`w-element c1vu70pc co7nfib chae98v cqp1iu8 c1dxgzic cavlpe c1bjxlr9 ch2shl c1dhh8cz c1u6lavf`}>
 {REQHomePage?.data?.data?.customerLogos?.sectionTitle}
 </h3>
 <Box
@@ -321,7 +321,7 @@ className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
 {REQHomePage?.data?.data?.benefitsSection?.title}
 </h2>
 <h3
-className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c7k8dvj cseqxw9 c1g7thye`}>
+className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1d80dtg cseqxw9 c1g7thye`}>
 {  REQHomePage?.data?.data?.benefitsSection?.subtitle}
 </h3>
 <div
@@ -381,7 +381,7 @@ className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
 {REQHomePage?.data?.data?.gettingStartedSection?.title}
 </h2>
 <h3
-className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j cs0vytw cseqxw9 c1g7thye`}>
+className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1d80dtg cseqxw9 c1g7thye`}>
 {  REQHomePage?.data?.data?.gettingStartedSection?.subtitle}
 </h3>
 <div
@@ -427,7 +427,7 @@ className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
 {REQHomePage?.data?.data?.solutions?.title}
 </h2>
 <h3
-className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j cs0vytw cseqxw9 c1g7thye`}>
+className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1d80dtg cseqxw9 c1g7thye`}>
 {REQHomePage?.data?.data?.solutions?.subtitle}
 </h3>
 <div
@@ -477,7 +477,7 @@ className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
 {REQHomePage?.data?.data?.clientReviews?.title}
 </h2>
 <h3
-className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1cf4c3b cseqxw9 c1g7thye`}>
+className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1d80dtg cseqxw9 c1g7thye`}>
 {REQHomePage?.data?.data?.clientReviews?.subtitle}
 </h3>
 <div
@@ -536,7 +536,7 @@ className={`w-element cavlpe c53v5zz c1735zj0 cseqxw9 c1g7thye`}>
 {REQHomePage?.data?.data?.faqs?.title}
 </h2>
 <h3
-className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1cf4c3b cseqxw9 c1g7thye`}>
+className={`w-element cavlpe c1bjxlr9 c1nr3lww cpf8n67 crl2cyx c1xz0hfv c1nn1c1j c1d80dtg cseqxw9 c1g7thye`}>
 {REQHomePage?.data?.data?.faqs?.subtitle}
 </h3>
 <Box
@@ -834,5 +834,5 @@ className={`w-markdown-embed c1k5mt0p ceohp8a c6kddcu cqjwob8 c3l0smv c128652x c
 }
 
 
-      export { Page };
+      export { Page }
     

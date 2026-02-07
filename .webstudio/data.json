@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "f613c1b5-7325-4fa8-b461-96bccfac85fb",
+    "id": "2e3ab248-9e24-4ee2-934f-f767998efc6c",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 2937,
-    "createdAt": "2026-02-07T09:08:11.828+00:00",
-    "updatedAt": "2026-02-07T09:08:11.828+00:00",
+    "version": 2969,
+    "createdAt": "2026-02-07T10:06:02.879+00:00",
+    "updatedAt": "2026-02-07T10:06:02.879+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -8288,8 +8288,8 @@
           "property": "marginBottom",
           "value": {
             "type": "unit",
-            "unit": "px",
-            "value": 18
+            "value": 20,
+            "unit": "px"
           }
         }
       ],
@@ -10134,8 +10134,8 @@
           "property": "marginBottom",
           "value": {
             "type": "unit",
-            "unit": "px",
-            "value": 28
+            "value": 40,
+            "unit": "px"
           }
         }
       ],
@@ -10441,8 +10441,8 @@
           "property": "marginBottom",
           "value": {
             "type": "unit",
-            "unit": "px",
-            "value": 36
+            "value": 40,
+            "unit": "px"
           }
         }
       ],
@@ -11166,13 +11166,13 @@
       [
         "rCgMmTG7i3IyDGcBAIvT2:IOEBbQqW2Zb9XucSe4u8N:marginBottom:",
         {
-          "styleSourceId": "rCgMmTG7i3IyDGcBAIvT2",
           "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
+          "styleSourceId": "rCgMmTG7i3IyDGcBAIvT2",
           "property": "marginBottom",
           "value": {
             "type": "unit",
-            "unit": "px",
-            "value": 36
+            "value": 40,
+            "unit": "px"
           }
         }
       ],
@@ -12226,7 +12226,7 @@
           "property": "marginBottom",
           "value": {
             "type": "unit",
-            "value": 60,
+            "value": 40,
             "unit": "px"
           }
         }
@@ -14699,13 +14699,13 @@
       [
         "R6o9aEq_QpFFPQm1XVjRP:IOEBbQqW2Zb9XucSe4u8N:marginBottom:",
         {
-          "styleSourceId": "R6o9aEq_QpFFPQm1XVjRP",
           "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
+          "styleSourceId": "R6o9aEq_QpFFPQm1XVjRP",
           "property": "marginBottom",
           "value": {
             "type": "unit",
-            "unit": "px",
-            "value": 60
+            "value": 40,
+            "unit": "px"
           }
         }
       ],
@@ -25007,6 +25007,32 @@
             "type": "unit",
             "unit": "px",
             "value": 12
+          }
+        }
+      ],
+      [
+        "dIzdASIYIpmYgCW1wMwLE:IOEBbQqW2Zb9XucSe4u8N:marginBottom:",
+        {
+          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
+          "styleSourceId": "dIzdASIYIpmYgCW1wMwLE",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "value": 30,
+            "unit": "px"
+          }
+        }
+      ],
+      [
+        "t4i_9XQa407XyBOM2nm1Y:IOEBbQqW2Zb9XucSe4u8N:marginBottom:",
+        {
+          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
+          "styleSourceId": "t4i_9XQa407XyBOM2nm1Y",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "value": 20,
+            "unit": "px"
           }
         }
       ]
