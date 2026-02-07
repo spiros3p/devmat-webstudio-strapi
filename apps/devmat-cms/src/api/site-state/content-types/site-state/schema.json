@@ -13,6 +13,9 @@
   "attributes": {
     "siteStatus": {
       "type": "string"
+    },
+    "websiteURL": {
+      "type": "string"
     }
   }
 }
