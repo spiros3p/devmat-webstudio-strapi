@@ -254,7 +254,18 @@
       "fields": [
          "siteStatus",
          "websiteURL"
-      ]
+      ],
+      "populate": {
+         "instructionsToCms": {
+            "fields": [
+               "name",
+               "alternativeText",
+               "size",
+               "url",
+               "documentId"
+            ]
+         }
+      }
    },
    "GET /api/faqs": {
       "content-type": "api::faq.faq",
