@@ -6,9 +6,16 @@
       import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
   let URLcmsdocker = "http://172.18.0.23:1337"
-  let URLmiddlemanproxy = "http://172.18.0.25:5151"
-  let ENDPOINTproxysubmitcontactform = "/proxy/contact-form-submits"
-  const REQHomePage_1: ResourceRequest = {
+  const SiteState_1: ResourceRequest = {
+    name: "Site State",
+    url: "http://172.18.0.23:1337/api/site-state",
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
+  const REQHomePage: ResourceRequest = {
     name: "REQ | Home Page",
     url: URLcmsdocker+"/api/general",
     searchParams: [
@@ -17,7 +24,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQBenfitsDevmat_1: ResourceRequest = {
+  const REQBenfitsDevmat: ResourceRequest = {
     name: "REQ | Benfits Devmat",
     url: URLcmsdocker+"/api/benefits",
     searchParams: [
@@ -26,7 +33,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQGetStartedSteps_1: ResourceRequest = {
+  const REQGetStartedSteps: ResourceRequest = {
     name: "REQ | Get Started Steps",
     url: URLcmsdocker+'/api/getting-started-steps',
     searchParams: [
@@ -35,7 +42,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQSolutions_1: ResourceRequest = {
+  const REQSolutions: ResourceRequest = {
     name: "REQ | Solutions",
     url: URLcmsdocker+'/api/solutions',
     searchParams: [
@@ -44,7 +51,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQClientReviews_1: ResourceRequest = {
+  const REQClientReviews: ResourceRequest = {
     name: "REQ | Client Reviews",
     url: URLcmsdocker+'/api/client-reviews',
     searchParams: [
@@ -53,7 +60,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQFAQs_1: ResourceRequest = {
+  const REQFAQs: ResourceRequest = {
     name: "REQ | FAQs ",
     url: URLcmsdocker+'/api/faqs',
     searchParams: [
@@ -62,17 +69,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const action: ResourceRequest = {
-    name: "action",
-    url: URLmiddlemanproxy+ENDPOINTproxysubmitcontactform,
-    searchParams: [
-    ],
-    method: "post",
-    headers: [
-      { name: "Content-Type", value: "application/json" },
-    ],
-  }
-  const REQfooter_1: ResourceRequest = {
+  const REQfooter: ResourceRequest = {
     name: "REQ | footer",
     url: URLcmsdocker+'/api/footer',
     searchParams: [
@@ -81,7 +78,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQSocial_1: ResourceRequest = {
+  const REQSocial: ResourceRequest = {
     name: "REQ | Social",
     url: URLcmsdocker+'/api/social-media-devmats',
     searchParams: [
@@ -90,7 +87,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQContactInfo_1: ResourceRequest = {
+  const REQContactInfo: ResourceRequest = {
     name: "REQ | Contact Info",
     url: URLcmsdocker+'/api/contact-info',
     searchParams: [
@@ -99,7 +96,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQNavigation_1: ResourceRequest = {
+  const REQNavigation: ResourceRequest = {
     name: "REQ | Navigation",
     url: URLcmsdocker+'/api/navigation',
     searchParams: [
@@ -109,19 +106,19 @@ export const getResources = (_props: { system: System }) => {
     ],
   }
   const _data = new Map<string, ResourceRequest>([
-    ["REQHomePage_1", REQHomePage_1],
-    ["REQBenfitsDevmat_1", REQBenfitsDevmat_1],
-    ["REQGetStartedSteps_1", REQGetStartedSteps_1],
-    ["REQSolutions_1", REQSolutions_1],
-    ["REQClientReviews_1", REQClientReviews_1],
-    ["REQFAQs_1", REQFAQs_1],
-    ["REQfooter_1", REQfooter_1],
-    ["REQSocial_1", REQSocial_1],
-    ["REQContactInfo_1", REQContactInfo_1],
-    ["REQNavigation_1", REQNavigation_1],
+    ["SiteState_1", SiteState_1],
+    ["REQHomePage", REQHomePage],
+    ["REQBenfitsDevmat", REQBenfitsDevmat],
+    ["REQGetStartedSteps", REQGetStartedSteps],
+    ["REQSolutions", REQSolutions],
+    ["REQClientReviews", REQClientReviews],
+    ["REQFAQs", REQFAQs],
+    ["REQfooter", REQfooter],
+    ["REQSocial", REQSocial],
+    ["REQContactInfo", REQContactInfo],
+    ["REQNavigation", REQNavigation],
   ])
   const _action = new Map<string, ResourceRequest>([
-    ["action", action],
   ])
   return { data: _data, action: _action }
 }
@@ -136,11 +133,11 @@ export const getResources = (_props: { system: System }) => {
 }): PageMeta => {
   return {
     title: "Devmat Solutions PC – Easy, Powerful, Intelligent",
-    description: "",
+    description: undefined,
     excludePageFromSearch: true,
-    language: "",
+    language: undefined,
     socialImageAssetName: undefined,
-    socialImageUrl: "",
+    socialImageUrl: undefined,
     status: undefined,
     redirect: "",
     custom: [

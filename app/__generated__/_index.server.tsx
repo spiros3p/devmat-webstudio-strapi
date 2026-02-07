@@ -6,16 +6,9 @@
       import type { System, ResourceRequest } from "@webstudio-is/sdk";
 export const getResources = (_props: { system: System }) => {
   let URLcmsdocker = "http://172.18.0.23:1337"
-  const SiteState_1: ResourceRequest = {
-    name: "Site State",
-    url: "http://172.18.0.23:1337/api/site-state",
-    searchParams: [
-    ],
-    method: "get",
-    headers: [
-    ],
-  }
-  const REQHomePage: ResourceRequest = {
+  let URLmiddlemanproxy = "http://172.18.0.25:5151"
+  let ENDPOINTproxysubmitcontactform = "/proxy/contact-form-submits"
+  const REQHomePage_1: ResourceRequest = {
     name: "REQ | Home Page",
     url: URLcmsdocker+"/api/general",
     searchParams: [
@@ -24,7 +17,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQBenfitsDevmat: ResourceRequest = {
+  const REQBenfitsDevmat_1: ResourceRequest = {
     name: "REQ | Benfits Devmat",
     url: URLcmsdocker+"/api/benefits",
     searchParams: [
@@ -33,7 +26,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQGetStartedSteps: ResourceRequest = {
+  const REQGetStartedSteps_1: ResourceRequest = {
     name: "REQ | Get Started Steps",
     url: URLcmsdocker+'/api/getting-started-steps',
     searchParams: [
@@ -42,7 +35,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQSolutions: ResourceRequest = {
+  const REQSolutions_1: ResourceRequest = {
     name: "REQ | Solutions",
     url: URLcmsdocker+'/api/solutions',
     searchParams: [
@@ -51,7 +44,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQClientReviews: ResourceRequest = {
+  const REQClientReviews_1: ResourceRequest = {
     name: "REQ | Client Reviews",
     url: URLcmsdocker+'/api/client-reviews',
     searchParams: [
@@ -60,7 +53,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQFAQs: ResourceRequest = {
+  const REQFAQs_1: ResourceRequest = {
     name: "REQ | FAQs ",
     url: URLcmsdocker+'/api/faqs',
     searchParams: [
@@ -69,7 +62,17 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQfooter: ResourceRequest = {
+  const action: ResourceRequest = {
+    name: "action",
+    url: URLmiddlemanproxy+ENDPOINTproxysubmitcontactform,
+    searchParams: [
+    ],
+    method: "post",
+    headers: [
+      { name: "Content-Type", value: "application/json" },
+    ],
+  }
+  const REQfooter_1: ResourceRequest = {
     name: "REQ | footer",
     url: URLcmsdocker+'/api/footer',
     searchParams: [
@@ -78,7 +81,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQSocial: ResourceRequest = {
+  const REQSocial_1: ResourceRequest = {
     name: "REQ | Social",
     url: URLcmsdocker+'/api/social-media-devmats',
     searchParams: [
@@ -87,7 +90,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQContactInfo: ResourceRequest = {
+  const REQContactInfo_1: ResourceRequest = {
     name: "REQ | Contact Info",
     url: URLcmsdocker+'/api/contact-info',
     searchParams: [
@@ -96,7 +99,7 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
-  const REQNavigation: ResourceRequest = {
+  const REQNavigation_1: ResourceRequest = {
     name: "REQ | Navigation",
     url: URLcmsdocker+'/api/navigation',
     searchParams: [
@@ -106,19 +109,19 @@ export const getResources = (_props: { system: System }) => {
     ],
   }
   const _data = new Map<string, ResourceRequest>([
-    ["SiteState_1", SiteState_1],
-    ["REQHomePage", REQHomePage],
-    ["REQBenfitsDevmat", REQBenfitsDevmat],
-    ["REQGetStartedSteps", REQGetStartedSteps],
-    ["REQSolutions", REQSolutions],
-    ["REQClientReviews", REQClientReviews],
-    ["REQFAQs", REQFAQs],
-    ["REQfooter", REQfooter],
-    ["REQSocial", REQSocial],
-    ["REQContactInfo", REQContactInfo],
-    ["REQNavigation", REQNavigation],
+    ["REQHomePage_1", REQHomePage_1],
+    ["REQBenfitsDevmat_1", REQBenfitsDevmat_1],
+    ["REQGetStartedSteps_1", REQGetStartedSteps_1],
+    ["REQSolutions_1", REQSolutions_1],
+    ["REQClientReviews_1", REQClientReviews_1],
+    ["REQFAQs_1", REQFAQs_1],
+    ["REQfooter_1", REQfooter_1],
+    ["REQSocial_1", REQSocial_1],
+    ["REQContactInfo_1", REQContactInfo_1],
+    ["REQNavigation_1", REQNavigation_1],
   ])
   const _action = new Map<string, ResourceRequest>([
+    ["action", action],
   ])
   return { data: _data, action: _action }
 }
@@ -133,13 +136,13 @@ export const getResources = (_props: { system: System }) => {
 }): PageMeta => {
   return {
     title: "Devmat Solutions PC – Easy, Powerful, Intelligent",
-    description: undefined,
-    excludePageFromSearch: undefined,
-    language: undefined,
+    description: "Devmat Solutions is an Innovative Startup, made up of a team of Maritime Professionals with more than 50 years of accumulated expertise in Managerial and Leadership Positions within the Shipping Industry.",
+    excludePageFromSearch: true,
+    language: "",
     socialImageAssetName: undefined,
-    socialImageUrl: undefined,
+    socialImageUrl: "https://admin.devmat.spirosroadto.info/uploads/devmat_parallax_cargo_vessel_75c3d61ae4.webp",
     status: undefined,
-    redirect: undefined,
+    redirect: "",
     custom: [
     ],
   };

@@ -124,7 +124,7 @@ export const getResources = (_props: { system: System }) => {
   return {
     title: "Page not found",
     description: undefined,
-    excludePageFromSearch: false,
+    excludePageFromSearch: true,
     language: undefined,
     socialImageAssetName: undefined,
     socialImageUrl: undefined,

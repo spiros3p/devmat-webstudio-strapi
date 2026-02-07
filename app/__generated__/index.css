@@ -97,17 +97,6 @@
     border-left-style: solid;
     margin: 0
   }
-  img.w-image {
-    box-sizing: border-box;
-    max-width: 100%;
-    display: block;
-    height: auto
-  }
-  div.w-html-embed {
-    display: contents;
-    white-space: normal;
-    white-space-collapse: collapse
-  }
   div.w-navigation-menu {
     box-sizing: border-box
   }
@@ -129,6 +118,17 @@
   }
   div.w-menu-viewport {
     box-sizing: border-box
+  }
+  div.w-html-embed {
+    display: contents;
+    white-space: normal;
+    white-space-collapse: collapse
+  }
+  img.w-image {
+    box-sizing: border-box;
+    max-width: 100%;
+    display: block;
+    height: auto
   }
   div.w-accordion {
     box-sizing: border-box

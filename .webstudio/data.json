@@ -1,21 +1,40 @@
 {
   "build": {
-    "id": "cfe43a06-790e-47a2-902f-994fc1596fea",
+    "id": "72553c46-1e5e-48d2-95fa-504d6acaaded",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 2908,
-    "createdAt": "2026-02-06T23:54:15.502+00:00",
-    "updatedAt": "2026-02-06T23:54:15.502+00:00",
+    "version": 2927,
+    "createdAt": "2026-02-07T00:16:34.617+00:00",
+    "updatedAt": "2026-02-07T00:16:34.617+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
         "faviconAssetId": "db1c1891eed3349d541fb69cbe3f801b988b105599487d858b8867efe2f4bd57"
       },
       "homePage": {
-        "id": "nyIpBNHmNR8MvJeQAVLs2",
-        "name": "under construction",
+        "id": "84gONRgxC5KUX1IKoVxAh",
+        "name": "Home",
         "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
-        "rootInstanceId": "YGHM2JjdXEXbvLr1kX_YB",
-        "meta": {},
+        "history": [
+          "/home"
+        ],
+        "rootInstanceId": "6xK8OBCz1a0km4Hi38tjX",
+        "meta": {
+          "description": "\"Devmat Solutions is an Innovative Startup, made up of a team of Maritime Professionals with more than 50 years of accumulated expertise in Managerial and Leadership Positions within the Shipping Industry.\"",
+          "excludePageFromSearch": "true",
+          "language": "\"\"",
+          "socialImageUrl": "\"https://admin.devmat.spirosroadto.info/uploads/devmat_parallax_cargo_vessel_75c3d61ae4.webp\"",
+          "redirect": "\"\"",
+          "documentType": "html",
+          "custom": [
+            {
+              "property": "",
+              "content": "\"\""
+            }
+          ]
+        },
+        "marketplace": {
+          "include": false
+        },
         "path": ""
       },
       "pages": [
@@ -25,26 +44,19 @@
           "title": "\"Page not found\"",
           "rootInstanceId": "MGVE_v4earymoi5ZC8wLX",
           "meta": {
-            "excludePageFromSearch": "false",
+            "excludePageFromSearch": "true",
             "status": "404"
           },
           "path": "/*"
         },
         {
-          "id": "84gONRgxC5KUX1IKoVxAh",
-          "name": "home",
+          "id": "nyIpBNHmNR8MvJeQAVLs2",
+          "name": "under construction",
           "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
-          "history": [
-            "/home"
-          ],
-          "rootInstanceId": "6xK8OBCz1a0km4Hi38tjX",
+          "rootInstanceId": "YGHM2JjdXEXbvLr1kX_YB",
           "meta": {
-            "description": "\"\"",
             "excludePageFromSearch": "true",
-            "language": "\"\"",
-            "socialImageUrl": "\"\"",
             "redirect": "\"\"",
-            "documentType": "html",
             "custom": [
               {
                 "property": "",
@@ -52,10 +64,7 @@
               }
             ]
           },
-          "marketplace": {
-            "include": false
-          },
-          "path": "/home"
+          "path": "/under-construction"
         }
       ],
       "folders": [
@@ -64,9 +73,9 @@
           "name": "Root",
           "slug": "",
           "children": [
-            "nyIpBNHmNR8MvJeQAVLs2",
+            "84gONRgxC5KUX1IKoVxAh",
             "WMUbnK_GI-1K7AZnE8Kg7",
-            "84gONRgxC5KUX1IKoVxAh"
+            "nyIpBNHmNR8MvJeQAVLs2"
           ]
         }
       ]
@@ -28202,7 +28211,7 @@
           "instanceId": "Eg-Je9SIAyI22VLRU_vd6",
           "name": "alt",
           "type": "expression",
-          "value": "$ws$dataSource$VWBVk0XpsQPkcKNv2__DASH__Gbc.logo.name"
+          "value": "$ws$dataSource$VWBVk0XpsQPkcKNv2__DASH__Gbc.logo.alternativeText"
         }
       ],
       [
@@ -30765,6 +30774,36 @@
           "name": "title",
           "type": "expression",
           "value": "$ws$dataSource$FArxfgS8hYIgWCz1wonSE.href"
+        }
+      ],
+      [
+        "jzgwK949Fj9EAx20aYefI",
+        {
+          "id": "jzgwK949Fj9EAx20aYefI",
+          "instanceId": "sdZ_YZwAWxgQ20nADjw8R",
+          "name": "alt",
+          "type": "expression",
+          "value": "$ws$dataSource$UC4idxLgrilwHpuq9AtRp.alternativeText"
+        }
+      ],
+      [
+        "WlnlPDtdqLOOVASYrY5VL",
+        {
+          "id": "WlnlPDtdqLOOVASYrY5VL",
+          "instanceId": "xcmHo2AqGo1fAUJIO7KQr",
+          "name": "alt",
+          "type": "expression",
+          "value": "$ws$dataSource$w06tgLc17gzhkx5uQXV7o.image.alternativeText"
+        }
+      ],
+      [
+        "7GbI3pfvOLjUGFzs1lBU4",
+        {
+          "id": "7GbI3pfvOLjUGFzs1lBU4",
+          "instanceId": "UcRCPlB6fEOp4NB8AhFxr",
+          "name": "alt",
+          "type": "expression",
+          "value": "$ws$dataSource$lWeP2rSLnyB4RuTVg9b6a.icon.name"
         }
       ]
     ],
@@ -35742,46 +35781,46 @@
     }
   },
   "page": {
-    "id": "nyIpBNHmNR8MvJeQAVLs2",
-    "name": "under construction",
+    "id": "84gONRgxC5KUX1IKoVxAh",
+    "name": "Home",
     "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
-    "rootInstanceId": "YGHM2JjdXEXbvLr1kX_YB",
-    "meta": {},
+    "history": [
+      "/home"
+    ],
+    "rootInstanceId": "6xK8OBCz1a0km4Hi38tjX",
+    "meta": {
+      "description": "\"Devmat Solutions is an Innovative Startup, made up of a team of Maritime Professionals with more than 50 years of accumulated expertise in Managerial and Leadership Positions within the Shipping Industry.\"",
+      "excludePageFromSearch": "true",
+      "language": "\"\"",
+      "socialImageUrl": "\"https://admin.devmat.spirosroadto.info/uploads/devmat_parallax_cargo_vessel_75c3d61ae4.webp\"",
+      "redirect": "\"\"",
+      "documentType": "html",
+      "custom": [
+        {
+          "property": "",
+          "content": "\"\""
+        }
+      ]
+    },
+    "marketplace": {
+      "include": false
+    },
     "path": ""
   },
   "pages": [
     {
-      "id": "nyIpBNHmNR8MvJeQAVLs2",
-      "name": "under construction",
-      "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
-      "rootInstanceId": "YGHM2JjdXEXbvLr1kX_YB",
-      "meta": {},
-      "path": ""
-    },
-    {
-      "id": "WMUbnK_GI-1K7AZnE8Kg7",
-      "name": "404",
-      "title": "\"Page not found\"",
-      "rootInstanceId": "MGVE_v4earymoi5ZC8wLX",
-      "meta": {
-        "excludePageFromSearch": "false",
-        "status": "404"
-      },
-      "path": "/*"
-    },
-    {
       "id": "84gONRgxC5KUX1IKoVxAh",
-      "name": "home",
+      "name": "Home",
       "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
       "history": [
         "/home"
       ],
       "rootInstanceId": "6xK8OBCz1a0km4Hi38tjX",
       "meta": {
-        "description": "\"\"",
+        "description": "\"Devmat Solutions is an Innovative Startup, made up of a team of Maritime Professionals with more than 50 years of accumulated expertise in Managerial and Leadership Positions within the Shipping Industry.\"",
         "excludePageFromSearch": "true",
         "language": "\"\"",
-        "socialImageUrl": "\"\"",
+        "socialImageUrl": "\"https://admin.devmat.spirosroadto.info/uploads/devmat_parallax_cargo_vessel_75c3d61ae4.webp\"",
         "redirect": "\"\"",
         "documentType": "html",
         "custom": [
@@ -35794,7 +35833,35 @@
       "marketplace": {
         "include": false
       },
-      "path": "/home"
+      "path": ""
+    },
+    {
+      "id": "WMUbnK_GI-1K7AZnE8Kg7",
+      "name": "404",
+      "title": "\"Page not found\"",
+      "rootInstanceId": "MGVE_v4earymoi5ZC8wLX",
+      "meta": {
+        "excludePageFromSearch": "true",
+        "status": "404"
+      },
+      "path": "/*"
+    },
+    {
+      "id": "nyIpBNHmNR8MvJeQAVLs2",
+      "name": "under construction",
+      "title": "\"Devmat Solutions PC – Easy, Powerful, Intelligent\"",
+      "rootInstanceId": "YGHM2JjdXEXbvLr1kX_YB",
+      "meta": {
+        "excludePageFromSearch": "true",
+        "redirect": "\"\"",
+        "custom": [
+          {
+            "property": "",
+            "content": "\"\""
+          }
+        ]
+      },
+      "path": "/under-construction"
     }
   ],
   "assets": [
