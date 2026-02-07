@@ -252,7 +252,8 @@
    "GET /api/site-state": {
       "content-type": "api::site-state.site-state",
       "fields": [
-         "siteStatus"
+         "siteStatus",
+         "websiteURL"
       ]
    },
    "GET /api/faqs": {
