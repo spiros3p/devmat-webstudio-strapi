@@ -108,6 +108,15 @@ export const getResources = (_props: { system: System }) => {
     headers: [
     ],
   }
+  const REQsitestate_1: ResourceRequest = {
+    name: "REQ | site state",
+    url: URLcmsdocker + '/api/site-state',
+    searchParams: [
+    ],
+    method: "get",
+    headers: [
+    ],
+  }
   const _data = new Map<string, ResourceRequest>([
     ["REQHomePage_1", REQHomePage_1],
     ["REQBenfitsDevmat_1", REQBenfitsDevmat_1],
@@ -119,6 +128,7 @@ export const getResources = (_props: { system: System }) => {
     ["REQSocial_1", REQSocial_1],
     ["REQContactInfo_1", REQContactInfo_1],
     ["REQNavigation_1", REQNavigation_1],
+    ["REQsitestate_1", REQsitestate_1],
   ])
   const _action = new Map<string, ResourceRequest>([
     ["action", action],

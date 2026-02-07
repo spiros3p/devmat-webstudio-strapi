@@ -11,7 +11,7 @@ import { Box as Box, Fragment as Fragment_1, HtmlEmbed as HtmlEmbed, Image as Im
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-07T10:06:02.879Z";
+      export const lastPublished = "2026-02-07T11:31:42.935Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -36,6 +36,7 @@ import { Box as Box, Fragment as Fragment_1, HtmlEmbed as HtmlEmbed, Image as Im
           
 
       const Page = (_props: { system: any; }) => {
+let REQsitestate = useResource("REQsitestate_1")
 let REQNavigation = useResource("REQNavigation_1")
 let REQHomePage = useResource("REQHomePage_1")
 let [URLcmsMediaLocal, set$URLcmsMediaLocal] = useVariableState<any>("https://admin.devmat.spirosroadto.info")
@@ -54,10 +55,16 @@ className={`w-element c1pk2abd c1om2ni4 c1t9kc3 caxks0e c17l107q c1axzkds cpofr2
 className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j c1nnj4xy caui1hn`}>
 <NavigationMenu
 className={`w-navigation-menu c1gbr3z6 c1b9a0j2 cyksmbj c1rc0m8f c1q7lfpp ciexhcn c1oji2iw crw0x0i c7k78s6 cz4er6w c1jfats1`}>
+<Link_1
+href={REQsitestate?.data?.data?.websiteURL}
+target={"_self"}
+title={REQsitestate?.data?.data?.websiteURL}
+className={`w-element cu2xsck cqjwob8`}>
 <div
 className={`w-element c1anbojs c1kgg7oc c1uyinf6 c1wdeocc c4cayoo c53v5zz c1f5y87x c1y6e6gy cj79p55 c13mijno c1m8wuxn c1c9qrtl cu9hx8o`}>
 {"Devmat Solutions PC"}
 </div>
+</Link_1>
 <NavigationMenuList
 className={`w-menu-list c1wdeocc c4kj7kl c4cayoo c7d4aiq cyksmbj c19ayrcm cm1hduf c9ki4md c1sdaeb8 c1oji2iw c7pv373 c18tswnh c1avjyiw cyh8saq c98ze20`}>
 <Box
@@ -726,10 +733,16 @@ className={`w-element cvq2wwp cyksmbj c1i7snbb c1029aa7 c1tjvjms cih7fsz c1xz0hf
 className={`w-element cyksmbj c1q7lfpp c1wdeocc cgqpu4r cziueud c1wh3e3g c1rc0m8f c22bnnu cy0z055`}>
 <div
 className={`w-element cyksmbj c1i7snbb c1s7cfds cgocsqs ceh8ohp cfspsgy c1jlm1rw`}>
+<Link_1
+title={REQsitestate?.data?.data?.websiteURL}
+href={REQsitestate?.data?.data?.websiteURL}
+target={"_self"}
+className={`w-element cu2xsck cqjwob8`}>
 <div
 className={`w-element c1anbojs c1eqko4a chxya58 c1wdeocc c4cayoo c1ox04z8 cj79p55 c1falt5c cfxgm5o c1dipgxw c1c9qrtl`}>
 {"Devmat Solutions PC"}
 </div>
+</Link_1>
 <p
 className={`w-element cp01muw c1ihn9l4 c189u35v c1yral3q c17j7sop`}>
 {REQfooter?.data?.data?.footerParagraph}
