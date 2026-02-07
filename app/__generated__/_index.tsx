@@ -38,7 +38,7 @@ import { Box as Box, Fragment as Fragment_1, HtmlEmbed as HtmlEmbed, Image as Im
       const Page = (_props: { system: any; }) => {
 let REQNavigation = useResource("REQNavigation_1")
 let REQHomePage = useResource("REQHomePage_1")
-let [URLcmsMediaLocal, set$URLcmsMediaLocal] = useVariableState<any>("http://localhost:1337")
+let [URLcmsMediaLocal, set$URLcmsMediaLocal] = useVariableState<any>("https://admin.devmat.spirosroadto.info")
 let REQBenfitsDevmat = useResource("REQBenfitsDevmat_1")
 let REQGetStartedSteps = useResource("REQGetStartedSteps_1")
 let REQSolutions = useResource("REQSolutions_1")
