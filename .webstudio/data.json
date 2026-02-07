@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "72553c46-1e5e-48d2-95fa-504d6acaaded",
+    "id": "f613c1b5-7325-4fa8-b461-96bccfac85fb",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 2927,
-    "createdAt": "2026-02-07T00:16:34.617+00:00",
-    "updatedAt": "2026-02-07T00:16:34.617+00:00",
+    "version": 2937,
+    "createdAt": "2026-02-07T09:08:11.828+00:00",
+    "updatedAt": "2026-02-07T09:08:11.828+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -2867,7 +2867,7 @@
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 12
+            "value": 0
           }
         }
       ],
@@ -5519,7 +5519,7 @@
           "property": "fontSize",
           "value": {
             "type": "unit",
-            "value": 18,
+            "value": 21,
             "unit": "px"
           }
         }
@@ -24970,6 +24970,45 @@
             "unit": "px"
           }
         }
+      ],
+      [
+        "iKDS9RCkH_MIVaqSGSdyq:Cau1OpnQLcB8-xVPpUhsW:marginTop:",
+        {
+          "breakpointId": "Cau1OpnQLcB8-xVPpUhsW",
+          "styleSourceId": "iKDS9RCkH_MIVaqSGSdyq",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 12
+          }
+        }
+      ],
+      [
+        "iKDS9RCkH_MIVaqSGSdyq:IOEBbQqW2Zb9XucSe4u8N:paddingLeft:",
+        {
+          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
+          "styleSourceId": "iKDS9RCkH_MIVaqSGSdyq",
+          "property": "paddingLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 12
+          }
+        }
+      ],
+      [
+        "iKDS9RCkH_MIVaqSGSdyq:IOEBbQqW2Zb9XucSe4u8N:paddingRight:",
+        {
+          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
+          "styleSourceId": "iKDS9RCkH_MIVaqSGSdyq",
+          "property": "paddingRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 12
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -35602,8 +35641,8 @@
           "component": "Text",
           "children": [
             {
-              "type": "text",
-              "value": "Products"
+              "type": "expression",
+              "value": "$ws$dataSource$PlmRtTNuWeAIPTQ6Czeib.name"
             }
           ]
         }

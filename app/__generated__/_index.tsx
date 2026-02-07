@@ -2,16 +2,16 @@
       /* This is a auto generated file for building the project */ 
 
 
-      import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Body as Body, Link as Link, Link as Link_1, Form as Form } from "@webstudio-is/sdk-components-react-router";
-import { NavigationMenu as NavigationMenu, NavigationMenuList as NavigationMenuList, NavigationMenuItem as NavigationMenuItem, NavigationMenuLink as NavigationMenuLink, NavigationMenuViewport as NavigationMenuViewport, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent, Label as Label, NavigationMenuTrigger as NavigationMenuTrigger, NavigationMenuContent as NavigationMenuContent } from "@webstudio-is/sdk-components-react-radix";
-import { Box as Box, Fragment as Fragment_1, HtmlEmbed as HtmlEmbed, Image as Image, Slot as Slot, MarkdownEmbed as MarkdownEmbed, Text as Text, Textarea as Textarea, Input as Input, Select as Select, Button as Button, Paragraph as Paragraph } from "@webstudio-is/sdk-components-react";
+import { Box, Button, Fragment as Fragment_1, HtmlEmbed, Image, Input, MarkdownEmbed, Paragraph, Select, Slot, Text, Textarea } from "@webstudio-is/sdk-components-react";
+import { Accordion, AccordionContent, AccordionHeader, AccordionItem, AccordionTrigger, Label, NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, NavigationMenuViewport } from "@webstudio-is/sdk-components-react-radix";
+import { Body, Form, Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
+import { Fragment } from "react";
 
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-07T00:16:34.617Z";
+      export const lastPublished = "2026-02-07T09:08:11.828Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -55,7 +55,7 @@ className={`w-element c1f5y87x c1y6e6gy c1xz0hfv c1nn1c1j c1nnj4xy caui1hn`}>
 <NavigationMenu
 className={`w-navigation-menu c1gbr3z6 c1b9a0j2 cyksmbj c1rc0m8f c1q7lfpp ciexhcn c1oji2iw crw0x0i c7k78s6 cz4er6w c1jfats1`}>
 <div
-className={`w-element c1anbojs c1kgg7oc c1uyinf6 c1wdeocc c4cayoo c53v5zz cj79p55 c1falt5c c1dipgxw c1c9qrtl`}>
+className={`w-element c1anbojs c1kgg7oc c1uyinf6 c1wdeocc c4cayoo c53v5zz c1f5y87x c1y6e6gy cj79p55 c13mijno c1m8wuxn c1c9qrtl cu9hx8o`}>
 {"Devmat Solutions PC"}
 </div>
 <NavigationMenuList
@@ -98,7 +98,7 @@ className={`w-menu-item`}>
 className={`w-button ccqry52 c1oji2iw c7pv373 c199gza7 c1scatng c12dglsd c18cn36h c1s0vdhp cc3itzg cu15652 cyjqqjx c152iurg c15q8tho c1kh7ybw c1rwsfc4 c16v3bxy c1qj3xb5 cwl22p7 c6i07qh c16vucp1 c10wx85o c1q4fk80 cbq1r21 c3928kp c1jwpyv4 c1frugua`}>
 <Text
 className={`w-text c53v5zz`}>
-{"Products"}
+{collectionItem?.name}
 </Text>
 <Box
 className={`w-box c1jfsl5 cv7jg5f c15h8iyp c1ilvq6h cleis16 c1eqwf0y czk77kp c2lasyc cdjvvc8 c1o70tqg`}>
@@ -834,5 +834,5 @@ className={`w-markdown-embed c1k5mt0p ceohp8a c6kddcu cqjwob8 c3l0smv c128652x c
 }
 
 
-      export { Page }
+      export { Page };
     
