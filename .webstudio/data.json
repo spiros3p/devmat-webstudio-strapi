@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "1ce2f15e-95f9-472c-9b4a-7f844117b3a4",
+    "id": "88391b93-c44c-429c-8cb4-5cb07b7d6117",
     "projectId": "b76c7430-2a95-4845-aeef-095a5acae881",
-    "version": 3008,
-    "createdAt": "2026-02-07T16:34:55.482+00:00",
-    "updatedAt": "2026-02-07T16:34:55.482+00:00",
+    "version": 3056,
+    "createdAt": "2026-02-07T16:55:03.698+00:00",
+    "updatedAt": "2026-02-07T16:55:03.698+00:00",
     "pages": {
       "meta": {
         "siteName": "Devmat Solutions PC – Easy, Powerful, Intelligent",
@@ -42,6 +42,9 @@
           "id": "WMUbnK_GI-1K7AZnE8Kg7",
           "name": "404",
           "title": "\"Page not found\"",
+          "history": [
+            "/"
+          ],
           "rootInstanceId": "MGVE_v4earymoi5ZC8wLX",
           "meta": {
             "excludePageFromSearch": "true",
@@ -21769,19 +21772,6 @@
         }
       ],
       [
-        "lxZnG-aYpSAT7Kr6KblUX:IOEBbQqW2Zb9XucSe4u8N:paddingBottom:",
-        {
-          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
-          "styleSourceId": "lxZnG-aYpSAT7Kr6KblUX",
-          "property": "paddingBottom",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 10
-          }
-        }
-      ],
-      [
         "2-W4Epqkk2N38ELzNd2gX:IOEBbQqW2Zb9XucSe4u8N:flexWrap:",
         {
           "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
@@ -22121,13 +22111,13 @@
       [
         "dGTqyYm0z2ib9o0XM5Cpx:IOEBbQqW2Zb9XucSe4u8N:fontSize:",
         {
-          "styleSourceId": "dGTqyYm0z2ib9o0XM5Cpx",
           "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
+          "styleSourceId": "dGTqyYm0z2ib9o0XM5Cpx",
           "property": "fontSize",
           "value": {
             "type": "unit",
-            "unit": "px",
-            "value": 16
+            "value": 14,
+            "unit": "px"
           }
         }
       ],
@@ -22286,19 +22276,6 @@
         }
       ],
       [
-        "GSX3ko0VKvLXNUtzHivlN:IOEBbQqW2Zb9XucSe4u8N:lineHeight:",
-        {
-          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
-          "styleSourceId": "GSX3ko0VKvLXNUtzHivlN",
-          "property": "lineHeight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 20
-          }
-        }
-      ],
-      [
         "GSX3ko0VKvLXNUtzHivlN:IOEBbQqW2Zb9XucSe4u8N:color:",
         {
           "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
@@ -22342,20 +22319,7 @@
           "property": "rowGap",
           "value": {
             "type": "unit",
-            "value": 8,
-            "unit": "px"
-          }
-        }
-      ],
-      [
-        "XayS5YS_A4dpjg7CVDyDL:IOEBbQqW2Zb9XucSe4u8N:columnGap:",
-        {
-          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
-          "styleSourceId": "XayS5YS_A4dpjg7CVDyDL",
-          "property": "columnGap",
-          "value": {
-            "type": "unit",
-            "value": 8,
+            "value": 5,
             "unit": "px"
           }
         }
@@ -25108,6 +25072,71 @@
             "value": "none"
           }
         }
+      ],
+      [
+        "1Uywbtqi2E7tvyzmz1gBD:IOEBbQqW2Zb9XucSe4u8N:fontSize:",
+        {
+          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
+          "styleSourceId": "1Uywbtqi2E7tvyzmz1gBD",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "value": 14,
+            "unit": "px"
+          }
+        }
+      ],
+      [
+        "4MfFIb5Wq3r3dW0p1lSex:IOEBbQqW2Zb9XucSe4u8N:fontSize:",
+        {
+          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
+          "styleSourceId": "4MfFIb5Wq3r3dW0p1lSex",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "value": 16,
+            "unit": "px"
+          }
+        }
+      ],
+      [
+        "gMr96RgpOedvTImBAZo18:Cau1OpnQLcB8-xVPpUhsW:rowGap:",
+        {
+          "breakpointId": "Cau1OpnQLcB8-xVPpUhsW",
+          "styleSourceId": "gMr96RgpOedvTImBAZo18",
+          "property": "rowGap",
+          "value": {
+            "type": "unit",
+            "value": 20,
+            "unit": "px"
+          }
+        }
+      ],
+      [
+        "2-W4Epqkk2N38ELzNd2gX:Cau1OpnQLcB8-xVPpUhsW:rowGap:",
+        {
+          "breakpointId": "Cau1OpnQLcB8-xVPpUhsW",
+          "styleSourceId": "2-W4Epqkk2N38ELzNd2gX",
+          "property": "rowGap",
+          "value": {
+            "type": "unit",
+            "value": 20,
+            "unit": "px"
+          }
+        }
+      ],
+      [
+        "FnDGm4ZU8Cabs4TgV0hn0:IOEBbQqW2Zb9XucSe4u8N:marginBottom:",
+        {
+          "breakpointId": "IOEBbQqW2Zb9XucSe4u8N",
+          "styleSourceId": "FnDGm4ZU8Cabs4TgV0hn0",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "value": 14,
+            "unit": "px"
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -26605,6 +26634,13 @@
           "type": "local",
           "id": "LGmxNlqT11OEC4rKnQrw8"
         }
+      ],
+      [
+        "FnDGm4ZU8Cabs4TgV0hn0",
+        {
+          "type": "local",
+          "id": "FnDGm4ZU8Cabs4TgV0hn0"
+        }
       ]
     ],
     "styleSourceSelections": [
@@ -28036,7 +28072,8 @@
         {
           "instanceId": "Sooojri1la0jgOAGmXXVs",
           "values": [
-            "v4Tm_kbfD0kCkvgGmYdxJ"
+            "v4Tm_kbfD0kCkvgGmYdxJ",
+            "FnDGm4ZU8Cabs4TgV0hn0"
           ]
         }
       ],
@@ -36174,6 +36211,9 @@
       "id": "WMUbnK_GI-1K7AZnE8Kg7",
       "name": "404",
       "title": "\"Page not found\"",
+      "history": [
+        "/"
+      ],
       "rootInstanceId": "MGVE_v4earymoi5ZC8wLX",
       "meta": {
         "excludePageFromSearch": "true",

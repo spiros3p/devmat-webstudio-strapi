@@ -11,7 +11,7 @@ import { Box as Box, Fragment as Fragment_1, HtmlEmbed as HtmlEmbed, Image as Im
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-07T16:34:55.482Z";
+      export const lastPublished = "2026-02-07T16:55:03.698Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
@@ -730,7 +730,7 @@ className={`w-element c1j6km2m ceohp8a c3vcdka c1ht3eul`}>
 <div
 className={`w-element cvq2wwp cyksmbj c1i7snbb c1029aa7 c1tjvjms cih7fsz c1xz0hfv c1nn1c1j c2ace6m cjaeftc c15ykucn cb65ij0 c17l107q c1axzkds cpofr2j c1lflnfx c1ezmlcj c9hm1t6 c440rna cscmz44 c1o9f9gj`}>
 <div
-className={`w-element cyksmbj c1q7lfpp c1wdeocc cgqpu4r cziueud c1wh3e3g c1rc0m8f c22bnnu cy0z055`}>
+className={`w-element cyksmbj c1q7lfpp c1wdeocc cgqpu4r cziueud c1wh3e3g c1rc0m8f c22bnnu cy0z055 c16b5ghs`}>
 <div
 className={`w-element cyksmbj c1i7snbb c1s7cfds cgocsqs ceh8ohp cfspsgy c1jlm1rw`}>
 <Link_1
@@ -748,7 +748,7 @@ className={`w-element cp01muw c1ihn9l4 c189u35v c1yral3q c17j7sop`}>
 {REQfooter?.data?.data?.footerParagraph}
 </p>
 <div
-className={`w-element cyksmbj ceqpkba c1s7cfds c1mvrzbm c17p4du2`}>
+className={`w-element cyksmbj ceqpkba c1s7cfds c1mvrzbm`}>
 {Object.entries(
   // @ts-ignore
   REQSocial?.data?.data ?? {}
@@ -777,16 +777,16 @@ className={`w-image c5ccpqx`} />
 </div>
 </div>
 <div
-className={`w-element cyksmbj c1rc0m8f c1qmi4iq c1pzb3bk ckfzd4e`}>
+className={`w-element cyksmbj c1rc0m8f c1qmi4iq c1pzb3bk ckfzd4e c16b5ghs`}>
 {(!!REQNavigation?.data?.data?.footerNavbar?.navlink?.length) &&
 <div
 className={`w-element cm4wacd chxya58 cn3l2c4 crw0x0i`}>
 <h4
-className={`w-element c1kgmnno c128qlnr c16wa6q4 ch2shl c19jcr0r`}>
+className={`w-element c1kgmnno c128qlnr c16wa6q4 ch2shl ci2d6i9`}>
 {REQNavigation?.data?.data?.footerNavbar?.title}
 </h4>
 <div
-className={`w-element cyksmbj c1i7snbb c1r678ej ceqpkba cqjwob8`}>
+className={`w-element cyksmbj c1i7snbb chn9tnv cqjwob8`}>
 {Object.entries(
   // @ts-ignore
   REQNavigation?.data?.data?.footerNavbar?.navlink ?? {}
@@ -795,12 +795,12 @@ className={`w-element cyksmbj c1i7snbb c1r678ej ceqpkba cqjwob8`}>
   return (
 <Fragment key={collectionItemKey_10}>
 <div
-className={`w-element c6xnyar c1ox04z8`}>
+className={`w-element c1ox04z8`}>
 <Link_1
 href={collectionItem_12?.href}
 target={collectionItem_12?.target}
 title={collectionItem_12?.href}
-className={`w-element cu2xsck c1ox04z8 c6xnyar cqjwob8`}>
+className={`w-element cu2xsck c1ox04z8 c6xnyar cqjwob8 c1yral3q`}>
 {collectionItem_12?.name}
 </Link_1>
 </div>
@@ -816,7 +816,7 @@ className={`w-element cu2xsck c1ox04z8 c6xnyar cqjwob8`}>
 className={`w-element cm4wacd chxya58 cn3l2c4 crw0x0i`}>
 <MarkdownEmbed
 code={REQContactInfo?.data?.data?.block}
-className={`w-markdown-embed c189u35v c16wa6q4 c1j26kzh cymfyx4 c11xdbs4 c1u4vt9x c1m580rh c17yn698 ckca6uk c1mbvols c1y8jsaf cyveut7`}>
+className={`w-markdown-embed c189u35v c16wa6q4 c1j26kzh cymfyx4 c11xdbs4 c1u4vt9x c1m580rh c17yn698 ckca6uk c1mbvols c19maxhr cyveut7 c1q1m4k2`}>
 </MarkdownEmbed>
 </div>
 }
