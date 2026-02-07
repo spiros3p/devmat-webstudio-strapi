@@ -16,7 +16,9 @@
     "export": "strapi export --file exports/strapi_dt --no-encrypt",
     "import": "strapi import -f exports/strapi_dt.tar.gz",
     "docker:import": "docker exec -it devmat-cms-production strapi import -f exports/strapi_dt.tar.gz",
-    "scp:data": "scp exports/strapi_dt.tar.gz spiros@37.60.235.172:/home/spiros/apps/devmat/devmat-webstudio-strapi/apps/devmat-cms/exports"
+    "docker:export": "docker exec -it devmat-cms-production strapi export --file exports/strapi_dt --no-encrypt",
+    "scp:to": "scp exports/strapi_dt.tar.gz spiros@37.60.235.172:/home/spiros/apps/devmat/devmat-webstudio-strapi/apps/devmat-cms/exports",
+    "scp:from": "scp spiros@37.60.235.172:/home/spiros/apps/devmat/devmat-webstudio-strapi/apps/devmat-cms/exports/strapi_dt.tar.gz exports/strapi_dt.tar.gz"
   },
   "dependencies": {
     "@strapi/plugin-users-permissions": "5.34.0",
