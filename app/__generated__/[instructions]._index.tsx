@@ -5,7 +5,7 @@
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body } from "@webstudio-is/sdk-components-react-router";
-import { Image as Image } from "@webstudio-is/sdk-components-react";
+import { HtmlEmbed as HtmlEmbed } from "@webstudio-is/sdk-components-react";
 
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
@@ -21,7 +21,7 @@ import { Image as Image } from "@webstudio-is/sdk-components-react";
 
       // Font assets on current page (can be preloaded)
       export const pageFontAssets: string[] =
-        ["Monoton-Regular_2wnBBOU8x4IpGGenJ_aES.ttf"]
+        []
 
       export const pageBackgroundImageAssets: string[] =
         []
@@ -29,24 +29,15 @@ import { Image as Image } from "@webstudio-is/sdk-components-react";
       
 
       const Page = (_props: { system: any; }) => {
-let SiteState = useResource("SiteState_1")
+let [URLcmsMedia, set$URLcmsMedia] = useVariableState<any>("https://admin.devmat.spirosroadto.info")
+let REQsitestate = useResource("REQsitestate_1")
 return <Body
 className={`w-element`}>
-<h1
-className={`w-element c1anbojs cpf8n67 ctg9xgo cavlpe`}>
-{"Devmat Solutions PC"}
-</h1>
-<h2
-className={`w-element cavlpe c153cr87`}>
-{SiteState?.data?.data?.siteStatus}
-</h2>
-<Image
-src={"/assets/work-in-progress_9kwdBfP1AlkQIoCBpUhxT_tzCv1ntJfGV095tFowbBF.webp"}
-width={300}
-height={300}
-alt={""}
-loading={"eager"}
-className={`w-image cu3uc3t c1xz0hfv c1nn1c1j`} />
+<HtmlEmbed
+code={`<iframe src=\"https://docs.google.com/viewer?url=${URLcmsMedia}${REQsitestate?.data?.data?.instructionsToCms?.url}&amp;embedded=true\" width=\"100%\" height=\"100%\" style=\"border: none; min-height: 100vh;\">\n</iframe>`}
+executeScriptOnCanvas={true}
+clientOnly={true}
+className={`w-html-embed`} />
 </Body>
 }
 

@@ -11,7 +11,7 @@ import { Box as Box, Fragment as Fragment_1, HtmlEmbed as HtmlEmbed, Image as Im
 
       export const projectId = "b76c7430-2a95-4845-aeef-095a5acae881";
 
-      export const lastPublished = "2026-02-07T11:31:42.935Z";
+      export const lastPublished = "2026-02-07T16:34:55.482Z";
 
       export const siteName = "Devmat Solutions PC – Easy, Powerful, Intelligent";
 
